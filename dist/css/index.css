@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'praktika_bold_extended';
+  src: url("praktika-boldextended-webfont.eot");
+  src: url("praktika-boldextended-webfont.eot?#iefix") format("embedded-opentype"), url("praktika-boldextended-webfont.woff2") format("woff2"), url("praktika-boldextended-webfont.woff") format("woff"), url("praktika-boldextended-webfont.ttf") format("truetype"), url("praktika-boldextended-webfont.svg#praktikabold_extended") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'praktika_medium';
+  src: url("praktika-medium-webfont.eot");
+  src: url("praktika-medium-webfont.eot?#iefix") format("embedded-opentype"), url("praktika-medium-webfont.woff2") format("woff2"), url("praktika-medium-webfont.woff") format("woff"), url("praktika-medium-webfont.ttf") format("truetype"), url("praktika-medium-webfont.svg#praktikamedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: 'MyWebFont', Fallback, sans-serif; }
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
