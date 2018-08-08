@@ -7,7 +7,6 @@ var sass        = require('gulp-sass');
 gulp.task('sass', function() {
     return gulp.src(['src/scss/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest("src/css"))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -30,8 +29,14 @@ gulp.task('js', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('assets', function() {
+    return gulp.src(['src/assets/*/*'])
+        .pipe(gulp.dest("dist/assets"))
+        .pipe(browserSync.stream());
+});
+
 // Static Server + watching scss/html files
-gulp.task('serve', ['html', 'js', 'sass'], function() {
+gulp.task('serve', ['html', 'js', 'sass', 'assets'], function() {
 
     browserSync.init({
         server: "./src"  
@@ -39,6 +44,7 @@ gulp.task('serve', ['html', 'js', 'sass'], function() {
 
     gulp.watch(['src/scss/*.scss'], ['sass']);
     gulp.watch(['src/js/*.js'], ['js']);
+    gulp.watch(['src/assets/*/*'], ['assets']);
     gulp.watch(["src/*.html"],['html']).on('change', browserSync.reload);
     // gulp.watch("src/js/*.js").on('change', browserSync.reload);
 });
