@@ -7,7 +7,6 @@ var sass        = require('gulp-sass');
 gulp.task('sass', function() {
     return gulp.src(['src/scss/*.scss'])
         .pipe(sass())
-        .pipe(gulp.dest("src/css"))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
