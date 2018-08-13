@@ -11,30 +11,29 @@ const setHeightsArray = [
 
 //adjust height of a div to the highest child of all considered divs
 export function setHeights() {
-    setHeightsArray.forEach(val => {
-        let parentElement = document.getElementById(val.parentId);
-        let elements = parentElement.querySelectorAll('.' + val.className);
-        let maxH = 0;
+    setHeightsArray.forEach(arrayEl => {
+        const parentElement = document.getElementById(arrayEl.parentId);
+        const elements = parentElement.querySelectorAll('.' + arrayEl.className);
+        let maxHeight = 0;
         
         elements.forEach(el => {
-            let childH = el.children[0].scrollHeight;
+            let childHeight = el.children[0].scrollHeight;
             
-            if (maxH <childH) {
-                maxH = childH;
+            if (maxHeight < childHeight) {
+                maxHeight = childHeight;
             }
         });
-        elements.forEach(el => el.style.height = maxH + 'px')
+        elements.forEach(el => el.style.height = maxHeight + 'px')
     });
 }
 
 //reset heights of divs to heights of their own children
 export function resetHeights() {
-    setHeightsArray.forEach(val => {
-        let parentElement = document.getElementById(val.parentId);
-        let elements = parentElement.querySelectorAll('.' + val.className);
+    setHeightsArray.forEach(arrayEl => {
+        const parentElement = document.getElementById(arrayEl.parentId);
+        const elements = parentElement.querySelectorAll('.' + arrayEl.className);
         elements.forEach(el => {
-            let childH = el.children[0].scrollHeight;
-            el.style.height = childH + 'px';
+            el.style.height = '';
         });
     });
 }
