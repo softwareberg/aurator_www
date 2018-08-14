@@ -1,9 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const port = process.env.PORT || 3000;
 const prod = process.env.NODE_ENV === 'production';
@@ -28,7 +29,11 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, 'src/img'), to: path.resolve(__dirname, 'dist/img') }
-    ])
+    ]),
+    new StyleLintPlugin({
+      configFile: path.resolve(__dirname, '.stylelintrc'),
+      emitErrors: true,
+    })
   ],
   module: {
     rules: [{
@@ -36,6 +41,11 @@ module.exports = {
       exclude: /node_modules/,
       use: [{
         loader: 'babel-loader'
+      }, {
+        loader: 'eslint-loader', options: {
+          failOnWarning: true,
+          failOnError: true
+        }
       }]
     }, {
       test: /\.scss$/,
