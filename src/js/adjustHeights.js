@@ -10,7 +10,7 @@ const setHeightsArray = [
 ];
 
 
-//adjust height of a div to the highest child of all considered divs
+// adjust height of a div to the highest child of all considered divs
 export function setHeights() {
     setHeightsArray.forEach(arrayEl => {
         const elements = $('#' + arrayEl.parentId).find('.' + arrayEl.className).toArray();
@@ -20,7 +20,7 @@ export function setHeights() {
     });
 }
 
-//reset heights of divs to heights of their own children
+// reset heights of divs to heights of their own children
 export function resetHeights() {
     setHeightsArray.forEach(arrayEl => {
         const elements = $('#' + arrayEl.parentId).find('.' + arrayEl.className).toArray();
