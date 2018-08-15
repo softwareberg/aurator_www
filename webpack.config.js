@@ -43,8 +43,10 @@ module.exports = {
         loader: 'babel-loader'
       }, {
         loader: 'eslint-loader', options: {
-          failOnWarning: true,
-          failOnError: true
+          emitError: true,
+          emitWarning: true,
+          failOnError: true,
+          failOnWarning: true
         }
       }]
     }, {
