@@ -24,15 +24,15 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html')
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     }),
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, 'src/img'), to: path.resolve(__dirname, 'dist/img') }
     ]),
     new StyleLintPlugin({
       configFile: path.resolve(__dirname, '.stylelintrc'),
-      emitErrors: true,
+      emitErrors: true
     })
   ],
   module: {
@@ -42,7 +42,8 @@ module.exports = {
       use: [{
         loader: 'babel-loader'
       }, {
-        loader: 'eslint-loader', options: {
+        loader: 'eslint-loader',
+        options: {
           emitError: true,
           emitWarning: true,
           failOnError: true,
@@ -54,24 +55,29 @@ module.exports = {
       use: [{
         loader: prod ? MiniCssExtractPlugin.loader : 'style-loader'
       }, {
-        loader: 'css-loader', options: {
+        loader: 'css-loader',
+        options: {
           sourceMap: !prod
         }
       }, {
-        loader: 'sass-loader', options: {
+        loader: 'sass-loader',
+        options: {
           sourceMap: !prod
         }
       }]
     }, {
       test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)$/i,
       use: [{
-        loader: 'file-loader', options: {name: '[path][name].[ext]'}
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
+        }
       }]
     }]
   },
   devServer: {
     host: 'localhost',
-    port: port,
+    port,
     contentBase: path.resolve(__dirname, 'src'),
     open: true
   }
