@@ -28,7 +28,7 @@
     "html-webpack-plugin": "3.2.x",
     "mini-css-extract-plugin": "0.4.x",
     "node-sass": "4.9.x",
-    "popper.js": "^1.14.4",
+    "popper.js": "1.14.x",
     "postcss-loader": "3.0.0",
     "sass-loader": "7.1.x",
     "style-loader": "0.22.x",
@@ -41,6 +41,6 @@
   "dependencies": {
     "bootstrap": "4.1.x",
     "jquery": "3.3.x",
-    "lodash": "^4.17.10"
+    "lodash": "4.17.x"
   }
 }
