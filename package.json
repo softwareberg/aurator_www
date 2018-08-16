@@ -33,6 +33,7 @@
     "sass-loader": "7.1.x",
     "style-loader": "0.22.x",
     "stylelint": "9.4.x",
+    "stylelint-config-primer": "2.2.x",
     "stylelint-webpack-plugin": "0.10.x",
     "webpack": "4.16.x",
     "webpack-cli": "3.1.x",
