@@ -1,24 +1,11 @@
 {
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
+  "extends": "airbnb",
+  "env": {
+    "browser": true
   },
   "rules": {
-    "semi": ["error", "always"],
-    "quotes": ["error", "single"],
-    "spaced-comment": ["error", "always"],
-    "no-multi-spaces": "error",
-    "block-spacing": "error",
-    "no-mixed-spaces-and-tabs": "error",
-    "no-trailing-spaces": "error",
-    "no-whitespace-before-property": "error",
-    "space-before-blocks": "error",
-    "keyword-spacing": "error",
-    "space-before-function-paren": ["error", {"anonymous": "always", "named": "never", "asyncArrow": "always"}],
-    "space-in-parens": "error",
-    "space-infix-ops": "error",
-    "space-unary-ops": "error",
-    "no-spaced-func": "error",
-    "arrow-spacing": "error"
+    "comma-dangle": ["error", "never"],
+    "import/no-unresolved": "ignore",
+    "no-param-reassign": ["error", {"props": false}]
   }
 }
