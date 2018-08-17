@@ -8,6 +8,10 @@ window.jQuery = $; window.$ = $;
 const breakpointDesktop = 992;
 
 $(document).ready(() => {
+  $('.menu-toggle').click(() => {
+    $('.nav-mobile').toggleClass('show');
+  });
+
   if (window.innerWidth >= breakpointDesktop) {
     // for development purposes only:
     setTimeout(() => setHeights(), 500);
