@@ -1,7 +1,9 @@
-@import "variables";
-@import "~bootstrap/dist/css/bootstrap";
+@import "styles/variables";
+@import "styles/bootstrap";
+@import "~bootstrap/dist/css/bootstrap-grid";
 
 @font-face {
+  font-display: swap;
   font-family: "Praktika Bold";
   src: url("fonts/praktika-boldextended-webfont.eot");
   src:
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+  font-display: swap;
   font-family: "Praktika Medium";
   src: url("fonts/praktika-medium-webfont.eot");
   src:
@@ -29,7 +32,7 @@
 
 .app {
   font-family: "Praktika Bold", "Source Sans Pro", "Lucida Grande", sans-serif;
-  background-color: $primary-color;
+  background-color: #FFF;
 }
 
 *,
