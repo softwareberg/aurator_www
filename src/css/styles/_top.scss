@@ -22,12 +22,7 @@
 }
 
 .nav-menu__list {
-  display: inline-block;
-  margin: 1rem;
-}
-
-.nav-menu__list__item {
-  display: inline;
+  margin: 1rem 0.5rem;
 }
 
 .nav-link {
@@ -44,13 +39,12 @@
 }
 
 .nav-menu__lang {
-  margin: 1rem;
+  padding: 1rem;
 }
 
 // tablet and mobile
 
 .menu-toggle {
-  display: none;
   float: right;
   padding: 1rem 0;
 }
@@ -61,15 +55,15 @@
   left: 100%;
   z-index: 1000;
   width: 100%;
-  height: calc(100% - 2 * 2rem);
   padding: 2rem;
-  // vertical-align: middle;
   background: $col-bg-gray-dark;
+  opacity: 0;
   transition: 0.5s ease-in-out;
 }
 
 .nav-mobile.show {
   left: 0;
+  opacity: 1;
 }
 
 .nav-link--mobile {
@@ -77,22 +71,19 @@
   font-size: 1.6rem;
 }
 
-.nav-mobile__list__item {
+.nav-mobile__list {
+  width: 100%;
+  margin-left: 0;
+  list-style: none;
+}
+
+.nav-mobile__list-item {
   padding: 1rem 0;
   border-bottom: 1px solid $col-banner-gray-dark;
 }
 
-.nav-mobile-kontakt {
-  display: none;
-  width: 100%;
-  margin-left: 0;
-}
-
-.nav-mobile-kontakt__item {
-  display: inline;
-}
-
-.nav-mobile-kontakt__link {
+.nav-link--mobile-kontakt {
+  padding: 0;
   font-size: 0.8rem;
 }
 
@@ -100,27 +91,47 @@
   padding: 1rem 0;
 }
 
-@media (max-width: 991px) {
-  .main-menu,
-  .nav-menu__lang {
-    display: none;
-  }
+.banner {
+  height: 800px;
+  padding-top: 52px;
+  background-image: url("../img/banner-bg.png");
+  background-repeat: no-repeat;
+  background-position: 75%;
+  background-size: cover;
+}
 
-  .menu-toggle {
-    display: inline-block;
+.banner__texts {
+  position: relative;
+  top: 50%;
+  padding: 2rem 4rem;
+  transform: translateY(-50%);
+}
+
+.banner-link {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.banner-link--with-logo::after {
+  float: right;
+  content: url("../img/banner__icon--oferta.png");
+}
+
+@media (max-width: 991px) {
+  .banner__texts {
+    padding: 2rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .menu-kontakt {
-    display: none;
-  }
-
   .nav-link--mobile {
     font-size: 1rem;
   }
 
-  .nav-mobile-kontakt {
-    display: flex;
+  .banner {
+    height: 580px;
   }
 }

@@ -22,6 +22,7 @@ $(document).ready(() => {
     if (window.innerWidth >= breakpointDesktop) {
       // on resize of a window adjust heights of mirrored elements
       setHeights();
+      $('.nav-mobile').removeClass('show');
     } else {
       // for smaller screens reset heights of the elements to default
       resetHeights();
