@@ -97,6 +97,10 @@
   line-height: 110%;
 }
 
+.h-txt24 {
+  font-size: 1.6rem;
+}
+
 .h-txt16 {
   font-size: 1rem;
 }
@@ -118,5 +122,13 @@
 @media (max-width: 575.98px) {
   .h-h1 {
     font-size: 1.6rem;
+  }
+
+  .h-txt24 {
+    font-size: 1rem;
+  }
+
+  .h-txt10 {
+    font-size: 0.6rem;
   }
 }

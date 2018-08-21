@@ -8,7 +8,6 @@
   left: 0;
   width: calc(100% - 2 * 2rem);
   margin: 0 2rem;
-  font-size: 0.6rem;
   border-bottom: solid $col-orange 3px;
 }
 
@@ -49,9 +48,17 @@
   padding: 1rem 0;
 }
 
+.menu-toggle--open.show {
+  display: none !important;
+}
+
+.menu-toggle--close.show {
+  display: inline-block !important;
+}
+
 .nav-mobile {
   position: absolute;
-  top: 52px;
+  top: 60px;
   left: 100%;
   z-index: 1000;
   width: 100%;
@@ -68,7 +75,6 @@
 
 .nav-link--mobile {
   padding: 0;
-  font-size: 1.6rem;
 }
 
 .nav-mobile__list {
@@ -110,7 +116,6 @@
 .banner-link {
   padding: 1rem;
   margin: 1rem;
-  font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -127,10 +132,6 @@
 }
 
 @media (max-width: 575.98px) {
-  .nav-link--mobile {
-    font-size: 1rem;
-  }
-
   .banner {
     height: 580px;
   }

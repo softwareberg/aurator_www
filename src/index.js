@@ -10,6 +10,7 @@ const breakpointDesktop = 992;
 $(document).ready(() => {
   $('.menu-toggle').click(() => {
     $('.nav-mobile').toggleClass('show');
+    $('.menu-toggle').toggleClass('show');
   });
 
   if (window.innerWidth >= breakpointDesktop) {
