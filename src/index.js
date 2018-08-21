@@ -23,6 +23,7 @@ $(document).ready(() => {
     if (window.innerWidth >= breakpointDesktop) {
       // on resize of a window adjust heights of mirrored elements
       setHeights();
+      // on resize of a window reset state of mobile menu 
       $('.nav-mobile').removeClass('h-open');
       $('.menu-toggle').removeClass('h-open');
     } else {
