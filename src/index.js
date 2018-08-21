@@ -9,8 +9,8 @@ const breakpointDesktop = 992;
 
 $(document).ready(() => {
   $('.menu-toggle').click(() => {
-    $('.nav-mobile').toggleClass('show');
-    $('.menu-toggle').toggleClass('show');
+    $('.nav-mobile').toggleClass('h-open');
+    $('.menu-toggle').toggleClass('h-open');
   });
 
   if (window.innerWidth >= breakpointDesktop) {
@@ -23,7 +23,8 @@ $(document).ready(() => {
     if (window.innerWidth >= breakpointDesktop) {
       // on resize of a window adjust heights of mirrored elements
       setHeights();
-      $('.nav-mobile').removeClass('show');
+      $('.nav-mobile').removeClass('h-open');
+      $('.menu-toggle').removeClass('h-open');
     } else {
       // for smaller screens reset heights of the elements to default
       resetHeights();
