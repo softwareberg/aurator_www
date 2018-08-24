@@ -1,43 +1,5 @@
-@import "styles/variables";
 @import "styles/bootstrap";
-
-@font-face {
-  font-display: swap;
-  font-family: "Praktika Bold";
-  src: url("fonts/praktika-boldextended-webfont.eot");
-  src:
-    url("fonts/praktika-boldextended-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/praktika-boldextended-webfont.woff2") format("woff2"),
-    url("fonts/praktika-boldextended-webfont.woff") format("woff"),
-    url("fonts/praktika-boldextended-webfont.ttf") format("truetype"),
-    url("fonts/praktika-boldextended-webfont.svg#praktikabold_extended") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Praktika Medium";
-  src: url("fonts/praktika-medium-webfont.eot");
-  src:
-    url("fonts/praktika-medium-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fonts/praktika-medium-webfont.woff2") format("woff2"),
-    url("fonts/praktika-medium-webfont.woff") format("woff"),
-    url("fonts/praktika-medium-webfont.ttf") format("truetype"),
-    url("fonts/praktika-medium-webfont.svg#praktikamedium") format("svg");
-  font-style: normal;
-  font-weight: normal;
-}
-
-.app {
-  font-family: "Praktika Bold", "Source Sans Pro", "Lucida Grande", sans-serif;
-  background-color: #fff;
-}
-
-*,
-*::before,
-*::after {
-  // margin: 0;
-  // padding: 0;
-  box-sizing: border-box;
-}
+@import "styles/variables";
+@import "styles/typography";
+@import "styles/general";
+@import "styles/top";
