@@ -123,14 +123,3 @@
   content: url("../img/banner__icon--oferta.png");
 }
 
-@include media-breakpoint-down(md) {
-  .banner__texts {
-    padding: 2rem;
-  }
-}
-
-@include media-breakpoint-down(xs) {
-  .banner {
-    height: 580px;
-  }
-}

@@ -1,13 +1,3 @@
-.nav-link,
-.banner-header {
-  font-family: "Praktika Bold", "Source Sans Pro", "Lucida Grande", sans-serif;
-}
-
-.app,
-.nav-link--mobile-kontakt {
-  font-family: "Praktika Medium", "Source Sans Pro", "Lucida Grande", sans-serif;
-}
-
 *,
 *::before,
 *::after {
@@ -62,6 +52,10 @@
 @include media-breakpoint-down(md) {
   .h-h1 {
     font-size: 2.8rem;
+  }
+
+  .banner__texts {
+    padding: 2rem;
   }
 }
 
