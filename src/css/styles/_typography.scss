@@ -1,3 +1,31 @@
+@font-face {
+  font-display: swap;
+  font-family: "Praktika Bold";
+  src:
+    url("fonts/praktika-boldextended-webfont.eot"),
+    url("fonts/praktika-boldextended-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/praktika-boldextended-webfont.woff2") format("woff2"),
+    url("fonts/praktika-boldextended-webfont.woff") format("woff"),
+    url("fonts/praktika-boldextended-webfont.ttf") format("truetype"),
+    url("fonts/praktika-boldextended-webfont.svg#praktikabold_extended") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Praktika Medium";
+  src:
+    url("fonts/praktika-medium-webfont.eot"),
+    url("fonts/praktika-medium-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/praktika-medium-webfont.woff2") format("woff2"),
+    url("fonts/praktika-medium-webfont.woff") format("woff"),
+    url("fonts/praktika-medium-webfont.ttf") format("truetype"),
+    url("fonts/praktika-medium-webfont.svg#praktikamedium") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
 .h-h1 {
   margin-bottom: 3rem;
   font-size: 3.5rem;
