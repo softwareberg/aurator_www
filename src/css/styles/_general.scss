@@ -1,8 +1,8 @@
 @font-face {
   font-display: swap;
   font-family: "Praktika Bold";
-  src: url("fonts/praktika-boldextended-webfont.eot");
   src:
+    url("fonts/praktika-boldextended-webfont.eot"),
     url("fonts/praktika-boldextended-webfont.eot?#iefix") format("embedded-opentype"),
     url("fonts/praktika-boldextended-webfont.woff2") format("woff2"),
     url("fonts/praktika-boldextended-webfont.woff") format("woff"),
@@ -15,8 +15,8 @@
 @font-face {
   font-display: swap;
   font-family: "Praktika Medium";
-  src: url("fonts/praktika-medium-webfont.eot");
   src:
+    url("fonts/praktika-medium-webfont.eot"),
     url("fonts/praktika-medium-webfont.eot?#iefix") format("embedded-opentype"),
     url("fonts/praktika-medium-webfont.woff2") format("woff2"),
     url("fonts/praktika-medium-webfont.woff") format("woff"),
@@ -24,10 +24,6 @@
     url("fonts/praktika-medium-webfont.svg#praktikamedium") format("svg");
   font-style: normal;
   font-weight: normal;
-}
-
-.app {
-  background-color: #fff;
 }
 
 .nav-link,
@@ -91,35 +87,13 @@
   border-bottom: solid $col-banner-gray-dark 2px;
 }
 
-.h-h1 {
-  margin-bottom: 3rem;
-  font-size: 3.5rem;
-  line-height: 110%;
-}
-
-.h-txt24 {
-  font-size: 1.6rem;
-}
-
-.h-txt16 {
-  font-size: 1rem;
-}
-
-.h-txt10 {
-  font-size: 0.8rem;
-}
-
-.h-txt9 {
-  font-size: 0.6rem;
-}
-
-@media (max-width: 991px) {
+@include media-breakpoint-down(md) {
   .h-h1 {
     font-size: 2.8rem;
   }
 }
 
-@media (max-width: 575.98px) {
+@include media-breakpoint-down(xs) {
   .h-h1 {
     font-size: 1.6rem;
   }

@@ -100,9 +100,7 @@
 .banner {
   height: 800px;
   padding-top: 52px;
-  background-image: url("../img/banner-bg.png");
-  background-repeat: no-repeat;
-  background-position: 75%;
+  background: url("../img/banner-bg.png") no-repeat 75%;
   background-size: cover;
 }
 
@@ -125,13 +123,13 @@
   content: url("../img/banner__icon--oferta.png");
 }
 
-@media (max-width: 991px) {
+@include media-breakpoint-down(md) {
   .banner__texts {
     padding: 2rem;
   }
 }
 
-@media (max-width: 575.98px) {
+@include media-breakpoint-down(xs) {
   .banner {
     height: 580px;
   }
