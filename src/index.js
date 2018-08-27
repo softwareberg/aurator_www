@@ -8,6 +8,7 @@ window.jQuery = $; window.$ = $;
 const breakpointDesktop = 992;
 
 $(document).ready(() => {
+  $('.top').css('height', window.innerHeight);
   $('.menu-toggle').click(() => {
     $('.nav-mobile').toggleClass('h-open');
     $('.menu-toggle').toggleClass('h-open');
@@ -20,6 +21,7 @@ $(document).ready(() => {
     // setHeights();
   }
   window.addEventListener('resize', () => {
+    $('.top').css('height', window.innerHeight);
     if (window.innerWidth >= breakpointDesktop) {
       // on resize of a window adjust heights of mirrored elements
       setHeights();

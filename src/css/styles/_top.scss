@@ -1,5 +1,10 @@
 .top {
   position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  background: url("../img/banner-bg.png") no-repeat 75%;
+  background-size: cover;
 }
 
 .nav {
@@ -41,73 +46,10 @@
   padding: 1rem;
 }
 
-// tablet and mobile
-
-.menu-toggle {
-  float: right;
-  padding: 1rem 0;
-}
-
-.menu-toggle--open.h-open {
-  display: none !important;
-}
-
-.menu-toggle--close.h-open {
-  display: inline-block !important;
-}
-
-.nav-mobile {
-  position: absolute;
-  top: 60px;
-  left: 100%;
-  z-index: 1000;
-  width: 100%;
-  padding: 2rem;
-  background: $col-bg-gray-dark;
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-}
-
-.nav-mobile.h-open {
-  left: 0;
-  opacity: 1;
-}
-
-.nav-link--mobile {
-  padding: 0;
-}
-
-.nav-mobile__list {
-  width: 100%;
-  margin-left: 0;
-  list-style: none;
-}
-
-.nav-mobile__list-item {
-  padding: 1rem 0;
-  border-bottom: 1px solid $col-banner-gray-dark;
-}
-
-.nav-link--mobile-kontakt {
-  padding: 0;
-  font-size: 0.8rem;
-}
-
-.nav-mobile__lang {
-  padding: 1rem 0;
-}
-
-.banner {
-  height: 800px;
-  padding-top: 52px;
-  background: url("../img/banner-bg.png") no-repeat 75%;
-  background-size: cover;
-}
-
-.banner__texts {
+.l-center-vertical--banner {
   position: relative;
   top: 50%;
-  padding: 2rem 4rem;
+  padding-top: 52px;
   transform: translateY(-50%);
 }
 
@@ -123,3 +65,68 @@
   content: url("../img/banner__icon--oferta.png");
 }
 
+// tablet and mobile
+
+.menu-toggle {
+  float: right;
+  padding-top: 0.6rem;
+  margin-left: -0.2rem;
+}
+
+.menu-toggle--open.h-open {
+  display: none !important;
+}
+
+.menu-toggle--close.h-open {
+  display: inline-block !important;
+}
+
+.l-center-vertical--mobile-menu {
+  // position: relative;
+  // top: 50%;
+  // transform: translateY(-50%);
+}
+
+.nav-mobile {
+  position: absolute;
+  top: 56px;
+  left: 100%;
+  z-index: 1000;
+  width: 100%;
+  height: calc(100% - 56px);
+  padding: 2rem;
+  background: $col-bg-gray-dark;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-mobile.h-open {
+  left: 0;
+  opacity: 1;
+}
+
+.nav-link--mobile {
+  padding: 1.5rem 0;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+.nav-mobile__list {
+  width: 100%;
+  margin-left: 0;
+  list-style: none;
+}
+
+.nav-mobile__list-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid $col-banner-gray-dark;
+}
+
+.nav-link--mobile-kontakt {
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.nav-mobile__lang {
+  padding: 1rem 0;
+}

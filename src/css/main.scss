@@ -1,5 +1,35 @@
 @import "styles/bootstrap";
 @import "styles/variables";
 @import "styles/typography";
+@import "styles/helpers";
 @import "styles/general";
 @import "styles/top";
+@import "styles/naprawa";
+
+@include media-breakpoint-down(lg) {
+  //
+}
+
+@include media-breakpoint-down(md) {
+  .h-h1 {
+    font-size: 2.8rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .h-h1 {
+    font-size: 1.6rem;
+  }
+
+  .h-txt24 {
+    font-size: 1rem;
+  }
+
+  .h-txt10 {
+    font-size: 0.6rem;
+  }
+}

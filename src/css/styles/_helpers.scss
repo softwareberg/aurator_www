@@ -1,0 +1,31 @@
+.h-white {
+  color: #fff !important;
+}
+
+.h-black {
+  color: #000 !important;
+}
+
+.h-dark {
+  color: $col-txt-gray !important;
+}
+
+.h-light {
+  color: $col-txt-gray-light !important;
+}
+
+.h-orange {
+  color: $col-orange !important;
+}
+
+.h-border-bottom {
+  border-bottom: solid 4px;
+}
+
+.h-border-bottom--orange {
+  border-bottom: solid $col-orange 4px;
+}
+
+.h-border-bottom--thin-gray {
+  border-bottom: solid $col-banner-gray-dark 2px;
+}
