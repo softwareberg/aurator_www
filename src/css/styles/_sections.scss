@@ -1,0 +1,70 @@
+.section__cover-img {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+
+.section__title {
+  position: relative;
+  top: 75%;
+  transform: translateY(-60%);
+}
+
+.section__cover-img--naprawa {
+  background: url("../img/naprawa__foto.png") no-repeat 5%;
+  background-size: cover;
+}
+
+.section_texts {
+  padding: 0.5rem;
+}
+
+.section__header {
+  margin: 2rem 0;
+  letter-spacing: 0.1em;
+}
+
+.section__p {
+  margin-bottom: 1.6rem;
+}
+
+.section__p--2 {
+  margin-bottom: 2.5rem;
+}
+
+.section__list {
+  list-style: none;
+  counter-reset: list-counter;
+}
+
+.section__list-item {
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.section__list-item::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 4rem;
+  color: $col-txt-gray-light;
+  content: counter(list-counter) ". ";
+  counter-increment: list-counter;
+}
+
+.section__list-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 1rem);
+  content: "";
+  border-bottom: solid $col-txt-gray-light 4px;
+}
+
+.section__list-item__inner {
+  position: absolute;
+  bottom: 1rem;
+  left: 5rem;
+  padding-right: 1rem;
+}

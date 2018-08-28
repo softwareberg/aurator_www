@@ -54,10 +54,11 @@
 }
 
 .banner-link {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.6rem;
+  margin: 0.6rem;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .banner-link--with-logo::after {
@@ -82,9 +83,9 @@
 }
 
 .l-center-vertical--mobile-menu {
-  // position: relative;
-  // top: 50%;
-  // transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .nav-mobile {

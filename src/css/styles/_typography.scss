@@ -27,21 +27,34 @@
 }
 
 .nav-link,
-.banner-header {
+.banner-header,
+.h-header {
   font-family: "Praktika Bold", "Source Sans Pro", "Lucida Grande", sans-serif;
 }
 
 .app,
-.nav-link--mobile-kontakt {
+.nav-link--mobile-kontakt,
+.h-txt-thin {
   font-family: "Praktika Medium", "Source Sans Pro", "Lucida Grande", sans-serif;
+}
+
+.h-header {
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.h-txt-bold {
+  font-weight: 700;
+}
+
+.h-txt-thin {
+  font-weight: 500;
 }
 
 .h-h1 {
   margin-bottom: 3rem;
   font-size: 3.5rem;
-  line-height: 110%;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 .h-txt24 {

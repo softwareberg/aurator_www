@@ -3,7 +3,7 @@
 @import "styles/typography";
 @import "styles/general";
 @import "styles/top";
-@import "styles/naprawa";
+@import "styles/sections";
 @import "styles/helpers";
 
 @include media-breakpoint-down(lg) {
@@ -16,7 +16,8 @@
   }
 
   .l-container-padding {
-    padding: 0 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -29,15 +30,15 @@
     font-size: 1rem;
   }
 
+  .h-txt16 {
+    font-size: 0.8rem;
+  }
+
   .h-txt10 {
     font-size: 0.6rem;
   }
 
-  .cover-photo {
+  .section__cover-img {
     height: 180px;
-  }
-
-  .cover-header {
-    padding-top: 6rem;
   }
 }

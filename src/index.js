@@ -21,8 +21,8 @@ $(document).ready(() => {
     // for production purposes:
     // setHeights();
   }
-  window.addEventListener('resize', () => {
-    $('.top').css('height', window.innerHeight);
+
+  $(window).resize(() => {
     if (window.innerWidth >= breakpointDesktop) {
       // on resize of a window adjust heights of mirrored elements
       setHeights();
@@ -33,5 +33,6 @@ $(document).ready(() => {
       // for smaller screens reset heights of the elements to default
       resetHeights();
     }
+    $('.top').css('height', window.innerHeight);
   });
 });
