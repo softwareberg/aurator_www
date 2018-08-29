@@ -6,10 +6,6 @@
 @import "styles/sections";
 @import "styles/helpers";
 
-@include media-breakpoint-down(lg) {
-  //
-}
-
 @include media-breakpoint-down(md) {
   .h-h1 {
     font-size: 2.8rem;
