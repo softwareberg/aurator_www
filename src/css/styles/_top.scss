@@ -46,12 +46,6 @@
   padding: 1rem;
 }
 
-.l-center-vertical {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .l-center-vertical--banner {
   padding-top: 52px;
 }
@@ -86,11 +80,11 @@
 
 .nav-mobile {
   position: absolute;
-  top: 56px;
+  top: $nav-height;
   left: 100%;
   z-index: 1000;
   width: 100%;
-  height: calc(100% - 56px);
+  height: calc(100% - $nav-height);
   padding: 2rem;
   background: $col-bg-gray-dark;
   opacity: 0;

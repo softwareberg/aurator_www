@@ -7,7 +7,7 @@
 }
 
 .app {
-  min-width: 300px;
+  min-width: 320px;
 }
 
 .container-fluid {
@@ -16,6 +16,9 @@
 
 .container {
   max-width: 1600px;
-  padding: 0 4rem;
-  overflow: hidden;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
 }

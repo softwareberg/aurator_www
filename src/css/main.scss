@@ -1,22 +1,19 @@
 @import "styles/bootstrap";
 @import "styles/variables";
 @import "styles/typography";
-@import "styles/helpers";
 @import "styles/general";
 @import "styles/top";
 @import "styles/naprawa";
-
-@include media-breakpoint-down(lg) {
-  //
-}
+@import "styles/helpers";
 
 @include media-breakpoint-down(md) {
   .h-h1 {
     font-size: 2.8rem;
   }
 
-  .container {
-    padding: 0 2rem;
+  .l-container-padding {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -27,6 +24,10 @@
 
   .h-txt24 {
     font-size: 1rem;
+  }
+
+  .h-txt16 {
+    font-size: 0.8rem;
   }
 
   .h-txt10 {
