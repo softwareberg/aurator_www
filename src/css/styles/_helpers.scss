@@ -34,3 +34,9 @@
   padding-right: 4rem;
   padding-left: 4rem;
 }
+
+.l-center-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
