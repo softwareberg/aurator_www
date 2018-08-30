@@ -17,26 +17,22 @@ const setHeightsArrayAll = [
 ];
 
 // adjust height of a div to the highest child of all considered divs
-// fot desktop widths
-export function setHeightsDesktop() {
-  setHeightsArrayDesktop.forEach((arrayEl) => {
-    const elements = $(`#${arrayEl.parentId}`).find(`.${arrayEl.className}`).toArray();
-    const heights = elements.map(it => it.children[0].scrollHeight);
-    const maxHeight = _.max(heights);
-    elements.forEach((el) => { el.style.height = `${maxHeight}px`; });
-  });
+function setHeightsInner(array) {
+  return () => {
+    array.forEach((arrayEl) => {
+      const elements = $(`#${arrayEl.parentId}`).find(`.${arrayEl.className}`).toArray();
+      const heights = elements.map(it => it.children[0].scrollHeight);
+      const maxHeight = _.max(heights);
+      elements.forEach((el) => { el.style.height = `${maxHeight}px`; });
+    });
+  };
 }
 
-// adjust height of a div to the highest child of all considered divs
-// (for all widths, including mobile)
-export function setHeightsAll() {
-  setHeightsArrayAll.forEach((arrayEl) => {
-    const elements = $(`#${arrayEl.parentId}`).find(`.${arrayEl.className}`).toArray();
-    const heights = elements.map(it => it.children[0].scrollHeight);
-    const maxHeight = _.max(heights);
-    elements.forEach((el) => { el.style.height = `${maxHeight}px`; });
-  });
-}
+// for desktop widths
+const setHeightsDesktop = setHeightsInner(setHeightsArrayDesktop);
+// for all widths
+const setHeightsAll = setHeightsInner(setHeightsArrayAll);
+export { setHeightsDesktop, setHeightsAll };
 
 // reset heights of divs to heights of their own children
 export function resetHeights() {

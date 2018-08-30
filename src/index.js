@@ -9,7 +9,6 @@ const breakpointDesktop = 992;
 
 $(document).ready(() => {
   $('.top').css('height', window.innerHeight);
-  // $('.cover-photo').css('width', window.innerWidth);
   $('.menu-toggle').click(() => {
     $('.nav-mobile').toggleClass('h-open');
     $('.menu-toggle').toggleClass('h-open');
