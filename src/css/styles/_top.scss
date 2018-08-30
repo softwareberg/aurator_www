@@ -47,7 +47,7 @@
 }
 
 .banner {
-  padding-top: $nav-height;
+  padding-top: 56px;
 }
 
 .banner-link {
@@ -80,11 +80,11 @@
 
 .nav-mobile {
   position: absolute;
-  top: $nav-height;
+  top: 56px;
   left: 100%;
   z-index: 1000;
   width: 100%;
-  height: calc(100% - $nav-height);
+  height: calc(100% - 56px);
   padding: 2rem;
   background: $col-bg-gray-dark;
   opacity: 0;
