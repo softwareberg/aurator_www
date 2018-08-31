@@ -26,3 +26,11 @@ export function resetHeights() {
     elements.forEach((el) => { el.style.height = ''; });
   });
 }
+
+export function setPositionForeground() {
+  const quoteHeight = $('.firma__quote-div').height();
+  const foregroundHeight = $('.firma__foreground').height();
+  const foto = $('.firma__foto');
+  const fotoHeight = quoteHeight + foregroundHeight;
+  foto.height(fotoHeight);
+}

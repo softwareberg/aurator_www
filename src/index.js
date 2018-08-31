@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { setHeights, resetHeights } from 'js/adjustHeights';
+import { setHeights, resetHeights, setPositionForeground } from 'js/layout';
 
 require('css/main.scss');
 
@@ -9,6 +9,8 @@ const breakpointDesktop = 992;
 
 $(document).ready(() => {
   $('.top').css('height', window.innerHeight);
+  setTimeout(() => setPositionForeground(), 500);
+  // setPositionFoto();
   $('.menu-toggle').click(() => {
     $('.nav-mobile').toggleClass('h-open');
     $('.menu-toggle').toggleClass('h-open');
@@ -22,6 +24,8 @@ $(document).ready(() => {
   }
   window.addEventListener('resize', () => {
     $('.top').css('height', window.innerHeight);
+    setPositionForeground();
+    // setPositionFoto();
     if (window.innerWidth >= breakpointDesktop) {
       // on resize of a window adjust heights of mirrored elements
       setHeights();

@@ -3,8 +3,14 @@
 @import "styles/typography";
 @import "styles/general";
 @import "styles/top";
-@import "styles/naprawa";
+@import "styles/firma";
 @import "styles/helpers";
+
+@include media-breakpoint-down(xl) {
+  .firma__quote {
+    font-size: 1.6rem;
+  }
+}
 
 @include media-breakpoint-down(md) {
   .h-h1 {
@@ -14,6 +20,10 @@
   .l-container-padding {
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .firma__quote {
+    font-size: 1rem;
   }
 }
 
