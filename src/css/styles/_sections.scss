@@ -8,6 +8,7 @@
 .section__title {
   position: relative;
   top: 75%;
+  text-shadow: 0 0 10px #000;
   transform: translateY(-60%);
 }
 
@@ -21,16 +22,18 @@
 }
 
 .section__header {
+  padding-right: 2rem;
   margin: 2rem 0;
   letter-spacing: 0.1em;
 }
 
 .section__p {
+  padding-right: 2rem;
   margin-bottom: 1.6rem;
 }
 
 .section__p--2 {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .section__p--3 {
