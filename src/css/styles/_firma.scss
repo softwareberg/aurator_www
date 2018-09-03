@@ -42,3 +42,23 @@
 .firma__foreground-img {
   width: 100%;
 }
+
+.firma__foreground-texts {
+  position: relative;
+  padding: 0.5rem;
+}
+
+.section__title {
+  position: relative;
+  top: 75%;
+  transform: translateY(-60%);
+}
+
+.section__header {
+  margin: 2rem 0;
+  letter-spacing: 0.1em;
+}
+
+.section__p {
+  margin-bottom: 1.6rem;
+}

@@ -33,4 +33,6 @@ export function setPositionForeground() {
   const foto = $('.firma__foto');
   const fotoHeight = quoteHeight + foregroundHeight;
   foto.height(fotoHeight);
+  const foregroundTexts = $('.firma__foreground-texts');
+  foregroundTexts.css('top', `${-foregroundTexts.outerHeight()}px`);
 }
