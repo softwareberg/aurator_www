@@ -6,8 +6,11 @@ require('css/main.scss');
 window.jQuery = $; window.$ = $;
 
 const breakpointDesktop = 992;
+const yearFounded = 2008;
 
 $(document).ready(() => {
+  const yearNow = (new Date()).getFullYear();
+  $('.js-doswiadczenie__x-lat').html(`${yearNow - yearFounded} lat doświadczenia`);
   $('.top').css('height', window.innerHeight);
   setTimeout(() => setPositionForeground(), 500);
   // setPositionFoto();

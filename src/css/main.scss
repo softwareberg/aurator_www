@@ -27,6 +27,11 @@
   }
 }
 
+@include media-breakpoint-down(sm) {
+  .doswiadczenie__cover-img {
+    height: 420px;
+  }
+}
 @include media-breakpoint-down(xs) {
   .h-h1 {
     font-size: 1.6rem;
