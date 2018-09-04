@@ -3,7 +3,7 @@
 @import "styles/typography";
 @import "styles/general";
 @import "styles/top";
-@import "styles/naprawa";
+@import "styles/sections";
 @import "styles/helpers";
 
 @include media-breakpoint-down(md) {
@@ -32,5 +32,9 @@
 
   .h-txt10 {
     font-size: 0.6rem;
+  }
+
+  .section__cover-img {
+    height: 180px;
   }
 }

@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { setHeights, resetHeights } from 'js/adjustHeights';
+import { setHeightsDesktop, setHeightsAll, resetHeights } from 'js/adjustHeights';
 
 require('css/main.scss');
 
@@ -14,17 +14,23 @@ $(document).ready(() => {
     $('.menu-toggle').toggleClass('h-open');
   });
 
+  // for development purposes only:
+  setTimeout(() => setHeightsAll(), 500);
+  // for production purposes:
+  // setHeightsAll();
+
   if (window.innerWidth >= breakpointDesktop) {
     // for development purposes only:
-    setTimeout(() => setHeights(), 500);
+    setTimeout(() => setHeightsDesktop(), 500);
     // for production purposes:
-    // setHeights();
+    // setHeightsDesktop();
   }
-  window.addEventListener('resize', () => {
-    $('.top').css('height', window.innerHeight);
+
+  $(window).resize(() => {
     if (window.innerWidth >= breakpointDesktop) {
       // on resize of a window adjust heights of mirrored elements
-      setHeights();
+      setHeightsDesktop();
+      setHeightsAll();
       // on resize of a window reset state of mobile menu
       $('.nav-mobile').removeClass('h-open');
       $('.menu-toggle').removeClass('h-open');
@@ -32,5 +38,6 @@ $(document).ready(() => {
       // for smaller screens reset heights of the elements to default
       resetHeights();
     }
+    $('.top').css('height', window.innerHeight);
   });
 });

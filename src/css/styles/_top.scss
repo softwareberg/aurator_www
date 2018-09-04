@@ -51,10 +51,11 @@
 }
 
 .banner-link {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 0.6rem;
+  margin: 0.6rem;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .banner-link--with-logo::after {
