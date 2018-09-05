@@ -1,14 +1,21 @@
 import $ from 'jquery';
-import { setHeightsDesktop, setHeightsAll, resetHeights } from 'js/adjustHeights';
+import {
+  setHeightsDesktop, setHeightsAll, resetHeights, setFotoHeight
+} from 'js/layout';
 
 require('css/main.scss');
 
 window.jQuery = $; window.$ = $;
 
 const breakpointDesktop = 992;
+const yearFounded = 2008;
 
 $(document).ready(() => {
   $('.top').css('height', window.innerHeight);
+  setTimeout(() => setFotoHeight(), 500);
+  const yearNow = (new Date()).getFullYear();
+  // set experience time under the logo in 'Doswiadczenie' section
+  $('.js-doswiadczenie__x-lat').html(`${yearNow - yearFounded} lat doświadczenia`);
   $('.menu-toggle').click(() => {
     $('.nav-mobile').toggleClass('h-open');
     $('.menu-toggle').toggleClass('h-open');
@@ -27,6 +34,8 @@ $(document).ready(() => {
   }
 
   $(window).resize(() => {
+    $('.top').css('height', window.innerHeight);
+    setFotoHeight();
     if (window.innerWidth >= breakpointDesktop) {
       // on resize of a window adjust heights of mirrored elements
       setHeightsDesktop();
@@ -38,6 +47,5 @@ $(document).ready(() => {
       // for smaller screens reset heights of the elements to default
       resetHeights();
     }
-    $('.top').css('height', window.innerHeight);
   });
 });

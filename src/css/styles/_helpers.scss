@@ -35,8 +35,16 @@
   padding-left: 4rem;
 }
 
-.l-center-vertical {
-  position: relative;
+.l-center-y {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.l-col-clean {
+  padding: 0;
+}
+
+.l-col-padding {
+  padding: 0.5rem;
 }
