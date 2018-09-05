@@ -29,11 +29,9 @@ function setHeightsInner(elementsWithParents) {
 }
 
 // for desktop widths
-const setHeightsDesktop = setHeightsInner(setHeightsArrayDesktop);
+export const setHeightsDesktop = setHeightsInner(setHeightsArrayDesktop);
 // for all widths
-const setHeightsAll = setHeightsInner(setHeightsArrayAll);
-
-export { setHeightsDesktop, setHeightsAll };
+export const setHeightsAll = setHeightsInner(setHeightsArrayAll);
 
 // reset heights of divs to heights of their own children
 export function resetHeights() {
