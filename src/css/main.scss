@@ -3,6 +3,7 @@
 @import "styles/typography";
 @import "styles/general";
 @import "styles/top";
+@import "styles/sections";
 @import "styles/firma";
 @import "styles/helpers";
 
@@ -27,11 +28,6 @@
   }
 }
 
-@include media-breakpoint-down(sm) {
-  .doswiadczenie__cover-img {
-    height: 420px;
-  }
-}
 @include media-breakpoint-down(xs) {
   .h-h1 {
     font-size: 1.6rem;
@@ -47,5 +43,9 @@
 
   .h-txt10 {
     font-size: 0.6rem;
+  }
+
+  .section__cover-img {
+    height: 180px;
   }
 }

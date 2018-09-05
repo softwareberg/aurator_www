@@ -38,7 +38,6 @@
 }
 
 .h-header {
-  font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -50,6 +49,14 @@
 
 .h-txt-thin {
   font-weight: 500;
+}
+
+.h-txt-shadow {
+  text-shadow: 0 0 10px #000;
+}
+
+.h-txt-spaced {
+  letter-spacing: 0.1em;
 }
 
 .h-h1 {
@@ -71,8 +78,4 @@
 
 .h-txt9 {
   font-size: 0.6rem;
-}
-
-.h-txt-shadow {
-  text-shadow: 0 0 10px #000;
 }
