@@ -45,6 +45,7 @@
 .firma__foreground-texts {
   position: absolute;
   bottom: 0;
+  width: 100%;
   padding: 0.5rem;
 }
 
@@ -62,8 +63,12 @@
 }
 
 .doswiadczenie__icon-div {
-  max-width: 280px;
+  max-width: 260px;
   margin: 0 auto;
+}
+
+.doswiadczenie__icon {
+  width: 100%;
 }
 
 .js-doswiadczenie__x-lat {
