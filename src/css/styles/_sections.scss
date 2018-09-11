@@ -39,6 +39,9 @@
 .section__list {
   padding: 0;
   list-style: none;
+}
+
+.section_list--num {
   counter-reset: list-counter;
 }
 
