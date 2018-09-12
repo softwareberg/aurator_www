@@ -6,10 +6,6 @@ const setHeightsArrayDesktop = [
   // { elementClass: 'section__p--1', parentId: 'naprawa' },
   // { elementClass: 'section__p--2', parentId: 'naprawa' },
   // { elementClass: 'section__list-div', parentId: 'naprawa' },
-  // { elementClass: 'section__header', parentId: 'produkcja' },
-  // { elementClass: 'section__p--1', parentId: 'produkcja' },
-  // { elementClass: 'section__p--2', parentId: 'produkcja' },
-  // { elementClass: 'section__list-div', parentId: 'produkcja' }
 ];
 
 const setHeightsArrayAll = [
