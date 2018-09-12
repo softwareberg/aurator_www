@@ -1,6 +1,5 @@
 .firma {
   position: relative;
-  margin-top: 4rem;
   overflow: hidden;
 }
 
@@ -26,7 +25,7 @@
 .firma__foto {
   position: absolute;
   top: 0;
-  right: -4rem;
+  right: 0.2rem;
   width: auto;
 }
 
@@ -47,11 +46,6 @@
   bottom: 0;
   width: 100%;
   padding: 0.5rem;
-}
-
-.section__p--firma {
-  padding: 0;
-  line-height: 150%;
 }
 
 .doswiadczenie__cover-img {

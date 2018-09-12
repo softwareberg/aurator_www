@@ -2,14 +2,14 @@ import $ from 'jquery';
 import _ from 'lodash';
 
 const setHeightsArrayDesktop = [
-  { elementClass: 'section__header', parentId: 'naprawa' },
-  { elementClass: 'section__p--1', parentId: 'naprawa' },
-  { elementClass: 'section__p--2', parentId: 'naprawa' },
-  { elementClass: 'section__list-div', parentId: 'naprawa' },
-  { elementClass: 'section__header', parentId: 'produkcja' },
-  { elementClass: 'section__p--1', parentId: 'produkcja' },
-  { elementClass: 'section__p--2', parentId: 'produkcja' },
-  { elementClass: 'section__list-div', parentId: 'produkcja' }
+  // { elementClass: 'section__header', parentId: 'naprawa' },
+  // { elementClass: 'section__p--1', parentId: 'naprawa' },
+  // { elementClass: 'section__p--2', parentId: 'naprawa' },
+  // { elementClass: 'section__list-div', parentId: 'naprawa' },
+  // { elementClass: 'section__header', parentId: 'produkcja' },
+  // { elementClass: 'section__p--1', parentId: 'produkcja' },
+  // { elementClass: 'section__p--2', parentId: 'produkcja' },
+  // { elementClass: 'section__list-div', parentId: 'produkcja' }
 ];
 
 const setHeightsArrayAll = [
@@ -45,6 +45,17 @@ export function setFotoHeight() {
   const quoteHeight = $('.firma__quote-div').height();
   const foregroundHeight = $('.firma__foreground').height();
   const foto = $('.firma__foto');
-  const fotoHeight = quoteHeight + foregroundHeight;
+  let fotoHeight;
+  const breakpoint1 = 1100;
+  const breakpoint2 = 1450;
+  if (window.innerWidth >= breakpoint2) {
+    fotoHeight = quoteHeight + 0.2 * foregroundHeight;
+    foto.css('right', '4rem');
+  } else if (window.innerWidth >= breakpoint1) {
+    fotoHeight = quoteHeight + 0.3 * foregroundHeight;
+    foto.css('right', '0.2rem');
+  } else {
+    fotoHeight = quoteHeight + 0.45 * foregroundHeight;
+  }
   foto.height(fotoHeight);
 }
