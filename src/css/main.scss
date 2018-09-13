@@ -7,7 +7,7 @@
 @import "styles/firma";
 @import "styles/helpers";
 
-@include media-breakpoint-down(xl) {
+@include media-breakpoint-down(lg) {
   .firma__quote {
     font-size: 1.6rem;
   }
@@ -27,6 +27,10 @@
     padding: 0;
   }
 
+  .section__cover-img {
+    height: 400px;
+  }
+
   .firma__quote {
     font-size: 1rem;
   }
@@ -34,6 +38,7 @@
 
 @include media-breakpoint-down(xs) {
   .h-h1 {
+    padding-bottom: 2rem;
     font-size: 1.6rem;
   }
 
@@ -49,7 +54,27 @@
     font-size: 0.6rem;
   }
 
-  .section__cover-img {
-    height: 180px;
+  .section__header {
+    margin: 1.2rem 0;
+  }
+
+  .section__p {
+    margin-bottom: 1rem;
+  }
+
+  .c-section {
+    padding-bottom: 2rem;
+  }
+
+  .l-last-element {
+    margin-bottom: 2rem;
+  }
+
+  .section__list-item--num {
+    margin-bottom: 1rem;
+  }
+
+  .firma__quote-div {
+    margin-bottom: 2rem;
   }
 }

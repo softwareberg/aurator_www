@@ -1,35 +1,34 @@
 .section__cover-img {
   position: relative;
   width: 100%;
-  height: 360px;
+  height: 800px;
   overflow: hidden;
 }
 
 .section__title {
   position: relative;
-  top: 75%;
+  top: 12%;
   text-shadow: 0 0 10px #000;
-  transform: translateY(-60%);
 }
 
-.section__cover-img--naprawa {
-  background: url("../img/naprawa__foto.png") no-repeat 5%;
+.section__cover-img--naprawa1 {
+  background: url("../img/naprawa1__foto.jpg") no-repeat 90% 70%;
+  background-size: cover;
+}
+
+.section__cover-img--naprawa2 {
+  background: url("../img/naprawa2__foto.jpg") no-repeat 30% 5%;
   background-size: cover;
 }
 
 .section__header {
-  padding-right: 2rem;
   margin: 2rem 0;
   letter-spacing: 0.1em;
 }
 
 .section__p {
-  padding-right: 2rem;
   margin-bottom: 1.6rem;
-}
-
-.section__p--2 {
-  margin-bottom: 4rem;
+  letter-spacing: 0.1em;
 }
 
 .section__p--3 {
@@ -39,6 +38,9 @@
 .section__list {
   padding: 0;
   list-style: none;
+}
+
+.section_list--num {
   counter-reset: list-counter;
 }
 
@@ -79,7 +81,12 @@
   padding-right: 1rem;
 }
 
-.section__cover-img--produkcja {
-  background: url("../img/produkcja__foto.png") no-repeat 5%;
+.section__cover-img--produkcja1 {
+  background: url("../img/produkcja1__foto.jpg") no-repeat 20% 40%;
+  background-size: cover;
+}
+
+.section__cover-img--produkcja2 {
+  background: url("../img/produkcja2__foto.jpg") no-repeat 25% 10%;
   background-size: cover;
 }

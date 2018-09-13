@@ -1,13 +1,10 @@
 import $ from 'jquery';
-import {
-  setHeightsDesktop, setHeightsAll, resetHeights, setFotoHeight
-} from 'js/layout';
+import { setFotoHeight } from 'js/layout';
 
 require('css/main.scss');
 
 window.jQuery = $; window.$ = $;
 
-const breakpointDesktop = 992;
 const yearFounded = 2008;
 
 $(document).ready(() => {
@@ -21,31 +18,8 @@ $(document).ready(() => {
     $('.menu-toggle').toggleClass('h-open');
   });
 
-  // for development purposes only:
-  setTimeout(() => setHeightsAll(), 500);
-  // for production purposes:
-  // setHeightsAll();
-
-  if (window.innerWidth >= breakpointDesktop) {
-    // for development purposes only:
-    setTimeout(() => setHeightsDesktop(), 500);
-    // for production purposes:
-    // setHeightsDesktop();
-  }
-
   $(window).resize(() => {
     $('.top').css('height', window.innerHeight);
     setFotoHeight();
-    if (window.innerWidth >= breakpointDesktop) {
-      // on resize of a window adjust heights of mirrored elements
-      setHeightsDesktop();
-      setHeightsAll();
-      // on resize of a window reset state of mobile menu
-      $('.nav-mobile').removeClass('h-open');
-      $('.menu-toggle').removeClass('h-open');
-    } else {
-      // for smaller screens reset heights of the elements to default
-      resetHeights();
-    }
   });
 });
