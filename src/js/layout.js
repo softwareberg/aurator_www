@@ -38,20 +38,19 @@ export function resetHeights() {
 }
 
 export function setFotoHeight() {
-  const quoteHeight = $('.firma__quote-div').height();
-  const foregroundHeight = $('.firma__foreground').height();
-  const foto = $('.firma__foto');
-  let fotoHeight;
-  const breakpoint1 = 1100;
-  const breakpoint2 = 1450;
-  if (window.innerWidth >= breakpoint2) {
-    fotoHeight = quoteHeight + 0.2 * foregroundHeight;
-    foto.css('right', '4rem');
-  } else if (window.innerWidth >= breakpoint1) {
-    fotoHeight = quoteHeight + 0.3 * foregroundHeight;
-    foto.css('right', '0.2rem');
+  const firmaBg = $('.firma__bg');
+  const firmaBgHeight = firmaBg.height();
+  const quoteHeight = $('.firma__quote-div').outerHeight();
+  const firma = $('.firma');
+  const breakpoint = 768;
+
+  if (window.innerWidth >= breakpoint) {
+    const maxTopHeight = 7 / 15 * firmaBgHeight;
+    const firmaBgTop = quoteHeight < maxTopHeight ? quoteHeight : maxTopHeight;
+    firmaBg.css({ top: `${-firmaBgTop}px` });
+    firma.css({ height: `${firmaBgHeight}px` });
   } else {
-    fotoHeight = quoteHeight + 0.45 * foregroundHeight;
+    firmaBg.css({ top: '' });
+    firma.css({ height: '' });
   }
-  foto.height(fotoHeight);
 }
