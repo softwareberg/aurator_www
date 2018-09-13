@@ -5,6 +5,7 @@ require('css/main.scss');
 
 window.jQuery = $; window.$ = $;
 
+const breakpointDesktop = 992;
 const yearFounded = 2008;
 
 $(document).ready(() => {
@@ -21,5 +22,10 @@ $(document).ready(() => {
   $(window).resize(() => {
     $('.top').css('height', window.innerHeight);
     setFotoHeight();
+    if (window.innerWidth >= breakpointDesktop) {
+      // on resize of a window reset state of mobile menu
+      $('.nav-mobile').removeClass('h-open');
+      $('.menu-toggle').removeClass('h-open');
+    }
   });
 });
