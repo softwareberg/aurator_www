@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import {
-  setFotoPosition, setTopFullscreen, toggleMobileMenu, hideMobileMenuForDesktop
+  setFotoPosition, setTopFullscreen, toggleMobileMenu, hideMobileMenuForDesktop, setContactPosition
 } from 'js/layout';
 
 import setYearsExperience from 'js/auxiliary';
@@ -14,10 +14,12 @@ $(document).ready(() => {
   setTimeout(() => setFotoPosition(), 500);
   setYearsExperience();
   toggleMobileMenu();
+  setContactPosition();
 
   $(window).resize(() => {
     setTopFullscreen();
     setFotoPosition();
     hideMobileMenuForDesktop();
+    setContactPosition();
   });
 });
