@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 500px;
   overflow: hidden;
-  background: url("../img/banner-bg.png") no-repeat 75%;
+  background: url("../img/banner-bg.jpg") no-repeat 75%;
   background-size: cover;
 }
 
@@ -90,6 +90,10 @@
   background: $col-bg-gray-dark;
   opacity: 0;
   transition: 0.5s ease-in-out;
+}
+
+.nav__mobile-menu {
+  width: calc(100% - 64px);
 }
 
 .nav-mobile.h-open {

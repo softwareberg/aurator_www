@@ -19,29 +19,25 @@
 }
 
 .firma__quote-div {
-  margin-bottom: 4rem;
-}
-
-.firma__foto {
-  position: absolute;
-  top: 0;
-  right: 0.2rem;
-  width: auto;
+  position: relative;
+  z-index: 1000;
+  padding-bottom: 2rem;
 }
 
 .firma__mobile-foto {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.firma__foreground {
+.firma__bg {
   position: relative;
 }
 
-.firma__foreground-img {
+.firma__bg-img {
   width: 100%;
 }
 
-.firma__foreground-texts {
+.firma__wiedza {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -49,10 +45,9 @@
 }
 
 .doswiadczenie__cover-img {
-  position: relative;
   width: 100%;
   overflow: hidden;
-  background: url("../img/doswiadczenie__bg.png") no-repeat 15%;
+  background: url("../img/doswiadczenie-bg.jpg") no-repeat 15%;
   background-size: cover;
 }
 

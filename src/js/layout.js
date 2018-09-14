@@ -1,57 +1,39 @@
 import $ from 'jquery';
-import _ from 'lodash';
 
-const setHeightsArrayDesktop = [
-  // { elementClass: 'section__header', parentId: 'naprawa' },
-  // { elementClass: 'section__p--1', parentId: 'naprawa' },
-  // { elementClass: 'section__p--2', parentId: 'naprawa' },
-  // { elementClass: 'section__list-div', parentId: 'naprawa' },
-];
+export function setFotoPosition() {
+  const firmaBg = $('.firma__bg');
+  const firmaBgHeight = firmaBg.height();
+  const quoteHeight = $('.firma__quote-div').outerHeight();
+  const firma = $('.firma');
+  const breakpoint = 768;
 
-const setHeightsArrayAll = [
-  { elementClass: 'section__p--3', parentId: 'produkcja' }
-];
-
-// adjust height of a div to the highest child of all considered divs
-function setHeightsInner(elementsWithParents) {
-  return () => {
-    elementsWithParents.forEach((elementWithParent) => {
-      const elements = $(`#${elementWithParent.parentId}`).find(`.${elementWithParent.elementClass}`).toArray();
-      const heights = elements.map(it => it.children[0].scrollHeight);
-      const maxHeight = _.max(heights);
-      elements.forEach((el) => { el.style.height = `${maxHeight}px`; });
-    });
-  };
+  if (window.innerWidth >= breakpoint) {
+    const maxTopHeight = 7 / 15 * firmaBgHeight;
+    const firmaBgTop = quoteHeight < maxTopHeight ? quoteHeight : maxTopHeight;
+    firmaBg.css({ top: `${-firmaBgTop}px` });
+    firma.css({ height: `${firmaBgHeight}px` });
+  } else {
+    firmaBg.css({ top: '' });
+    firma.css({ height: '' });
+  }
 }
 
-// for desktop widths
-export const setHeightsDesktop = setHeightsInner(setHeightsArrayDesktop);
-// for all widths
-export const setHeightsAll = setHeightsInner(setHeightsArrayAll);
+export function setTopFullscreen() {
+  $('.top').css('height', window.innerHeight);
+}
 
-// reset heights of divs to heights of their own children
-export function resetHeights() {
-  setHeightsArrayDesktop.forEach((elementWithParent) => {
-    const elements = $(`#${elementWithParent.parentId}`).find(`.${elementWithParent.elementClass}`).toArray();
-    elements.forEach((el) => { el.style.height = ''; });
+export function toggleMobileMenu() {
+  $('.menu-toggle').click(() => {
+    $('.nav-mobile').toggleClass('h-open');
+    $('.menu-toggle').toggleClass('h-open');
   });
 }
 
-export function setFotoHeight() {
-  const quoteHeight = $('.firma__quote-div').height();
-  const foregroundHeight = $('.firma__foreground').height();
-  const foto = $('.firma__foto');
-  let fotoHeight;
-  const breakpoint1 = 1100;
-  const breakpoint2 = 1450;
-  if (window.innerWidth >= breakpoint2) {
-    fotoHeight = quoteHeight + 0.2 * foregroundHeight;
-    foto.css('right', '4rem');
-  } else if (window.innerWidth >= breakpoint1) {
-    fotoHeight = quoteHeight + 0.3 * foregroundHeight;
-    foto.css('right', '0.2rem');
-  } else {
-    fotoHeight = quoteHeight + 0.45 * foregroundHeight;
+export function hideMobileMenuForDesktop() {
+  const breakpointDesktop = 992;
+  if (window.innerWidth >= breakpointDesktop) {
+    // on resize of a window reset state of mobile menu
+    $('.nav-mobile').removeClass('h-open');
+    $('.menu-toggle').removeClass('h-open');
   }
-  foto.height(fotoHeight);
 }
