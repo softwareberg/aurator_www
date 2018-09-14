@@ -5,6 +5,7 @@
 @import "styles/top";
 @import "styles/sections";
 @import "styles/firma";
+@import "styles/map";
 @import "styles/helpers";
 
 @include media-breakpoint-down(lg) {
@@ -33,6 +34,25 @@
 
   .firma__quote {
     font-size: 1rem;
+  }
+
+  .c-list__title {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+  }
+
+  .c-list__item {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .c-map__bg {
+    height: 400px;
+  }
+
+  .c-contact__texts {
+    padding: 2rem 0;
   }
 }
 
@@ -70,7 +90,7 @@
     margin-bottom: 2rem;
   }
 
-  .section__list-item--num {
+  .c-list--num__item {
     margin-bottom: 1rem;
   }
 }
