@@ -1,31 +1,23 @@
 import $ from 'jquery';
-import { setFotoHeight } from 'js/layout';
+import {
+  setFotoPosition, setTopFullscreen, toggleMobileMenu, hideMobileMenuForDesktop
+} from 'js/layout';
+
+import setYearsExperience from 'js/pomocnik';
 
 require('css/main.scss');
 
 window.jQuery = $; window.$ = $;
 
-const breakpointDesktop = 992;
-const yearFounded = 2008;
-
 $(document).ready(() => {
-  $('.top').css('height', window.innerHeight);
-  setTimeout(() => setFotoHeight(), 500);
-  const yearNow = (new Date()).getFullYear();
-  // set experience time under the logo in 'Doswiadczenie' section
-  $('.js-doswiadczenie__x-lat').html(`${yearNow - yearFounded} lat doświadczenia`);
-  $('.menu-toggle').click(() => {
-    $('.nav-mobile').toggleClass('h-open');
-    $('.menu-toggle').toggleClass('h-open');
-  });
+  setTopFullscreen();
+  setTimeout(() => setFotoPosition(), 500);
+  setYearsExperience();
+  toggleMobileMenu();
 
   $(window).resize(() => {
-    $('.top').css('height', window.innerHeight);
-    setFotoHeight();
-    if (window.innerWidth >= breakpointDesktop) {
-      // on resize of a window reset state of mobile menu
-      $('.nav-mobile').removeClass('h-open');
-      $('.menu-toggle').removeClass('h-open');
-    }
+    setTopFullscreen();
+    setFotoPosition();
+    hideMobileMenuForDesktop();
   });
 });
