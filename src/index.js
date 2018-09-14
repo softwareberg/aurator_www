@@ -3,7 +3,7 @@ import {
   setFotoPosition, setTopFullscreen, toggleMobileMenu, hideMobileMenuForDesktop
 } from 'js/layout';
 
-import setYearsExperience from 'js/pomocnik';
+import setYearsExperience from 'js/auxiliary';
 
 require('css/main.scss');
 
