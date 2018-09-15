@@ -15,22 +15,22 @@
 <body class="app">
     <div class="container-fluid">
 
-        <div class="top">
+        <div class="top" id="top">
             <div class="nav">
                 <a href="#" class="nav-logo"><img src="img/nav__logo.png" alt="logo"></a> 
                 <div class="nav-menu">
                     <ul class="nav-menu__list d-none d-lg-inline-block">
-                        <li class="d-inline"><a class="nav-link h-txt9" href="#">Naprawa i regeneracja</a></li>
-                        <li class="d-inline"><a class="nav-link h-txt9" href="#">Produkcja</a></li>
-                        <li class="d-inline"><a class="nav-link h-txt9" href="#">O firmie</a></li>
-                        <li class="d-inline"><a class="nav-link h-txt9 h-white" href="#">Kontakt</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9" href="#repair">Naprawa i regeneracja</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9" href="#production">Produkcja</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9" href="#about">O firmie</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-white" href="#contact">Kontakt</a></li>
                     </ul>
                     <ul class="nav-menu__list d-none d-sm-inline-block">
-                        <li class="d-inline d-lg-none"><a class="nav-link h-txt9 h-white" href="#">Kontakt</a></li>
-                        <li class="d-inline"><a class="nav-link h-txt9 h-orange" href="tel:+48323012097">+32 301 20 97</a></li>
-                        <li class="d-inline"><a class="nav-link h-txt9 h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a></li>
+                        <li class="d-inline d-lg-none"><a class="c-link c-link--nav h-txt9 h-white" href="#contact">Kontakt</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-orange" href="tel:+48323012097">+32 301 20 97</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a></li>
                     </ul>
-                    <a class="nav-link nav-menu__lang h-txt9 d-none d-lg-inline-block" href="#">PL <img src="img/dropdown.png" alt="dropdown-img"></a>
+                    <a class="c-link c-link--nav nav-menu__lang h-txt9 d-none d-lg-inline-block" href="#">PL <img src="img/dropdown.png" alt="dropdown-img"></a>
                     <a class="menu-toggle menu-toggle--open d-inline-block d-lg-none" href="#"><img src="img/nav__menu-toggle.png" alt="menu-toggle"></a>
                     <a class="menu-toggle menu-toggle--close d-none" href="#"><img src="img/nav__menu-toggle--close.png" alt="X"></a>
                 </div>
@@ -38,24 +38,24 @@
             <div class="nav-mobile d-block d-lg-none">
                 <div class="nav__mobile-menu l-center-y">
                     <ul class="nav-mobile__list">
-                            <li class="nav-mobile__list-item"><a class="nav-link nav-link--mobile h-txt24" href="#">Naprawa i regeneracja</a></li>
-                            <li class="nav-mobile__list-item"><a class="nav-link nav-link--mobile h-txt24" href="#">Produkcja</a></li>
-                            <li class="nav-mobile__list-item"><a class="nav-link nav-link--mobile h-txt24" href="#">O firmie</a></li>
-                            <li class="nav-mobile__list-item"><a class="nav-link nav-link--mobile h-txt24" href="#">Kontakt</a></li>
+                            <li class="nav-mobile__list-item"><a class="c-link c-link--nav c-link--nav-mobile h-txt24 js-hideMobileMenu" href="#repair">Naprawa i regeneracja</a></li>
+                            <li class="nav-mobile__list-item"><a class="c-link c-link--nav c-link--nav-mobile h-txt24 js-hideMobileMenu" href="#production">Produkcja</a></li>
+                            <li class="nav-mobile__list-item"><a class="c-link c-link--nav c-link--nav-mobile h-txt24 js-hideMobileMenu" href="#about">O firmie</a></li>
+                            <li class="nav-mobile__list-item"><a class="c-link c-link--nav c-link--nav-mobile h-txt24 js-hideMobileMenu" href="#contact">Kontakt</a></li>
                     </ul>
                     <ul class="nav-mobile__list nav-mobile__list--inline d-flex d-sm-none row">
-                        <li class="nav-mobile__list-item col-5"><a class="nav-link nav-link--mobile-kontakt h-orange" href="tel:+48323012097">+32 301 20 97</a></li>
-                        <li class="nav-mobile__list-item col-7"><a class="nav-link nav-link--mobile-kontakt h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a></li>
+                        <li class="nav-mobile__list-item col-5"><a class="c-link c-link--nav c-link--nav-mobile-kontakt h-orange" href="tel:+48323012097">+32 301 20 97</a></li>
+                        <li class="nav-mobile__list-item col-7"><a class="c-link c-link--nav c-link--nav-mobile-kontakt h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a></li>
                     </ul>
                     <div class="nav-mobile__lang">
-                        <a class="nav-link nav-link--mobile h-txt24 h-dark" href="#">PL <img src="img/dropdown--mobile.png" alt="dropdown"></a>
+                        <a class="c-link c-link--nav c-link--nav-mobile h-txt24 h-dark" href="#">PL <img src="img/dropdown--mobile.png" alt="dropdown"></a>
                     </div>
                 </div>
             </div>
             <div class="banner container l-center-y l-container-padding">
                 <div class="banner-buttons row">
-                        <a class="banner-link banner-link--with-logo h-txt10 h-white h-border-bottom--orange col-sm-6 col-lg-4" href="#">Sprawdż nasza ofertę</a>
-                        <a class="banner-link h-txt10 h-white h-border-bottom col-sm-5 col-lg-3" href="#">Umów sie na rozmowę</a>
+                        <a class="banner-link banner-link--with-logo h-txt10 h-white h-border-bottom--orange col-sm-6 col-lg-4" href="#repair">Sprawdż nasza ofertę</a>
+                        <a class="banner-link h-txt10 h-white h-border-bottom col-sm-5 col-lg-3" href="mailto:biuro@aurator.com.pl">Umów sie na rozmowę</a>
                         <a class="banner-link h-txt10 h-white h-border-bottom--thin-gray col-6 col-sm-3 col-lg-2" href="#">Zobacz film</a>
                 </div>
             </div>
@@ -63,7 +63,7 @@
 
         <div class="container">
 
-                <div class="section__cover-img section__cover-img--naprawa1 l-container-padding">
+                <div class="section__cover-img section__cover-img--naprawa1 l-container-padding" id="repair">
                     <h1 class="section__title h-h1 h-header h-white ">Naprawa<br>i regeneracja</h1>                    
                 </div>
                 <div class="c-section l-container-padding">
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 
-                <div class="section__cover-img section__cover-img--produkcja1 l-container-padding">
+                <div class="section__cover-img section__cover-img--produkcja1 l-container-padding" id="production">
                     <h1 class="section__title h-h1 h-header h-white ">Produkcja</h1>                    
                 </div>
                 <div class="c-section l-container-padding">
@@ -159,7 +159,7 @@
                 </div>
                 
 
-            <div class="firma">
+            <div class="firma" id="about">
                 <div class="l-container-padding row firma__texts">
                     <div class="l-col-clean col-md-6">
                         <div class="firma__quote-div">
@@ -211,7 +211,7 @@
                 </div>
             </div>
 
-            <div class="c-map">
+            <div class="c-map" id="contact">
                 <div class="c-map__bg">
                     <img class="c-map__foreground l-center-y d-none d-md-block" src="img/c-map__foreground.png" alt="map__contact-bg">
                 </div>
@@ -234,7 +234,7 @@
                                 <div class="c-list__title">
                                     <p>Adres e-mail:</p>
                                 </div>
-                                <li class="c-list__item"><a class="h-txt-bold h-orange">
+                                <li class="c-list__item"><a class="c-link h-txt-bold h-orange" href="mailto:biuro@aurator.com.pl">
                                     biuro@aurator.com.pl
                                 </a></li>
                             </ul>
@@ -242,7 +242,7 @@
                                 <div class="c-list__title">
                                     <p>Nr telefonu:</p>
                                 </div>
-                                <li class="c-list__item"><a class="h-txt-bold h-orange">
+                                <li class="c-list__item"><a class="c-link h-txt-bold h-orange" href="tel:+48323012097">
                                     (+48) 32 301 20 97
                                 </a></li>
                             </ul>

@@ -38,6 +38,14 @@ export function hideMobileMenuForDesktop() {
   }
 }
 
+export function hideMobileMenuOnClick() {
+  // reset state of mobile menu after clicking link from mobile menu
+  $('.js-hideMobileMenu').click(() => {
+    $('.nav-mobile').removeClass('h-open');
+    $('.menu-toggle').removeClass('h-open');
+  });
+}
+
 export function setContactPosition() {
   const breakpointDesktop = 768;
   if (window.innerWidth >= breakpointDesktop) {
