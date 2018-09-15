@@ -43,6 +43,7 @@
 
   .c-list__item {
     font-size: 1rem;
+    font-weight: bold;
   }
 
   .c-map__bg {
@@ -100,7 +101,6 @@
     margin-bottom: 0.5rem;
   }
 
-  .c-list__item::after,
   .c-list--num__item::after {
     bottom: 0.5rem;
     width: 100%;
