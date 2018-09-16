@@ -42,8 +42,9 @@
 
 .c-list__item {
   position: relative;
-  padding: 0.5rem 0;
-  font-size: 1.5rem;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .c-list--num {
@@ -71,7 +72,7 @@
 .c-list__item::after,
 .c-list--num__item::after {
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
   width: calc(100% - 1rem);
   content: "";

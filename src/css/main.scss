@@ -38,18 +38,21 @@
 
   .c-list__title {
     margin-top: 0.5rem;
-    font-size: 0.6rem;
   }
 
   .c-list__item {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
     font-size: 1rem;
-    font-weight: bold;
   }
 
   .c-map__bg {
     // background: url("../img/c-map__bg--mobile.png") no-repeat 70% 80%;
   }
 
+  .c-map__foreground {
+    max-width: 94%;
+  }
 }
 
 @include media-breakpoint-down(sm) {
