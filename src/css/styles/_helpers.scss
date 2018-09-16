@@ -30,6 +30,15 @@
   border-bottom: solid $col-banner-gray-dark 2px;
 }
 
+.h-txt-divider {
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+}
+
+.h-current-lang {
+  color: $col-txt-gray-light !important;
+}
+
 .l-container-padding {
   padding-right: 4rem;
   padding-left: 4rem;
