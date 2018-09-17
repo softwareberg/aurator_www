@@ -26,11 +26,20 @@
                         <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-white" href="#contact">Kontakt</a></li>
                     </ul>
                     <ul class="nav-menu__list d-none d-sm-inline-block">
-                        <li class="d-inline d-lg-none"><a class="c-link c-link--nav h-txt9 h-white" href="#contact">Kontakt</a></li>
+                        <li class="d-none d-md-inline d-lg-none"><a class="c-link c-link--nav h-txt9 h-white" href="#contact">Kontakt</a></li>
                         <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-orange" href="tel:+48323012097">+32 301 20 97</a></li>
                         <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a></li>
                     </ul>
-                    <a class="c-link c-link--nav nav-menu__lang h-txt9 d-none d-lg-inline-block" href="#">PL <img class="nav-menu__lang-icon" src="img/dropdown.png" alt="dropdown-img"></a>
+                    <div class="c-lang d-none d-lg-inline-block">
+                        <a class="c-link c-link--nav c-lang__toggle h-txt9" href="#">PL
+                            <img class="c-lang__icon" src="img/c-lang__icon.png" alt="dropdown-show">
+                            <img class="c-lang__icon-hide d-none" src="img/c-lang__icon--hide.png" alt="dropdown-hide">
+                        </a>
+                        <ul class="c-lang__dd d-none">
+                            <li class="c-lang-dd__option"><a class="js-translate c-link c-link--nav h-txt9 h-current-lang" id="pl" href="#">PL</a></li>
+                            <li class="c-lang-dd__option"><a class="js-translate c-link c-link--nav h-txt9" id="en" href="#">EN</a></li>
+                        </ul>
+                    </div>
                     <a class="menu-toggle menu-toggle--open d-inline-block d-lg-none" href="#"><img src="img/nav__menu-toggle.png" alt="menu-toggle"></a>
                     <a class="menu-toggle menu-toggle--close d-none" href="#"><img src="img/nav__menu-toggle--close.png" alt="X"></a>
                 </div>
@@ -48,13 +57,14 @@
                         <li class="nav-mobile__list-item col-7"><a class="c-link c-link--nav c-link--nav-mobile-kontakt h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a></li>
                     </ul>
                     <div class="nav-mobile__lang">
-                        <a class="c-link c-link--nav c-link--nav-mobile h-current-lang h-txt24 h-dark" href="#">PL</a>
+                        <a class="c-link c-link--nav c-link--nav-mobile h-txt24 h-dark h-current-lang" href="#">PL</a>
                         <a class="h-txt-divider h-txt24 h-dark">|</a>
                         <a class="c-link c-link--nav c-link--nav-mobile h-txt24 h-dark" href="#">EN</a>
                     </div>
                 </div>
             </div>
             <div class="banner container l-center-y l-container-padding">
+                    <h1 class="h-h1 h-header h-white">Naprawa<br>maszyn trakcyjnych</h1>
                 <div class="banner-buttons row">
                         <a class="banner-link banner-link--with-logo h-txt10 h-white h-border-bottom--orange col-sm-6 col-lg-4" href="#repair">Sprawdż nasza ofertę</a>
                         <a class="banner-link h-txt10 h-white h-border-bottom col-sm-5 col-lg-3" href="mailto:biuro@aurator.com.pl">Umów sie na rozmowę</a>
@@ -219,8 +229,11 @@
                 </div>
                 <div class="c-contact l-center-y">
                     <div class="l-container-padding row">
-                        <div class="c-contact__texts col-md-5 col-xl-4">
-                            <img class="c-contact__name" src="img/c-contact__name.png" alt="AURATOR SP. Z O.O.">
+                        <div class="c-contact__texts col-md-6 col-lg-5 col-xl-4">
+                            <div class="c-contact__name">
+                                <img class="c-contact__name-img" src="img/c-contact__name-img.png" alt="AURATOR SP. Z O.O.">
+                                <p class="c-contact__name-txt d-inline-block">Sp. z o. o.</p>
+                            </div>
                             <div class="c-contact__paragraph">
                                 <p class="h-txt10">ul. Chorzowska 58, 44-100 Gliwice</p>
                             </div>
@@ -228,7 +241,7 @@
                                 <div class="c-list__title">
                                     <p>Nip:</p>
                                 </div>
-                                <li class="c-list__item"><a class="h-txt-bold h-orange">
+                                <li class="c-list__item"><a class="h-orange">
                                     6645344563
                                 </a></li>
                             </ul>
@@ -236,7 +249,7 @@
                                 <div class="c-list__title">
                                     <p>Adres e-mail:</p>
                                 </div>
-                                <li class="c-list__item"><a class="c-link h-txt-bold h-orange" href="mailto:biuro@aurator.com.pl">
+                                <li class="c-list__item"><a class="c-link h-orange" href="mailto:biuro@aurator.com.pl">
                                     biuro@aurator.com.pl
                                 </a></li>
                             </ul>
@@ -244,7 +257,7 @@
                                 <div class="c-list__title">
                                     <p>Nr telefonu:</p>
                                 </div>
-                                <li class="c-list__item"><a class="c-link h-txt-bold h-orange" href="tel:+48323012097">
+                                <li class="c-list__item"><a class="c-link h-orange" href="tel:+48323012097">
                                     (+48) 32 301 20 97
                                 </a></li>
                             </ul>

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import {
   setFotoPosition, setTopFullscreen, toggleMobileMenu, hideMobileMenuForDesktop,
-  hideMobileMenuOnClick, setContactPosition
+  hideMobileMenuOnClick, setContactPosition, toggleLangDropdown, hideLangDropdownOutsideClick
 } from 'js/layout';
 
 import setYearsExperience from 'js/auxiliary';
@@ -17,6 +17,8 @@ $(document).ready(() => {
   toggleMobileMenu();
   hideMobileMenuOnClick();
   setContactPosition();
+  toggleLangDropdown();
+  hideLangDropdownOutsideClick();
 
   $(window).resize(() => {
     setTopFullscreen();

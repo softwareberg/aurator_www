@@ -12,6 +12,19 @@
   .firma__quote {
     font-size: 1.6rem;
   }
+
+  .nav-menu__list {
+    margin: 1rem 0.2rem;
+  }
+
+  .c-link--nav {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+
+  .nav::after {
+    width: calc(100% - 62px);
+  }
 }
 
 @include media-breakpoint-down(md) {
@@ -28,6 +41,10 @@
     padding: 0;
   }
 
+  .nav::after {
+    width: 100%;
+  }
+
   .section__cover-img {
     height: 400px;
   }
@@ -38,18 +55,21 @@
 
   .c-list__title {
     margin-top: 0.5rem;
-    font-size: 0.6rem;
   }
 
   .c-list__item {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
     font-size: 1rem;
-    font-weight: bold;
   }
 
   .c-map__bg {
     // background: url("../img/c-map__bg--mobile.png") no-repeat 70% 80%;
   }
 
+  .c-map__foreground {
+    max-width: 94%;
+  }
 }
 
 @include media-breakpoint-down(sm) {
@@ -108,5 +128,13 @@
 
   .c-list--num-item__inner {
     padding-right: 0;
+  }
+
+  .c-contact__name-img {
+    max-width: 160px;
+  }
+
+  .c-contact__name-txt {
+    font-size: 0.6rem;
   }
 }

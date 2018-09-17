@@ -26,20 +26,30 @@
 
 .c-list__title {
   margin-top: 1.5rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  line-height: 100%;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-.c-contact__name {
-  max-width: 100%;
+.c-contact__name-img {
+  max-width: 200px;
+}
+
+.c-contact__name-txt {
+  padding-left: 0.6rem;
+  font-size: 0.8rem;
+  color: $col-orange;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .c-contact__paragraph {
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem 0 2rem;
   letter-spacing: 0.1em;
 }
 
 .c-contact__icon {
+  max-height: 16px;
   padding-right: 1rem;
 }
