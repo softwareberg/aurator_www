@@ -5,6 +5,7 @@
 @import "styles/top";
 @import "styles/sections";
 @import "styles/firma";
+@import "styles/map";
 @import "styles/helpers";
 
 @include media-breakpoint-down(lg) {
@@ -33,6 +34,35 @@
 
   .firma__quote {
     font-size: 1rem;
+  }
+
+  .c-list__title {
+    margin-top: 0.5rem;
+  }
+
+  .c-list__item {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .c-map__bg {
+    // background: url("../img/c-map__bg--mobile.png") no-repeat 70% 80%;
+  }
+
+  .c-map__foreground {
+    max-width: 94%;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .c-map__bg {
+    height: 400px;
+    background-position: 100% 20%;
+  }
+
+  .c-contact__texts {
+    padding: 2rem 0;
   }
 }
 
@@ -70,7 +100,24 @@
     margin-bottom: 2rem;
   }
 
-  .section__list-item--num {
-    margin-bottom: 1rem;
+  .c-list--num__item {
+    margin-bottom: 0.5rem;
+  }
+
+  .c-list--num__item::after {
+    bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .c-list--num-item__inner {
+    padding-right: 0;
+  }
+
+  .c-contact__name-img {
+    max-width: 160px;
+  }
+
+  .c-contact__name-txt {
+    font-size: 0.6rem;
   }
 }

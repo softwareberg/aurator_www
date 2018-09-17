@@ -32,8 +32,27 @@ export function toggleMobileMenu() {
 export function hideMobileMenuForDesktop() {
   const breakpointDesktop = 992;
   if (window.innerWidth >= breakpointDesktop) {
-    // on resize of a window reset state of mobile menu
+    // for desktop widths reset state of mobile menu
     $('.nav-mobile').removeClass('h-open');
     $('.menu-toggle').removeClass('h-open');
+  }
+}
+
+export function hideMobileMenuOnClick() {
+  // reset state of mobile menu after clicking link from mobile menu
+  $('.js-hideMobileMenu').click(() => {
+    $('.nav-mobile').removeClass('h-open');
+    $('.menu-toggle').removeClass('h-open');
+  });
+}
+
+export function setContactPosition() {
+  const breakpointDesktop = 768;
+  if (window.innerWidth >= breakpointDesktop) {
+    // for MD widths and above- position contact inside the map
+    $('.c-contact').addClass('l-center-y');
+  } else {
+    // below MD width- position contact below the map
+    $('.c-contact').removeClass('l-center-y');
   }
 }

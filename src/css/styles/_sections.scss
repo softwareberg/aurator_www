@@ -35,27 +35,31 @@
   margin-bottom: 0;
 }
 
-.section__list {
+.c-list {
   padding: 0;
   list-style: none;
 }
 
-.section_list--num {
+.c-list__item {
+  position: relative;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.c-list--num {
+  text-transform: uppercase;
   counter-reset: list-counter;
 }
 
-.section__list-item {
+.c-list--num__item {
   position: relative;
   padding: 1rem 0;
-  margin-top: 1rem;
-  text-transform: uppercase;
-}
-
-.section__list-item--num {
   margin: 2rem 0;
+  font-size: 0.6rem;
 }
 
-.section__list-item--num::before {
+.c-list--num__item::before {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -65,16 +69,17 @@
   counter-increment: list-counter;
 }
 
-.section__list-item::after {
+.c-list__item::after,
+.c-list--num__item::after {
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: 0;
   width: calc(100% - 1rem);
   content: "";
   border-bottom: solid $col-txt-gray-light 3px;
 }
 
-.section__list-item__inner {
+.c-list--num-item__inner {
   position: absolute;
   bottom: 1rem;
   left: 5rem;
