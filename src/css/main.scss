@@ -23,7 +23,7 @@
   }
 
   .nav::after {
-    width: calc(100% - 62px);
+    width: calc(100% - 2 * 2rem + 0.4rem);
   }
 }
 
@@ -43,6 +43,10 @@
 
   .nav::after {
     width: 100%;
+  }
+
+  .nav-menu {
+    margin-right: 0;
   }
 
   .section__cover-img {
@@ -99,6 +103,10 @@
 
   .h-txt10 {
     font-size: 0.6rem;
+  }
+
+  .section__cover-img {
+    height: 350px;
   }
 
   .section__header {

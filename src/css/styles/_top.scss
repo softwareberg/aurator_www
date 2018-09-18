@@ -14,14 +14,13 @@
   width: calc(100% - 2 * 2rem);
   margin: 0 2rem;
   overflow: visible;
-  // border-bottom: solid $col-orange 3px;
 }
 
 .nav::after {
   position: absolute;
   top: 56px;
   left: 0;
-  width: calc(100% - 78px);
+  width: calc(100% - 2 * 2rem - 0.5rem);
   content: "";
   border-bottom: solid $col-orange 3px;
 }
@@ -33,6 +32,7 @@
 
 .nav-menu {
   float: right;
+  margin-right: 3rem;
 }
 
 .nav-menu__list {
@@ -59,19 +59,20 @@
   color: #fff;
 }
 
-.c-lang__toggle {
-  // position: relative;
-  padding: 1rem 0.5rem 0.5rem;
+.c-lang {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+
 }
 
-.c-lang__icon,
-.c-lang__icon-hide {
-  padding-left: 1em;
+.c-lang__toggle {
+  padding: 1rem 0.5rem 0.5rem !important;
 }
 
 .c-lang__dd {
   position: absolute;
-  top: calc(60px - 1rem);
+  top: 1.7rem;
   padding: 0;
   list-style: none;
   background: transparent;
@@ -92,16 +93,8 @@
   border-top: 1px solid $col-nav-link;
 }
 
-.c-lang__icon.h-show {
-  display: none;
-}
-
-.c-lang__icon--hide.h-show {
-  display: inline !important;
-}
-
-.c-lang__dd.h-show {
-  display: block !important;
+.c-lang-dd__option-link {
+  padding: 0.5rem !important;
 }
 
 .banner {
@@ -126,7 +119,6 @@
 .menu-toggle {
   float: right;
   padding-top: 0.6rem;
-  // margin-left: -0.2rem;
 }
 
 .menu-toggle--open.h-open {
@@ -162,6 +154,7 @@
 .c-link--nav-mobile {
   padding: 1.5rem 0;
   color: #fff;
+  text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 

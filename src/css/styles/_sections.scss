@@ -1,7 +1,7 @@
 .section__cover-img {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 650px;
   overflow: hidden;
 }
 
@@ -12,12 +12,12 @@
 }
 
 .section__cover-img--naprawa1 {
-  background: url("../img/naprawa1__foto.jpg") no-repeat 90% 70%;
+  background: url("../img/naprawa1__foto.jpg") no-repeat 80% 100%;
   background-size: cover;
 }
 
 .section__cover-img--naprawa2 {
-  background: url("../img/naprawa2__foto.jpg") no-repeat 30% 5%;
+  background: url("../img/naprawa2__foto.jpg") no-repeat 35% 5%;
   background-size: cover;
 }
 
@@ -87,11 +87,11 @@
 }
 
 .section__cover-img--produkcja1 {
-  background: url("../img/produkcja1__foto.jpg") no-repeat 20% 40%;
+  background: url("../img/produkcja1__foto.jpg") no-repeat 30% 40%;
   background-size: cover;
 }
 
 .section__cover-img--produkcja2 {
-  background: url("../img/produkcja2__foto.jpg") no-repeat 25% 10%;
+  background: url("../img/produkcja2__foto.jpg") no-repeat 40% 10%;
   background-size: cover;
 }
