@@ -108,7 +108,7 @@ function translateTexts(lang) {
   $('.js-lang')
     .toArray()
     .forEach((element) => {
-      element.innerHTML = arrLang[lang][element.getAttribute('key')];
+      element.innerHTML = arrLang[lang][element.getAttribute('data-key')];
     });
 }
 
@@ -116,14 +116,14 @@ function setCurrentLanguage(lang) {
   $('.js-translate')
     .toArray()
     .forEach((translateLink) => {
-      if (translateLink.getAttribute('key') === lang) {
+      if (translateLink.getAttribute('data-key') === lang) {
         translateLink.classList.add('h-current-lang');
       } else {
         translateLink.classList.remove('h-current-lang');
       }
     });
 
-  $('.c-lang__toggle').text(lang);
+  $('.c-lang__toggle-txt').text(lang);
   localStorage.setItem('currentLangAurator', lang);
 }
 
@@ -133,10 +133,9 @@ function resetDropdownState() {
   $('.c-lang__dd').addClass('d-none');
 }
 
-let currentLanguage;
 
 export function translateOnInit() {
-  currentLanguage = localStorage.getItem('currentLangAurator');
+  const currentLanguage = localStorage.getItem('currentLangAurator');
   if (currentLanguage) {
     translateTexts(currentLanguage);
     setCurrentLanguage(currentLanguage);
@@ -145,7 +144,7 @@ export function translateOnInit() {
 
 export function translateOnClick() {
   $('.js-translate').click((event) => {
-    const lang = event.target.getAttribute('key');
+    const lang = event.target.getAttribute('data-key');
     translateTexts(lang);
     setCurrentLanguage(lang);
     resetDropdownState();

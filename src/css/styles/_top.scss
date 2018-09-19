@@ -67,6 +67,10 @@
 }
 
 .c-lang__toggle {
+  cursor: pointer;
+}
+
+.c-lang__toggle-txt {
   padding: 1rem 0.5rem 0.5rem !important;
 }
 
@@ -94,7 +98,7 @@
 }
 
 .c-lang-dd__option-link {
-  padding: 0.5rem !important;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem !important;
 }
 
 .banner {
