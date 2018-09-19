@@ -47,7 +47,7 @@ const arrLang = {
     'map-spzoo': 'Sp. z o. o.',
     'map-adres': 'ul. Chorzowska 58, 44-100 Gliwice',
     'map-nip': 'Nip:',
-    'map-nip-nr': '6645344563',
+    'map-nip-nr': '6312658988',
     'map-email': 'Adres e-mail:',
     'map-tel': 'Nr telefonu:',
     'map-social': 'Aurator w social media:'
@@ -97,7 +97,7 @@ const arrLang = {
     'map-spzoo': 'Sp. z o. o.',
     'map-adres': 'ul. Chorzowska 58, 44-100 Gliwice',
     'map-nip': 'VAT-EU:',
-    'map-nip-nr': 'PL6645344563',
+    'map-nip-nr': 'PL6312658988',
     'map-email': 'E-mail address:',
     'map-tel': 'Phone no.:',
     'map-social': 'Aurator in social media:'
