@@ -56,3 +56,27 @@ export function setContactPosition() {
     $('.c-contact').removeClass('l-center-y');
   }
 }
+
+// const listDropdownIcons = []
+
+export function toggleLangDropdown() {
+  // show / hide dropdown with language selection
+  $('.c-lang__toggle').click(() => {
+    $('.c-lang__icon').toggleClass('d-none');
+    $('.c-lang__icon-hide').toggleClass('d-none');
+    $('.c-lang__dd').toggleClass('d-none');
+  });
+}
+
+export function hideLangDropdownOutsideClick() {
+  // hide dropdown with language selection when clicked outside the dropdown
+  $(document).click((event) => {
+    if (!$(event.target).closest('.c-lang').length) {
+      if ($('.c-lang').is(':visible')) {
+        $('.c-lang__icon').removeClass('d-none');
+        $('.c-lang__icon-hide').addClass('d-none');
+        $('.c-lang__dd').addClass('d-none');
+      }
+    }
+  });
+}

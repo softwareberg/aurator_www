@@ -20,17 +20,27 @@
                 <a href="#" class="nav-logo"><img src="img/nav__logo.png" alt="logo"></a> 
                 <div class="nav-menu">
                     <ul class="nav-menu__list d-none d-lg-inline-block">
-                        <li class="d-inline"><a class="c-link c-link--nav h-txt9" href="#repair">Naprawa i regeneracja</a></li>
-                        <li class="d-inline"><a class="c-link c-link--nav h-txt9" href="#production">Produkcja</a></li>
-                        <li class="d-inline"><a class="c-link c-link--nav h-txt9" href="#about">O firmie</a></li>
-                        <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-white" href="#contact">Kontakt</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9 js-lang" data-key="nav-naprawa" href="#repair">Naprawa i regeneracja</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9 js-lang" data-key="nav-produkcja" href="#production">Produkcja</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9 js-lang" data-key="nav-firma" href="#about">O firmie</a></li>
+                        <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-white js-lang" data-key="nav-kontakt" href="#contact">Kontakt</a></li>
                     </ul>
                     <ul class="nav-menu__list d-none d-sm-inline-block">
-                        <li class="d-inline d-lg-none"><a class="c-link c-link--nav h-txt9 h-white" href="#contact">Kontakt</a></li>
+                        <li class="d-none d-md-inline d-lg-none"><a class="c-link c-link--nav h-txt9 h-white js-lang" data-key="nav-kontakt" href="#contact">Kontakt</a></li>
                         <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-orange" href="tel:+48323012097">+32 301 20 97</a></li>
                         <li class="d-inline"><a class="c-link c-link--nav h-txt9 h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a></li>
                     </ul>
-                    <a class="c-link c-link--nav nav-menu__lang h-txt9 d-none d-lg-inline-block" href="#">PL <img src="img/dropdown.png" alt="dropdown-img"></a>
+                    <div class="c-lang d-none d-lg-inline-block">
+                        <div class="c-lang__toggle">
+                            <a class="c-lang__toggle-txt c-link c-link--nav h-txt9" href="#">PL</a>
+                            <img class="c-lang__icon" src="img/c-lang__icon.png" alt="dropdown-show">
+                            <img class="c-lang__icon-hide d-none" src="img/c-lang__icon--hide.png" alt="dropdown-hide">
+                        </div>
+                        <ul class="c-lang__dd d-none">
+                            <li class="c-lang-dd__option"><a class="c-lang-dd__option-link js-translate c-link c-link--nav h-txt9 h-current-lang" data-key="pl" href="#">PL</a></li>
+                            <li class="c-lang-dd__option"><a class="c-lang-dd__option-link js-translate c-link c-link--nav h-txt9" data-key="en" href="#">EN</a></li>
+                        </ul>
+                    </div>
                     <a class="menu-toggle menu-toggle--open d-inline-block d-lg-none" href="#"><img src="img/nav__menu-toggle.png" alt="menu-toggle"></a>
                     <a class="menu-toggle menu-toggle--close d-none" href="#"><img src="img/nav__menu-toggle--close.png" alt="X"></a>
                 </div>
@@ -38,25 +48,28 @@
             <div class="nav-mobile d-block d-lg-none">
                 <div class="nav__mobile-menu l-center-y">
                     <ul class="nav-mobile__list">
-                            <li class="nav-mobile__list-item"><a class="c-link c-link--nav c-link--nav-mobile h-txt24 js-hideMobileMenu" href="#repair">Naprawa i regeneracja</a></li>
-                            <li class="nav-mobile__list-item"><a class="c-link c-link--nav c-link--nav-mobile h-txt24 js-hideMobileMenu" href="#production">Produkcja</a></li>
-                            <li class="nav-mobile__list-item"><a class="c-link c-link--nav c-link--nav-mobile h-txt24 js-hideMobileMenu" href="#about">O firmie</a></li>
-                            <li class="nav-mobile__list-item"><a class="c-link c-link--nav c-link--nav-mobile h-txt24 js-hideMobileMenu" href="#contact">Kontakt</a></li>
+                        <li class="nav-mobile__list-item"><a class="c-link c-link--nav-mobile h-txt24 js-hideMobileMenu js-lang" data-key="nav-naprawa" href="#repair">Naprawa i regeneracja</a></li>
+                        <li class="nav-mobile__list-item"><a class="c-link c-link--nav-mobile h-txt24 js-hideMobileMenu js-lang" data-key="nav-produkcja" href="#production">Produkcja</a></li>
+                        <li class="nav-mobile__list-item"><a class="c-link c-link--nav-mobile h-txt24 js-hideMobileMenu js-lang" data-key="nav-firma" href="#about">O firmie</a></li>
+                        <li class="nav-mobile__list-item"><a class="c-link c-link--nav-mobile h-txt24 js-hideMobileMenu js-lang" data-key="nav-kontakt" href="#contact">Kontakt</a></li>
                     </ul>
                     <ul class="nav-mobile__list nav-mobile__list--inline d-flex d-sm-none row">
                         <li class="nav-mobile__list-item col-5"><a class="c-link c-link--nav c-link--nav-mobile-kontakt h-orange" href="tel:+48323012097">+32 301 20 97</a></li>
                         <li class="nav-mobile__list-item col-7"><a class="c-link c-link--nav c-link--nav-mobile-kontakt h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a></li>
                     </ul>
                     <div class="nav-mobile__lang">
-                        <a class="c-link c-link--nav c-link--nav-mobile h-txt24 h-dark" href="#">PL <img src="img/dropdown--mobile.png" alt="dropdown"></a>
+                        <a class="js-translate c-link c-link--nav c-link--nav-mobile h-txt24 h-dark h-current-lang" data-key="pl" href="#">PL</a>
+                        <a class="h-txt-divider h-txt24 h-dark">|</a>
+                        <a class="js-translate c-link c-link--nav c-link--nav-mobile h-txt24 h-dark" data-key="en" href="#">EN</a>
                     </div>
                 </div>
             </div>
             <div class="banner container l-center-y l-container-padding">
+                <h1 class="h-h1 h-header h-white js-lang" data-key="banner-naprawa">Naprawa<br>maszyn trakcyjnych</h1>
                 <div class="banner-buttons row">
-                        <a class="banner-link banner-link--with-logo h-txt10 h-white h-border-bottom--orange col-sm-6 col-lg-4" href="#repair">Sprawdż nasza ofertę</a>
-                        <a class="banner-link h-txt10 h-white h-border-bottom col-sm-5 col-lg-3" href="mailto:biuro@aurator.com.pl">Umów sie na rozmowę</a>
-                        <a class="banner-link h-txt10 h-white h-border-bottom--thin-gray col-6 col-sm-3 col-lg-2" href="#">Zobacz film</a>
+                        <a class="banner-link banner-link--with-logo h-txt10 h-white h-border-bottom--orange col-sm-6 col-lg-4 js-lang" data-key="banner-sprawdz" href="#repair">Sprawdż nasza ofertę</a>
+                        <a class="banner-link h-txt10 h-white h-border-bottom col-sm-5 col-lg-3 js-lang" data-key="banner-umow" href="mailto:biuro@aurator.com.pl">Umów sie na rozmowę</a>
+                        <a class="banner-link h-txt10 h-white h-border-bottom--thin-gray col-6 col-sm-3 col-lg-2 js-lang" data-key="banner-zobacz" href="#">Zobacz film</a>
                 </div>
             </div>
         </div>
@@ -64,57 +77,57 @@
         <div class="container">
 
                 <div class="section__cover-img section__cover-img--naprawa1 l-container-padding" id="repair">
-                    <h1 class="section__title h-h1 h-header h-white ">Naprawa<br>i regeneracja</h1>                    
+                    <h1 class="section__title h-h1 h-header h-white js-lang" data-key="section-naprawa">Naprawa<br>i regeneracja</h1>                    
                 </div>
                 <div class="c-section l-container-padding">
                     <div class="section__header">
-                        <h1 class="h-txt24 h-header h-orange">Elektryczne maszyny wirujące <br class="d-none d-md-inline">prądu stałego oraz zmiennego</h1>
+                        <h1 class="h-txt24 h-header h-orange js-lang" data-key="section1-elektryczne">Elektryczne maszyny wirujące <br class="d-none d-md-inline">prądu stałego oraz zmiennego</h1>
                     </div>
                     <div class="section__p">
-                        <p class="h-txt16" >Realizujemy naprawy maszyn elektrycznych ze spalinowych oraz elektrycznych pojazdów trakcyjnych.</p>
+                        <p class="h-txt16 js-lang" data-key="section1-realizujemy">Realizujemy naprawy maszyn elektrycznych ze spalinowych oraz elektrycznych pojazdów trakcyjnych.</p>
                     </div>
                     <div class="section__p l-last-element">
-                        <p class="h-txt16">Wykonujemy naprawy zarówno silników trakcyjnych, jak i maszyn pomocniczych do większości typów lokomotyw eksploatowanych w Polsce, jak i poza granicami naszego kraju.</p>
+                        <p class="h-txt16 js-lang" data-key="section1-wykonujemy">Wykonujemy naprawy zarówno silników trakcyjnych, jak i maszyn pomocniczych do większości typów lokomotyw eksploatowanych w Polsce, jak i poza granicami naszego kraju.</p>
                     </div>
                     <div class="c-list-div">
                         <ul class="c-list c-list--num row">
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li1">
                                 Wykonanie lub regeneracja metalowych elementów maszyn (wały wirników, tarcze łożyskowe, pokrywy łożyskowe itp.)
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li2">
                                 Wyważanie dynamiczne elementów wirujących
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li3">
                                 Wymiana łożysk
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li4">
                                 Przezwojenia wirników (klasa H i wyższe)
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li5">
                                 Produkcja cewek wirnikowych oraz stojanowych
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li6">
                                 Wymiana komutatorów
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li7">
                                 Przezwojenia stojanów (klasa H i wyższe)
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li8">
                                 Nasycanie próżniowo-ciśnieniowe
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li9">
                                 Automatyczne spawanie komutatorów metodą TIG
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li10">
                                 Automatyczna obróbka komutatorów wirników
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li11">
                                 Wytaczanie gniazd pod panewki osiowe silników trakcyjnych
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li12">
                                 Dostawa części zamiennych do maszyn elektrycznych
                             </a></li>
-                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange">
+                            <li class="c-list--num__item col-sm-6 col-lg-4"><a class="c-list--num-item__inner h-txt9 h-orange js-lang" data-key="section1-li13">
                                 Próby obciążeniowe na stacji prób wraz z wykonaniem charakterystyki obrotów silników
                             </a></li>
                         </ul>
@@ -125,22 +138,22 @@
                 </div>
                 <div class="c-section l-container-padding">
                     <div class="section__header">
-                        <h1 class="h-txt24 h-header h-orange">Pantografy</h1>
+                        <h1 class="h-txt24 h-header h-orange js-lang" data-key="section2-pantografy">Pantografy</h1>
                     </div>
                     <div class="section__p">
-                        <p class="h-txt16">Realizujemy naprawy odbieraków prądu do elektrycznych pojazdów trakcyjnych do wszystkich eksploatowanych pojazdów trakcyjnych w Polsce i za granicą.</p>
+                        <p class="h-txt16 js-lang" data-key="section2-realizujemy">Realizujemy naprawy odbieraków prądu do elektrycznych pojazdów trakcyjnych do wszystkich eksploatowanych pojazdów trakcyjnych w Polsce i za granicą.</p>
                     </div>
                 </div>
                 
                 <div class="section__cover-img section__cover-img--produkcja1 l-container-padding" id="production">
-                    <h1 class="section__title h-h1 h-header h-white ">Produkcja</h1>                    
+                    <h1 class="section__title h-h1 h-header h-white js-lang" data-key="section-produkcja">Produkcja</h1>                    
                 </div>
                 <div class="c-section l-container-padding">
                     <div class="section__header">
-                        <h1 class="h-txt24 h-header h-orange">Cewki stojanowe i wirnikowe do maszyn <br class="d-none d-lg-inline">prądu stałego oraz przemiennego</h1>
+                        <h1 class="h-txt24 h-header h-orange js-lang" data-key="section3-cewki">Cewki stojanowe i wirnikowe do maszyn <br class="d-none d-lg-inline">prądu stałego oraz przemiennego</h1>
                     </div>
                     <div class="section__p">
-                        <p class="h-txt16">Nasze zaplecze pozwala na uruchomienie produkcji cewek wirnikowych oraz stojanowych dla dowolnego typu maszyn na podstawie dostarczonej przez klienta dokumentacji. Istnieje również możliwość odtworzenia uzwojenia po dostarczeniu uszkodzonego wirnika lub stojana.</p>
+                        <p class="h-txt16 js-lang" data-key="section3-nasze">Nasze zaplecze pozwala na uruchomienie produkcji cewek wirnikowych oraz stojanowych dla dowolnego typu maszyn na podstawie dostarczonej przez klienta dokumentacji. Istnieje również możliwość odtworzenia uzwojenia po dostarczeniu uszkodzonego wirnika lub stojana.</p>
                     </div>
                 </div>
 
@@ -148,13 +161,13 @@
                 </div>
                 <div class="c-section l-container-padding">
                     <div class="section__header">
-                        <h1 class="h-txt24 h-header h-orange">Metalowe części zamienne do maszyn elektrycznych</h1>
+                        <h1 class="h-txt24 h-header h-orange js-lang" data-key="section4-metalowe">Metalowe części zamienne do maszyn elektrycznych</h1>
                     </div>
                     <div class="section__p">
-                        <p class="h-txt16">Zapewniamy podczas naprawy silników wykonanie i wymianę części metalowych (wały wirników, pokrywy, tarcze łożyskowe, labirynty itp.)</p>
+                        <p class="h-txt16 js-lang" data-key="section4-zapewniamy">Zapewniamy podczas naprawy silników wykonanie i wymianę części metalowych (wały wirników, pokrywy, tarcze łożyskowe, labirynty itp.)</p>
                     </div>
                     <div class="section__p">
-                        <p class="h-txt16">Mamy również podobnie, jak w przypadku cewek, możliwość uruchomienia produkcji dowolnych metalowych części zamiennych na podstawie dokumentacji, jak również odtworzenia ich z dostarczonych przez klienta części.</p>
+                        <p class="h-txt16 js-lang" data-key="section4-mamy">Mamy również podobnie, jak w przypadku cewek, możliwość uruchomienia produkcji dowolnych metalowych części zamiennych na podstawie dokumentacji, jak również odtworzenia ich z dostarczonych przez klienta części.</p>
                     </div>
                 </div>
                 
@@ -163,11 +176,11 @@
                 <div class="l-container-padding row firma__texts">
                     <div class="l-col-clean col-md-6">
                         <div class="firma__quote-div">
-                            <h1 class="firma__header h-h1 h-header">O firmie</h1>
+                            <h1 class="firma__header h-h1 h-header js-lang" data-key="about-firma">O firmie</h1>
                             <h1 class="firma__quote-start h-txt24 h-header h-orange">//</h1>
-                            <h1 class="firma__quote h-header">Poprzez koncentrację na wybranym segmencie rynku udało nam się wyspecjalizować w naprawach maszyn trakcyjnych</h1>
+                            <h1 class="firma__quote h-header js-lang" data-key="about-poprzez">Poprzez koncentrację na wybranym segmencie rynku udało nam się wyspecjalizować w naprawach maszyn trakcyjnych</h1>
                             <p class="firma__quote-author h-txt16 h-header h-orange d-sm-inline">Marek Paruzel</p>
-                            <p class="firma__quote-position h-txt9 h-header h-black d-sm-inline">Prezes zarządu</p>
+                            <p class="firma__quote-position h-txt9 h-header h-black d-sm-inline-block js-lang" data-key="about-prezes">Prezes zarządu</p>
                         </div>
                     </div>
                 </div>
@@ -180,13 +193,13 @@
                 <div class="firma__wiedza l-container-padding row">
                     <div class="l-col-clean col-md-7 h-white h-txt-shadow">
                         <div class="section__header">
-                            <h1 class="h-txt24 h-header">WIEDZA</h1>
+                            <h1 class="h-txt24 h-header js-lang" data-key="about-wiedza">Wiedza</h1>
                         </div>
                         <div class="section__p">
-                            <p class="h-txt16">Efektywna wiedza o budowie i eksploatacji maszyn elektrycznych jest podstawą działania i rozwoju naszej firmy.</p>
+                            <p class="h-txt16 js-lang" data-key="about-efektywna">Efektywna wiedza o budowie i eksploatacji maszyn elektrycznych jest podstawą działania i rozwoju naszej firmy.</p>
                         </div>
                         <div class="section__p">
-                            <p class="h-txt16">Przez lata pracy oraz dzięki doświadczeniu zgromadzonemu w okresie działania firmy, wypracowaliśmy rozwiązania serwisu maszyn trakcyjnych, które zapewnia skuteczną realizację podstawowych celów technicznych.</p>
+                            <p class="h-txt16 js-lang" data-key="about-przez">Przez lata pracy oraz dzięki doświadczeniu zgromadzonemu w okresie działania firmy, wypracowaliśmy rozwiązania serwisu maszyn trakcyjnych, które zapewnia skuteczną realizację podstawowych celów technicznych.</p>
                         </div>
                     </div>
                 </div>
@@ -196,10 +209,10 @@
                 <div class="doswiadczenie__cover-img l-container-padding row align-items-center">
                     <div class="l-col-clean col-md-7 h-white">
                         <div class="section__header">
-                            <h1 class="h-header h-txt24">DOŚWIADCZENIE</h1>
+                            <h1 class="h-header h-txt24 js-lang" data-key="section-doswiadczenie">Doświadczenie</h1>
                         </div>
                         <div class="section__p l-last-element">
-                            <p class="h-txt16">Profesjonalizm oraz doskonałe wyniki techniczne napraw maszyn trakcyjnych, które przechodzą oczekiwania naszych klientów, pozwoliły nam na stworzenie listy referencji, z której jesteśmy dumni.</p>
+                            <p class="h-txt16 js-lang" data-key="doswiadczenie-profesjonalizm">Profesjonalizm oraz doskonałe wyniki techniczne napraw maszyn trakcyjnych, które przechodzą oczekiwania naszych klientów, pozwoliły nam na stworzenie listy referencji, z której jesteśmy dumni.</p>
                         </div>
                     </div>
                     <div class="l-col-clean col-md-5">
@@ -220,22 +233,22 @@
                         <div class="c-contact__texts col-md-6 col-lg-5 col-xl-4">
                             <div class="c-contact__name">
                                 <img class="c-contact__name-img" src="img/c-contact__name-img.png" alt="AURATOR SP. Z O.O.">
-                                <p class="c-contact__name-txt d-inline-block">Sp. z o. o.</p>
+                                <p class="c-contact__name-txt d-inline-block js-lang" data-key="map-spzoo">Sp. z o. o.</p>
                             </div>
                             <div class="c-contact__paragraph">
-                                <p class="h-txt10">ul. Chorzowska 58, 44-100 Gliwice</p>
+                                <p class="h-txt10 js-lang" data-key="map-adres">ul. Chorzowska 58, 44-100 Gliwice</p>
                             </div>
                             <ul class="c-list">
                                 <div class="c-list__title">
-                                    <p>Nip:</p>
+                                    <p class=" js-lang" data-key="map-nip">Nip:</p>
                                 </div>
-                                <li class="c-list__item"><a class="h-orange">
+                                <li class="c-list__item"><a class="h-orange js-lang" data-key="map-nip-nr">
                                     6645344563
                                 </a></li>
                             </ul>
                             <ul class="c-list">
                                 <div class="c-list__title">
-                                    <p>Adres e-mail:</p>
+                                    <p class=" js-lang" data-key="map-email">Adres e-mail:</p>
                                 </div>
                                 <li class="c-list__item"><a class="c-link h-orange" href="mailto:biuro@aurator.com.pl">
                                     biuro@aurator.com.pl
@@ -243,7 +256,7 @@
                             </ul>
                             <ul class="c-list">
                                 <div class="c-list__title">
-                                    <p>Nr telefonu:</p>
+                                    <p class=" js-lang" data-key="map-tel">Nr telefonu:</p>
                                 </div>
                                 <li class="c-list__item"><a class="c-link h-orange" href="tel:+48323012097">
                                     (+48) 32 301 20 97
@@ -251,7 +264,7 @@
                             </ul>
                             <ul class="c-list">
                                 <div class="c-list__title">
-                                    <p>Aurator w social media:</p>
+                                    <p class=" js-lang" data-key="map-social">Aurator w social media:</p>
                                 </div>
                                 <li class="c-list__item">
                                     <a href="#"><img class="c-contact__icon" src="img/c-contact__icon--fb.png" alt="facebook"></a>
@@ -268,5 +281,15 @@
 
         </div>
     </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126028127-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-126028127-1');
+    </script>
 </body>
 </html>
