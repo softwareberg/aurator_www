@@ -63,3 +63,42 @@
 .js-doswiadczenie__x-lat {
   margin-bottom: 1.6rem;
 }
+
+.c-list__item--spaced {
+  margin-top: 5rem;
+}
+
+.c-list-item__inner {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  text-transform: uppercase;
+}
+
+.c-list-item__inner-main {
+  padding-right: 1rem;
+}
+
+.c-list-item__inner-sub {
+  padding-top: 0.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+}
+
+.c-list-item__inner-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.c-list-item__inner-icon--pkp {
+  max-width: 121px;
+}
+
+.c-list-item__inner-icon--icc {
+  max-width: 117px;
+}
+
+.c-list-item__inner-icon--iso {
+  max-width: 80px;
+}
