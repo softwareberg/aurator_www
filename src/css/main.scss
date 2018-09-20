@@ -4,12 +4,12 @@
 @import "styles/general";
 @import "styles/top";
 @import "styles/sections";
-@import "styles/firma";
+@import "styles/about";
 @import "styles/map";
 @import "styles/helpers";
 
 @include media-breakpoint-down(lg) {
-  .firma__quote {
+  .about__quote {
     font-size: 1.6rem;
   }
 
@@ -53,7 +53,7 @@
     height: 400px;
   }
 
-  .firma__quote {
+  .about__quote {
     font-size: 1rem;
   }
 
@@ -81,7 +81,7 @@
 }
 
 @include media-breakpoint-down(sm) {
-  .doswiadczenie__icon {
+  .experience__icon {
     margin-bottom: 1.6rem;
   }
 

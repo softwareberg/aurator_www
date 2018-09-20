@@ -1,20 +1,20 @@
 import $ from 'jquery';
 
 export function setFotoPosition() {
-  const firmaBg = $('.firma__bg');
-  const firmaBgHeight = firmaBg.height();
-  const quoteHeight = $('.firma__quote-div').outerHeight();
-  const firma = $('.firma');
+  const aboutBg = $('.about__bg');
+  const aboutBgHeight = aboutBg.height();
+  const quoteHeight = $('.about__quote-div').outerHeight();
+  const about = $('.about-main');
   const breakpoint = 768;
 
   if (window.innerWidth >= breakpoint) {
-    const maxTopHeight = 7 / 15 * firmaBgHeight;
-    const firmaBgTop = quoteHeight < maxTopHeight ? quoteHeight : maxTopHeight;
-    firmaBg.css({ top: `${-firmaBgTop}px` });
-    firma.css({ height: `${firmaBgHeight}px` });
+    const maxTopHeight = 7 / 15 * aboutBgHeight;
+    const aboutBgTop = quoteHeight < maxTopHeight ? quoteHeight : maxTopHeight;
+    aboutBg.css({ top: `${-aboutBgTop}px` });
+    about.css({ height: `${aboutBgHeight}px` });
   } else {
-    firmaBg.css({ top: '' });
-    firma.css({ height: '' });
+    aboutBg.css({ top: '' });
+    about.css({ height: '' });
   }
 }
 

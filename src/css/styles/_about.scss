@@ -1,62 +1,62 @@
-.firma {
+.about-main {
   position: relative;
   overflow: hidden;
 }
 
-.firma__quote-start {
+.about__quote-start {
   padding-bottom: 1.5em;
 }
 
-.firma__quote {
+.about__quote {
   padding-bottom: 1em;
   font-size: 2rem;
   line-height: 150%;
 }
 
-.firma__quote-author {
+.about__quote-author {
   padding-right: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
-.firma__quote-div {
+.about__quote-div {
   position: relative;
   z-index: 1000;
   padding-bottom: 2rem;
 }
 
-.firma__mobile-foto {
+.about__mobile-foto {
   width: 70%;
   margin: 0 auto;
 }
 
-.firma__bg {
+.about__bg {
   position: relative;
 }
 
-.firma__bg-img {
+.about__bg-img {
   width: 100%;
 }
 
-.firma__wiedza {
+.about__know-how {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 0.5rem;
 }
 
-.doswiadczenie__cover-img {
+.experience__cover-img {
   width: 100%;
   overflow: hidden;
-  background: url("../img/doswiadczenie-bg.jpg") no-repeat 15%;
+  background: url("../img/experience-bg.jpg") no-repeat 15%;
   background-size: cover;
 }
 
-.doswiadczenie__icon-div {
+.experience__icon-div {
   max-width: 260px;
   margin: 0 auto;
 }
 
-.doswiadczenie__icon {
+.experience__icon {
   width: 100%;
 }
 
