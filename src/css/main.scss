@@ -81,6 +81,10 @@
 }
 
 @include media-breakpoint-down(sm) {
+  .doswiadczenie__icon {
+    margin-bottom: 1.6rem;
+  }
+
   .c-map__bg {
     height: 400px;
     background-position: 100% 20%;
