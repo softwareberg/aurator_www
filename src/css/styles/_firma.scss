@@ -60,6 +60,72 @@
   width: 100%;
 }
 
-.js-doswiadczenie__x-lat {
-  margin-bottom: 1.6rem;
+.c-list__item--spaced {
+  margin-top: 5rem;
+}
+
+.c-list-item__inner {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.c-list-item__inner-main {
+  padding-right: 1rem;
+}
+
+.c-list-item__inner-sub {
+  padding-top: 0.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+}
+
+.c-list-item__inner-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.c-list-item__inner-icon--pkp {
+  max-width: 121px;
+}
+
+.c-list-item__inner-icon--icc {
+  max-width: 117px;
+}
+
+.c-list-item__inner-icon--iso {
+  max-width: 80px;
+}
+
+.c-btns__btn {
+  position: relative;
+  padding: 0.6rem;
+  margin: 0.6rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.c-btns__btn--form::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: url("../img/c-btns__btn--form.png");
+  transform: scale(0.5);
+}
+
+.c-btns__btn--phone::after {
+  position: absolute;
+  right: 0.4rem;
+  bottom: -0.2rem;
+  content: url("../img/c-btns__btn--phone.png");
+  transform: scale(0.5);
+}
+
+.c-btns-btn__inner {
+  padding-right: 1.6rem;
+  line-height: 100%;
 }

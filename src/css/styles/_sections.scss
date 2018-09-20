@@ -48,7 +48,6 @@
 }
 
 .c-list--num {
-  text-transform: uppercase;
   counter-reset: list-counter;
 }
 
@@ -84,6 +83,7 @@
   bottom: 1rem;
   left: 5rem;
   padding-right: 1rem;
+  text-transform: uppercase;
 }
 
 .section__cover-img--produkcja1 {
