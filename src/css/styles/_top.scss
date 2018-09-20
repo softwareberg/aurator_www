@@ -30,6 +30,10 @@
   margin: 1rem 0;
 }
 
+.nav-logo-img {
+  max-width: 187px;
+}
+
 .nav-menu {
   float: right;
   margin-right: 3rem;
@@ -63,7 +67,6 @@
   position: absolute;
   top: 1rem;
   right: 0;
-
 }
 
 .c-lang__toggle {
@@ -72,6 +75,11 @@
 
 .c-lang__toggle-txt {
   padding: 1rem 0.5rem 0.5rem !important;
+}
+
+.c-lang__icon,
+.c-lang__icon-hide {
+  max-width: 12px;
 }
 
 .c-lang__dd {
@@ -115,8 +123,11 @@
 }
 
 .banner-link--with-logo::after {
-  float: right;
+  position: absolute;
+  right: -1.2rem;
+  bottom: 0.2rem;
   content: url("../img/banner__icon--oferta.png");
+  transform: scale(0.5);
 }
 
 // tablet and mobile
@@ -124,6 +135,11 @@
 .menu-toggle {
   float: right;
   padding-top: 0.6rem;
+}
+
+.menu-toggle--open-icon,
+.menu-toggle--close-icon {
+  max-width: 28px;
 }
 
 .menu-toggle--open.h-open {
