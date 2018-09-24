@@ -2,33 +2,52 @@
 @import "styles/variables";
 @import "styles/typography";
 @import "styles/general";
-@import "styles/top";
-@import "styles/sections";
+@import "styles/c-link";
+@import "styles/c-btn";
+@import "styles/c-nav";
+@import "styles/c-menu";
+@import "styles/c-lang";
+@import "styles/c-cover";
+@import "styles/c-section";
+@import "styles/c-list";
+@import "styles/c-num-list";
+@import "styles/c-quote";
 @import "styles/about";
-@import "styles/map";
+@import "styles/c-map";
+@import "styles/c-contact";
 @import "styles/helpers";
 
 @include media-breakpoint-down(lg) {
-  .about__quote {
-    font-size: 1.6rem;
+  .l-col-pad-right {
+    padding-right: 1rem;
   }
 
-  .nav-menu__list {
+  .l-col-pad-left {
+    padding-left: 1rem;
+  }
+
+  .c-nav::after {
+    width: calc(100% - 2 * 2rem + 0.4rem);
+  }
+
+  .c-menu {
     margin: 1rem 0.2rem;
   }
 
-  .c-link--nav {
+  .c-menu__link {
     padding-right: 0.3rem;
     padding-left: 0.3rem;
   }
 
-  .nav::after {
-    width: calc(100% - 2 * 2rem + 0.4rem);
+  .c-quote__text {
+    font-size: 1.6rem;
   }
 }
 
 @include media-breakpoint-down(md) {
-  .h-h1 {
+  .h-h1,
+  .c-title,
+  .c-cover__title, {
     font-size: 2.8rem;
   }
 
@@ -37,23 +56,21 @@
     padding-left: 2rem;
   }
 
-  .l-col-padding {
+  .l-col-padding,
+  .l-col-pad-right,
+  .l-col-pad-left {
     padding: 0;
   }
 
-  .nav::after {
+  .c-nav::after {
     width: 100%;
   }
 
-  .nav-menu {
-    margin-right: 0;
-  }
-
-  .section__cover-img {
+  .c-cover {
     height: 400px;
   }
 
-  .about__quote {
+  .c-quote__text {
     font-size: 1rem;
   }
 
@@ -75,13 +92,20 @@
     right: 0;
   }
 
-  .c-map__foreground {
+  .c-map__fg {
     max-width: 94%;
   }
 }
 
 @include media-breakpoint-down(sm) {
-  .experience__icon {
+  .repair1,
+  .repair2,
+  .production1,
+  .production2 {
+    margin-bottom: 4rem;
+  }
+
+  .experience__logo-img {
     margin-bottom: 1.6rem;
   }
 
@@ -96,59 +120,70 @@
 }
 
 @include media-breakpoint-down(xs) {
-  .h-h1 {
+  // .h-h1,
+  .c-title,
+  .c-cover__title {
     padding-bottom: 2rem;
     font-size: 1.6rem;
   }
 
-  .h-txt24 {
+  // .h-txt24,
+  .c-menu--mobile__link,
+  .c-lang--mobile__item,
+  .c-section__header,
+  .c-quote__header,
+  .c-list-item__inner {
     font-size: 1.2rem;
   }
 
-  .h-txt16 {
+  // .h-txt16,
+  .c-section__text,
+  .c-quote__author {
     font-size: 0.8rem;
   }
 
-  .h-txt10 {
+  // .h-txt10,
+  .c-contact__text,
+  .c-contact__name-text {
     font-size: 0.6rem;
   }
 
-  .banner-link {
+  .repair1,
+  .repair2,
+  .production1,
+  .production2 {
+    margin-bottom: 3rem;
+  }
+
+  .c-btn {
     margin-right: 0;
     margin-left: 0;
   }
 
-  .section__cover-img {
+  .c-cover {
     height: 350px;
   }
 
-  .section__header {
+  .c-section__header {
     margin: 1.2rem 0;
   }
 
-  .section__p {
+  .c-section__text {
     margin-bottom: 1rem;
   }
 
-  .c-section {
-    padding-bottom: 2rem;
-  }
-
-  .l-last-element {
-    margin-bottom: 2rem;
-  }
-
-  .c-list--num__item {
+  .c-num-list__item {
     margin-bottom: 0.5rem;
   }
 
-  .c-list--num__item::after {
+  .c-num-list__item::after {
     bottom: 0.5rem;
     width: 100%;
   }
 
-  .c-list--num-item__inner {
+  .c-num-list-item__inner {
     padding-right: 0;
+    font-size: 0.7rem;
   }
 
   .c-contact__name-img {
@@ -157,5 +192,9 @@
 
   .c-contact__name-txt {
     font-size: 0.6rem;
+  }
+
+  .l-last-element {
+    margin-bottom: 2rem;
   }
 }

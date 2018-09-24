@@ -1,0 +1,35 @@
+.c-quote {
+  padding-bottom: 2rem;
+
+  &__header {
+    padding-bottom: 1.5em;
+    font-size: 1.6rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__text {
+    padding-bottom: 1em;
+    font-size: 2rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__author {
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__author-position {
+    font-size: 0.6rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}

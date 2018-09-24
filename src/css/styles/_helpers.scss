@@ -1,5 +1,5 @@
 .h-white {
-  color: #fff !important;
+  color: $col-white !important;
 }
 
 .h-black {
@@ -35,6 +35,14 @@
   padding-left: 0.3em;
 }
 
+.h-btn-divider {
+  padding: 0.6rem;
+  margin: 0.6rem 1.2rem 0.6rem 0;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .h-current-lang {
   color: $col-txt-gray-light !important;
 }
@@ -42,10 +50,6 @@
 .l-container-padding {
   padding-right: 4rem;
   padding-left: 4rem;
-}
-
-.c-section {
-  padding-bottom: 4rem;
 }
 
 .l-last-element {
@@ -60,6 +64,16 @@
 
 .l-col-clean {
   padding: 0;
+}
+
+.l-col-pad-right {
+  padding: 0;
+  padding-right: 2rem;
+}
+
+.l-col-pad-left {
+  padding: 0;
+  padding-left: 2rem;
 }
 
 .l-col-padding {

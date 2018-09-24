@@ -3,8 +3,8 @@ import $ from 'jquery';
 export function setFotoPosition() {
   const aboutBg = $('.about__bg');
   const aboutBgHeight = aboutBg.height();
-  const quoteHeight = $('.about__quote-div').outerHeight();
-  const about = $('.about-main');
+  const quoteHeight = $('.c-quote').outerHeight();
+  const about = $('.about');
   const breakpoint = 768;
 
   if (window.innerWidth >= breakpoint) {
@@ -23,9 +23,9 @@ export function setTopFullscreen() {
 }
 
 export function toggleMobileMenu() {
-  $('.menu-toggle').click(() => {
-    $('.nav-mobile').toggleClass('h-open');
-    $('.menu-toggle').toggleClass('h-open');
+  $('.c-menu__toggle').click(() => {
+    $('.c-nav--mobile').toggleClass('h-open');
+    $('.c-menu__toggle').toggleClass('h-open');
   });
 }
 
@@ -33,16 +33,16 @@ export function hideMobileMenuForDesktop() {
   const breakpointDesktop = 992;
   if (window.innerWidth >= breakpointDesktop) {
     // for desktop widths reset state of mobile menu
-    $('.nav-mobile').removeClass('h-open');
-    $('.menu-toggle').removeClass('h-open');
+    $('.c-nav--mobile').removeClass('h-open');
+    $('.c-menu__toggle').removeClass('h-open');
   }
 }
 
 export function hideMobileMenuOnClick() {
   // reset state of mobile menu after clicking link from mobile menu
   $('.js-hideMobileMenu').click(() => {
-    $('.nav-mobile').removeClass('h-open');
-    $('.menu-toggle').removeClass('h-open');
+    $('.c-nav--mobile').removeClass('h-open');
+    $('.c-menu__toggle').removeClass('h-open');
   });
 }
 

@@ -1,131 +1,28 @@
-.about-main {
+.about {
   position: relative;
   overflow: hidden;
-}
 
-.about__quote-start {
-  padding-bottom: 1.5em;
-}
+  &__quote {
+    position: relative;
+    z-index: 1000;
+  }
 
-.about__quote {
-  padding-bottom: 1em;
-  font-size: 2rem;
-  line-height: 150%;
-}
+  &__mobile-foto {
+    width: 70%;
+    margin: 0 auto;
+  }
 
-.about__quote-author {
-  padding-right: 1.5rem;
-  padding-bottom: 0.5rem;
-}
+  &__bg {
+    position: relative;
+  }
 
-.about__quote-div {
-  position: relative;
-  z-index: 1000;
-  padding-bottom: 2rem;
-}
+  &__bg-img {
+    width: 100%;
+  }
 
-.about__mobile-foto {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.about__bg {
-  position: relative;
-}
-
-.about__bg-img {
-  width: 100%;
-}
-
-.about__know-how {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5rem;
-}
-
-.experience__cover-img {
-  width: 100%;
-  overflow: hidden;
-  background: url("../img/experience-bg.jpg") no-repeat 15%;
-  background-size: cover;
-}
-
-.experience__icon-div {
-  width: 261px;
-  margin: 0 auto;
-}
-
-.experience__icon {
-  max-width: 261px;
-}
-
-.c-list__item--spaced {
-  margin-top: 5rem;
-}
-
-.c-list-item__inner {
-  position: absolute;
-  bottom: 0.8rem;
-  left: 0;
-  line-height: 100%;
-  text-transform: uppercase;
-}
-
-.c-list-item__inner-main {
-  padding-right: 1rem;
-}
-
-.c-list-item__inner-sub {
-  padding-top: 0.5rem;
-  font-size: 0.6rem;
-  letter-spacing: 0.1em;
-}
-
-.c-list-item__inner-icon {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-}
-
-.c-list-item__inner-icon--pkp {
-  max-width: 121px;
-}
-
-.c-list-item__inner-icon--icc {
-  max-width: 117px;
-}
-
-.c-list-item__inner-icon--iso {
-  max-width: 80px;
-}
-
-.c-btns__btn {
-  position: relative;
-  padding: 0.6rem;
-  margin: 0.6rem 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.c-btns__btn--form::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  content: url("../img/c-btns__btn--form.png");
-  transform: scale(0.5);
-}
-
-.c-btns__btn--phone::after {
-  position: absolute;
-  right: 0.4rem;
-  bottom: -0.2rem;
-  content: url("../img/c-btns__btn--phone.png");
-  transform: scale(0.5);
-}
-
-.c-btns-btn__inner {
-  padding-right: 1.6rem;
-  line-height: 100%;
+  &__know-how {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }

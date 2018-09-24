@@ -26,54 +26,33 @@
   font-weight: normal;
 }
 
-.c-link--nav,
-.c-link--nav-mobile,
+.c-menu__link,
+.c-menu--mobile__link,
 .c-lang-dd__option-link,
-.banner-link,
-.h-header,
+.c-lang--mobile__item,
+.c-btn,
+.c-section__header,
+.c-cover__title,
+.c-quote__header,
+.c-quote__text,
+.c-quote__author,
+.c-quote__author-position,
+.c-title,
 .c-list__title,
-.c-contact__name-txt,
-.c-btns__btn {
+.c-contact__name-text,
+.h-btn-divider {
   font-family: "Praktika Bold", "Source Sans Pro", "Lucida Grande", sans-serif;
 }
 
 .app,
-.c-link--nav-mobile-contact,
-.h-txt-thin {
+.c-menu--mobile__contact-link {
   font-family: "Praktika Medium", "Source Sans Pro", "Lucida Grande", sans-serif;
 }
 
-.h-header {
+.c-title {
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
   line-height: 100%;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-}
-
-.h-txt-bold {
-  font-weight: bold;
-}
-
-.h-txt-shadow {
-  text-shadow: 0 0 10px #000;
-}
-
-.h-h1 {
-  padding-bottom: 3rem;
-  font-size: 3.5rem;
-}
-
-.h-txt24 {
-  font-size: 1.6rem;
-}
-
-.h-txt16 {
-  font-size: 1rem;
-}
-
-.h-txt10 {
-  font-size: 0.8rem;
-}
-
-.h-txt9 {
-  font-size: 0.6rem;
 }

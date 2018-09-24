@@ -1,0 +1,71 @@
+.c-list {
+  padding: 0;
+  list-style: none;
+
+  &__title {
+    margin-top: 1.5rem;
+    font-size: 0.6rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__item {
+    position: relative;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: $col-orange;
+  }
+
+  &__item::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    content: "";
+    border-bottom: solid $col-txt-gray-light 3px;
+  }
+
+  &__item--spaced {
+    margin-top: 5rem;
+  }
+
+  &-item__inner {
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0;
+    font-size: 1.6rem;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  &-item__inner-main {
+    padding-right: 1rem;
+  }
+
+  &-item__inner-sub {
+    padding-top: 0.5rem;
+    font-size: 0.6rem;
+    color: $col-black;
+    letter-spacing: 0.1em;
+  }
+
+  &-item__inner-icon {
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+  }
+
+  &-item__inner-icon--pkp {
+    max-width: 121px;
+  }
+
+  &-item__inner-icon--icc {
+    max-width: 117px;
+  }
+
+  &-item__inner-icon--iso {
+    max-width: 80px;
+  }
+}

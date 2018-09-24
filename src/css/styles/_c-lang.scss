@@ -1,0 +1,57 @@
+.c-lang {
+  position: relative;
+  float: right;
+  margin-top: 1rem;
+
+  &__toggle {
+    cursor: pointer;
+  }
+
+  &__toggle-text {
+    padding: 1rem 0.5rem 0.5rem !important;
+  }
+
+  &__icon,
+  &__icon-hide {
+    max-width: 12px;
+  }
+
+  &__dd {
+    position: absolute;
+    top: 1.7rem;
+    padding: 0;
+    list-style: none;
+    background: transparent;
+  }
+
+  &-dd__option {
+    position: relative;
+    padding: 0.3rem 1rem 0.3rem 0;
+    text-align: center;
+  }
+
+  &-dd__option::before {
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    width: 3rem;
+    content: "";
+    border-top: 1px solid $col-nav-link;
+  }
+
+  &-dd__link {
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem !important;
+  }
+
+  &--mobile {
+    padding: 1rem 0;
+  }
+
+  &--mobile__item {
+    padding: 1.5rem 0;
+    font-size: 1.6rem;
+    color: $col-txt-gray;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
