@@ -1,6 +1,7 @@
 .c-section {
   &__header {
     margin: 2rem 0;
+    font-family: $font-praktika-bold;
     font-size: 1.6rem;
     line-height: 100%;
     text-transform: uppercase;
@@ -16,5 +17,17 @@
   &--cover {
     color: $col-white;
     text-shadow: 0 0 10px #000;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .c-section__header {
+    margin: 1.2rem 0;
+    font-size: 1.2rem;
+  }
+
+  .c-section__text {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
   }
 }

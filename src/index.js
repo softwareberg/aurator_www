@@ -9,6 +9,19 @@ require('css/main.scss');
 
 window.jQuery = $; window.$ = $;
 
+function debounce(fn, delay) {
+  let timerId;
+  return (...args) => {
+    if (timerId) {
+      clearTimeout(timerId);
+    }
+    timerId = setTimeout(() => {
+      fn(...args);
+      timerId = null;
+    }, delay);
+  };
+}
+
 $(document).ready(() => {
   translateOnInit();
   setTopFullscreen();
@@ -20,10 +33,10 @@ $(document).ready(() => {
   hideLangDropdownOutsideClick();
   translateOnClick();
 
-  $(window).resize(() => {
+  $(window).on('resize', debounce(() => {
     setTopFullscreen();
     setFotoPosition();
     hideMobileMenuForDesktop();
     setContactPosition();
-  });
+  }, 150));
 });

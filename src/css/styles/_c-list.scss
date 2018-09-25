@@ -4,6 +4,7 @@
 
   &__title {
     margin-top: 1.5rem;
+    font-family: $font-praktika-bold;
     font-size: 0.6rem;
     line-height: 100%;
     text-transform: uppercase;
@@ -67,5 +68,31 @@
 
   &-item__inner-icon--iso {
     max-width: 80px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .c-list__title {
+    margin-top: 0.5rem;
+  }
+
+  .c-list__item {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .c-list__item::after {
+    width: 100%;
+  }
+
+  .c-list-item__inner-icon {
+    right: 0;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .c-list-item__inner {
+    font-size: 1.2rem;
   }
 }

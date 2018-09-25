@@ -4,6 +4,7 @@
   &__link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    font-family: $font-praktika-bold;
     font-size: 0.6rem;
     color: $col-nav-link;
     text-transform: uppercase;
@@ -45,6 +46,7 @@
 
   &--mobile__link {
     padding: 1.5rem 0;
+    font-family: $font-praktika-bold;
     font-size: 1.6rem;
     color: $col-white;
     text-transform: uppercase;
@@ -53,7 +55,25 @@
 
   &--mobile__contact-link {
     padding: 0;
+    font-family: $font-praktika-medium;
     font-size: 0.8rem;
     text-transform: uppercase;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .c-menu {
+    margin: 1rem 0.2rem;
+  }
+
+  .c-menu__link {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .c-menu--mobile__link {
+    font-size: 1.2rem;
   }
 }

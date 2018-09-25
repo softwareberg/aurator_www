@@ -41,6 +41,7 @@
 
   &-dd__link {
     padding: 0.5rem 1.5rem 0.5rem 0.5rem !important;
+    font-family: $font-praktika-bold;
   }
 
   &--mobile {
@@ -49,9 +50,16 @@
 
   &--mobile__item {
     padding: 1.5rem 0;
+    font-family: $font-praktika-bold;
     font-size: 1.6rem;
     color: $col-txt-gray;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .c-lang--mobile__item {
+    font-size: 1.2rem;
   }
 }

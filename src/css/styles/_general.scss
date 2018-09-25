@@ -8,6 +8,7 @@
 
 .app {
   min-width: 320px;
+  font-family: $font-praktika-medium;
 }
 
 .container-fluid {
@@ -57,4 +58,26 @@
 
 .experience__logo-img {
   max-width: 261px;
+}
+
+@include media-breakpoint-down(sm) {
+  .repair1,
+  .repair2,
+  .production1,
+  .production2 {
+    margin-bottom: 4rem;
+  }
+
+  .experience__logo-img {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .repair1,
+  .repair2,
+  .production1,
+  .production2 {
+    margin-bottom: 3rem;
+  }
 }

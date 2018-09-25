@@ -36,7 +36,21 @@
     font-size: 0.8rem;
     line-height: 125%;
     color: $col-orange;
-    // text-transform: uppercase;
   }
 }
 
+@include media-breakpoint-down(xs) {
+  .c-num-list__item {
+    margin-bottom: 0.5rem;
+  }
+
+  .c-num-list__item::after {
+    bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .c-num-list-item__inner {
+    padding-right: 0;
+    font-size: 0.7rem;
+  }
+}

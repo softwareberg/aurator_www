@@ -38,6 +38,7 @@
 .h-btn-divider {
   padding: 0.6rem;
   margin: 0.6rem 1.2rem 0.6rem 0;
+  font-family: $font-praktika-bold;
   font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -78,4 +79,33 @@
 
 .l-col-padding {
   padding: 0.5rem;
+}
+
+@include media-breakpoint-down(lg) {
+  .l-col-pad-right {
+    padding-right: 1rem;
+  }
+
+  .l-col-pad-left {
+    padding-left: 1rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .l-container-padding {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .l-col-padding,
+  .l-col-pad-right,
+  .l-col-pad-left {
+    padding: 0;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .l-last-element {
+    margin-bottom: 2rem;
+  }
 }

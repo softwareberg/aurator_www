@@ -9,6 +9,7 @@
   &__title {
     position: relative;
     top: 12%;
+    font-family: $font-praktika-bold;
     font-size: 3.5rem;
     line-height: 100%;
     text-shadow: 0 0 10px #000;
@@ -30,5 +31,26 @@
 
   &--production2 {
     background: url("../img/production2__foto.jpg") no-repeat 40% 10%;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .c-cover__title {
+    font-size: 2.8rem;
+  }
+
+  .c-cover {
+    height: 400px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .c-cover__title {
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .c-cover {
+    height: 350px;
   }
 }
