@@ -10,7 +10,7 @@
     position: absolute;
     top: 56px;
     left: 0;
-    width: calc(100% - 2 * 2rem - 0.5rem);
+    width: calc(100% - 3rem - 1rem - 0.5rem);
     content: "";
     border-bottom: solid $col-orange 3px;
   }
@@ -33,7 +33,9 @@
   // }
 
   &__menu {
+    position: relative;
     float: right;
+    padding-right: 3rem;
   }
 
   // MOBILE

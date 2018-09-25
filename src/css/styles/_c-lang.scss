@@ -1,7 +1,7 @@
 .c-lang {
-  position: relative;
-  float: right;
-  margin-top: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
 
   &__toggle {
     cursor: pointer;

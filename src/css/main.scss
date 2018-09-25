@@ -27,7 +27,7 @@
   }
 
   .c-nav::after {
-    width: calc(100% - 2 * 2rem + 0.4rem);
+    width: calc(100% - 3rem - 0.2rem - 0.2rem - 0.3rem);
   }
 
   .c-menu {
@@ -64,6 +64,10 @@
 
   .c-nav::after {
     width: 100%;
+  }
+
+  .c-nav__menu {
+    padding-right: 0;
   }
 
   .c-cover {
