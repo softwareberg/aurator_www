@@ -17,19 +17,19 @@
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
     color: $col-orange;
-  }
 
-  &__item::after {
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    content: "";
-    border-bottom: solid $col-txt-gray-light 3px;
-  }
+    &::after {
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      content: "";
+      border-bottom: solid $col-txt-gray-light 3px;
+    }
 
-  &__item--spaced {
-    margin-top: 5rem;
+    &--spaced {
+      margin-top: 5rem;
+    }
   }
 
   &-item__inner {
@@ -39,60 +39,60 @@
     font-size: 1.6rem;
     line-height: 100%;
     text-transform: uppercase;
+
+    &-main {
+      padding-right: 1rem;
+    }
+
+    &-sub {
+      padding-top: 0.5rem;
+      font-size: 0.6rem;
+      color: $col-black;
+      letter-spacing: 0.1em;
+    }
+
+    &-icon {
+      position: absolute;
+      right: 0;
+      bottom: 1rem;
+
+      &--pkp {
+        max-width: 121px;
+      }
+
+      &--icc {
+        max-width: 117px;
+      }
+
+      &--iso {
+        max-width: 80px;
+      }
+    }
   }
 
-  &-item__inner-main {
-    padding-right: 1rem;
+  @include media-breakpoint-down(md) {
+    &__title {
+      margin-top: 0.5rem;
+    }
+
+    &__item {
+      padding: 0.5rem 0;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &-item__inner-icon {
+      right: 0;
+    }
   }
 
-  &-item__inner-sub {
-    padding-top: 0.5rem;
-    font-size: 0.6rem;
-    color: $col-black;
-    letter-spacing: 0.1em;
-  }
-
-  &-item__inner-icon {
-    position: absolute;
-    right: 0;
-    bottom: 1rem;
-  }
-
-  &-item__inner-icon--pkp {
-    max-width: 121px;
-  }
-
-  &-item__inner-icon--icc {
-    max-width: 117px;
-  }
-
-  &-item__inner-icon--iso {
-    max-width: 80px;
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .c-list__title {
-    margin-top: 0.5rem;
-  }
-
-  .c-list__item {
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-
-  .c-list__item::after {
-    width: 100%;
-  }
-
-  .c-list-item__inner-icon {
-    right: 0;
-  }
-}
-
-@include media-breakpoint-down(xs) {
-  .c-list-item__inner {
-    font-size: 1.2rem;
+  @include media-breakpoint-down(xs) {
+    &-item__inner {
+      font-size: 1.2rem;
+    }
   }
 }

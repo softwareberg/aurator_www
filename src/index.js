@@ -4,23 +4,11 @@ import {
   hideMobileMenuOnClick, setContactPosition, toggleLangDropdown, hideLangDropdownOutsideClick
 } from 'js/layout';
 import { translateOnInit, translateOnClick } from 'js/lang';
+import debounce from 'js/utils';
 
 require('css/main.scss');
 
 window.jQuery = $; window.$ = $;
-
-function debounce(fn, delay) {
-  let timerId;
-  return (...args) => {
-    if (timerId) {
-      clearTimeout(timerId);
-    }
-    timerId = setTimeout(() => {
-      fn(...args);
-      timerId = null;
-    }, delay);
-  };
-}
 
 $(document).ready(() => {
   translateOnInit();
@@ -38,5 +26,5 @@ $(document).ready(() => {
     setFotoPosition();
     hideMobileMenuForDesktop();
     setContactPosition();
-  }, 150));
+  }, 50));
 });

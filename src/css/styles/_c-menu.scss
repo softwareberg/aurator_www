@@ -8,72 +8,70 @@
     font-size: 0.6rem;
     color: $col-nav-link;
     text-transform: uppercase;
-  }
 
-  &__link:hover {
-    color: $col-white;
+    &:hover {
+      color: $col-white;
+    }
   }
 
   &__toggle {
     float: right;
     padding-top: 0.6rem;
     margin-left: 0.5rem;
-  }
 
-  &__toggle--open-icon,
-  &__toggle--close-icon {
-    max-width: 28px;
-  }
+    &--open-icon,
+    &--close-icon {
+      max-width: 28px;
+    }
 
-  &__toggle--open.h-open {
-    display: none !important;
-  }
+    &--open.h-open {
+      display: none !important;
+    }
 
-  &__toggle--close.h-open {
-    display: inline-block !important;
+    &--close.h-open {
+      display: inline-block !important;
+    }
   }
 
   &--mobile {
     width: 100%;
     margin-left: 0;
     list-style: none;
+
+    &__list-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid $col-banner-gray-dark;
+    }
+
+    &__link {
+      padding: 1.5rem 0;
+      font-family: $font-praktika-bold;
+      font-size: 1.6rem;
+      color: $col-white;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    &__contact-link {
+      padding: 0;
+      font-family: $font-praktika-medium;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
   }
 
-  &--mobile__list-item {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid $col-banner-gray-dark;
-  }
-
-  &--mobile__link {
-    padding: 1.5rem 0;
-    font-family: $font-praktika-bold;
-    font-size: 1.6rem;
-    color: $col-white;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  &--mobile__contact-link {
-    padding: 0;
-    font-family: $font-praktika-medium;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-  }
-}
-
-@include media-breakpoint-down(lg) {
-  .c-menu {
+  @include media-breakpoint-down(lg) {
     margin: 1rem 0.2rem;
+
+    &__link {
+      padding-right: 0.3rem;
+      padding-left: 0.3rem;
+    }
   }
 
-  .c-menu__link {
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
-  }
-}
-
-@include media-breakpoint-down(xs) {
-  .c-menu--mobile__link {
-    font-size: 1.2rem;
+  @include media-breakpoint-down(xs) {
+    &--mobile__link {
+      font-size: 1.2rem;
+    }
   }
 }

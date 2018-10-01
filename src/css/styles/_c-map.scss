@@ -13,17 +13,17 @@
   &__fg {
     max-width: 90%;
   }
-}
 
-@include media-breakpoint-down(md) {
-  .c-map__fg {
-    max-width: 94%;
+  @include media-breakpoint-down(md) {
+    &__fg {
+      max-width: 94%;
+    }
   }
-}
 
-@include media-breakpoint-down(sm) {
-  .c-map__bg {
-    height: 400px;
-    background-position: 100% 20%;
+  @include media-breakpoint-down(sm) {
+    &__bg {
+      height: 400px;
+      background-position: 100% 20%;
+    }
   }
 }

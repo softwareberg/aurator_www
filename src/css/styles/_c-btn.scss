@@ -7,44 +7,52 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
 
-  &--logo,
-  &--form,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--logo {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: -1.2rem;
+      bottom: 0.2rem;
+      content: url("../img/c-btn--logo.png");
+      transform: scale(0.5);
+    }
+  }
+
+  &--form {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: url("../img/c-btn--form.png");
+      transform: scale(0.5);
+    }
+  }
+
   &--phone {
     position: relative;
-  }
 
-  &--logo::after {
-    position: absolute;
-    right: -1.2rem;
-    bottom: 0.2rem;
-    content: url("../img/c-btn--logo.png");
-    transform: scale(0.5);
-  }
-
-  &--form::after {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    content: url("../img/c-btn--form.png");
-    transform: scale(0.5);
-  }
-
-  &--phone::after {
-    position: absolute;
-    right: 0.4rem;
-    bottom: -0.2rem;
-    content: url("../img/c-btn--phone.png");
-    transform: scale(0.5);
+    &::after {
+      position: absolute;
+      right: 0.4rem;
+      bottom: -0.2rem;
+      content: url("../img/c-btn--phone.png");
+      transform: scale(0.5);
+    }
   }
 
   &__inner {
     padding-right: 1.6rem;
     line-height: 100%;
   }
-}
 
-@include media-breakpoint-down(xs) {
-  .c-btn {
+  @include media-breakpoint-down(xs) {
     margin-right: 0;
     margin-left: 0;
   }

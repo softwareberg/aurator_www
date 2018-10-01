@@ -57,8 +57,6 @@ export function setContactPosition() {
   }
 }
 
-// const listDropdownIcons = []
-
 export function toggleLangDropdown() {
   // show / hide dropdown with language selection
   $('.c-lang__toggle').click(() => {

@@ -28,38 +28,36 @@
     position: relative;
     padding: 0.3rem 1rem 0.3rem 0;
     text-align: center;
-  }
 
-  &-dd__option::before {
-    position: absolute;
-    top: 0.1rem;
-    left: 0;
-    width: 3rem;
-    content: "";
-    border-top: 1px solid $col-nav-link;
-  }
+    &::before {
+      position: absolute;
+      top: 0.1rem;
+      left: 0;
+      width: 3rem;
+      content: "";
+      border-top: 1px solid $col-nav-link;
+    }
 
-  &-dd__link {
-    padding: 0.5rem 1.5rem 0.5rem 0.5rem !important;
-    font-family: $font-praktika-bold;
+    &__link {
+      padding: 0.5rem 1.5rem 0.5rem 0.5rem !important;
+      font-family: $font-praktika-bold;
+    }
   }
 
   &--mobile {
     padding: 1rem 0;
-  }
 
-  &--mobile__item {
-    padding: 1.5rem 0;
-    font-family: $font-praktika-bold;
-    font-size: 1.6rem;
-    color: $col-txt-gray;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-}
+    &__item {
+      padding: 1.5rem 0;
+      font-family: $font-praktika-bold;
+      font-size: 1.6rem;
+      color: $col-txt-gray;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
 
-@include media-breakpoint-down(xs) {
-  .c-lang--mobile__item {
-    font-size: 1.2rem;
+      @include media-breakpoint-down(xs) {
+        font-size: 1.2rem;
+      }
+    }
   }
 }

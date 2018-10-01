@@ -36,27 +36,26 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
-}
 
-@include media-breakpoint-down(lg) {
-  .c-quote__text {
-    font-size: 1.6rem;
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .c-quote__text {
-    font-size: 1rem;
-  }
-}
-
-@include media-breakpoint-down(xs) {
-  .c-quote__header {
-    font-size: 1.2rem;
+  @include media-breakpoint-down(lg) {
+    &__text {
+      font-size: 1.6rem;
+    }
   }
 
-  .c-quote__author {
-    font-size: 0.8rem;
+  @include media-breakpoint-down(md) {
+    &__text {
+      font-size: 1rem;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    &__header {
+      font-size: 1.2rem;
+    }
+
+    &__author {
+      font-size: 0.8rem;
+    }
   }
 }
-
