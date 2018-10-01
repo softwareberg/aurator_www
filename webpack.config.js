@@ -28,7 +28,9 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, 'src/img'), to: path.resolve(__dirname, 'dist/img') }
+      { from: path.resolve(__dirname, 'src/img'), to: path.resolve(__dirname, 'dist/img') },
+      { from: path.resolve(__dirname, 'src/mail.php'), to: path.resolve(__dirname, 'dist/mail.php') },
+      { from: path.resolve(__dirname, 'src/tel.php'), to: path.resolve(__dirname, 'dist/tel.php') }
     ]),
     new StyleLintPlugin({
       configFile: path.resolve(__dirname, '.stylelintrc'),
@@ -76,7 +78,7 @@ module.exports = {
     }]
   },
   devServer: {
-    host: 'localhost',
+    host: '0.0.0.0',
     port,
     contentBase: path.resolve(__dirname, 'src'),
     open: true
