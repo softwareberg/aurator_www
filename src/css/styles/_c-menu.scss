@@ -33,33 +33,6 @@
     }
   }
 
-  &--mobile {
-    width: 100%;
-    margin-left: 0;
-    list-style: none;
-
-    &__list-item {
-      padding: 1.5rem 0;
-      border-bottom: 1px solid $col-banner-gray-dark;
-    }
-
-    &__link {
-      padding: 1.5rem 0;
-      font-family: $font-praktika-bold;
-      font-size: 1.6rem;
-      color: $col-white;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    &__contact-link {
-      padding: 0;
-      font-family: $font-praktika-medium;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-    }
-  }
-
   @include media-breakpoint-down(lg) {
     margin: 1rem 0.2rem;
 
@@ -68,9 +41,36 @@
       padding-left: 0.3rem;
     }
   }
+}
+
+.c-menu-mobile {
+  width: 100%;
+  margin-left: 0;
+  list-style: none;
+
+  &__list-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid $col-banner-gray-dark;
+  }
+
+  &__link {
+    padding: 1.5rem 0;
+    font-family: $font-praktika-bold;
+    font-size: 1.6rem;
+    color: $col-white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__contact-link {
+    padding: 0;
+    font-family: $font-praktika-medium;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
 
   @include media-breakpoint-down(xs) {
-    &--mobile__link {
+    &__link {
       font-size: 1.2rem;
     }
   }

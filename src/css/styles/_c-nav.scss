@@ -30,28 +30,6 @@
     padding-right: 3rem;
   }
 
-  &--mobile {
-    position: absolute;
-    top: 60px;
-    left: 100%;
-    z-index: 1000;
-    width: 100%;
-    height: calc(100% - 60px);
-    padding: 2rem;
-    background: $col-bg-gray-dark;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-
-    &.h-open {
-      left: 0;
-      opacity: 1;
-    }
-
-    &__menu {
-      width: calc(100% - 4rem);
-    }
-  }
-
   @include media-breakpoint-down(lg) {
     &::after {
       width: calc(100% - 3rem - 0.2rem - 0.2rem - 0.3rem);
@@ -66,5 +44,27 @@
     &__menu {
       padding-right: 0;
     }
+  }
+}
+
+.c-nav-mobile {
+  position: absolute;
+  top: 60px;
+  left: 100%;
+  z-index: 1000;
+  width: 100%;
+  height: calc(100% - 60px);
+  padding: 2rem;
+  background: $col-bg-gray-dark;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+
+  &.h-open {
+    left: 0;
+    opacity: 1;
+  }
+
+  &__menu {
+    width: calc(100% - 4rem);
   }
 }

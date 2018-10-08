@@ -24,16 +24,16 @@
   margin: 0;
 }
 
-/* stylelint-disable */
+/* stylelint-disable-next-line */
 a {
   text-decoration: none;
 
+  /* stylelint-disable-next-line */
   &:hover {
     text-decoration: underline;
     transition: 0.2s ease-in-out;
   }
 }
-/* stylelint-enable */
 
 .top {
   position: relative;

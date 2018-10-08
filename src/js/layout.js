@@ -24,7 +24,7 @@ export function setTopFullscreen() {
 
 export function toggleMobileMenu() {
   $('.c-menu__toggle').click(() => {
-    $('.c-nav--mobile').toggleClass('h-open');
+    $('.c-nav-mobile').toggleClass('h-open');
     $('.c-menu__toggle').toggleClass('h-open');
   });
 }
@@ -33,7 +33,7 @@ export function hideMobileMenuForDesktop() {
   const breakpointDesktop = 992;
   if (window.innerWidth >= breakpointDesktop) {
     // for desktop widths reset state of mobile menu
-    $('.c-nav--mobile').removeClass('h-open');
+    $('.c-nav-mobile').removeClass('h-open');
     $('.c-menu__toggle').removeClass('h-open');
   }
 }
@@ -41,7 +41,7 @@ export function hideMobileMenuForDesktop() {
 export function hideMobileMenuOnClick() {
   // reset state of mobile menu after clicking link from mobile menu
   $('.js-hideMobileMenu').click(() => {
-    $('.c-nav--mobile').removeClass('h-open');
+    $('.c-nav-mobile').removeClass('h-open');
     $('.c-menu__toggle').removeClass('h-open');
   });
 }

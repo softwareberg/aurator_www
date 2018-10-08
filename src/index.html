@@ -47,56 +47,56 @@
                     </ul>
                     <div class="c-lang d-none d-lg-inline-block">
                         <div class="c-lang__toggle">
-                            <a class="c-lang__toggle-text c-menu__link" href="#">PL</a>
+                            <a class="c-lang__toggle-text" role="button">PL</a>
                             <img class="c-lang__icon" src="img/c-lang__icon.png" alt="dropdown-show">
                             <img class="c-lang__icon-hide d-none" src="img/c-lang__icon-hide.png" alt="dropdown-hide">
                         </div>
                         <ul class="c-lang__dd d-none">
-                            <li class="c-lang-dd__option">
-                                <a class="c-lang-dd__link c-menu__link js-translate h-current-lang" data-key="pl" href="#">PL</a>
+                            <li class="c-lang__dd-option">
+                                <a class="c-lang__dd-link c-lang--current-lang js-translate" data-key="pl" role="button">PL</a>
                             </li>
-                            <li class="c-lang-dd__option">
-                                <a class="c-lang-dd__link c-menu__link js-translate" data-key="en" href="#">EN</a>
+                            <li class="c-lang__dd-option">
+                                <a class="c-lang__dd-link js-translate" data-key="en" role="button">EN</a>
                             </li>
                         </ul>
                     </div>
-                    <a class="c-menu__toggle c-menu__toggle--open d-inline-block d-lg-none" href="#">
+                    <a class="c-menu__toggle c-menu__toggle--open d-inline-block d-lg-none" role="button">
                         <img class="c-menu__toggle--open-icon" src="img/c-menu__toggle--open-icon.png" alt="menu__toggle">
                     </a>
-                    <a class="c-menu__toggle c-menu__toggle--close d-none" href="#">
+                    <a class="c-menu__toggle c-menu__toggle--close d-none" role="button">
                         <img class="c-menu__toggle--close-icon" src="img/c-menu__toggle--close-icon.png" alt="X">
                     </a>
                 </div>
             </div>
 
-            <div class="c-nav--mobile d-block d-lg-none">
-                <div class="c-nav--mobile__menu l-center-y">
-                    <ul class="c-menu--mobile">
-                        <li class="c-menu--mobile__list-item">
-                            <a class="c-menu--mobile__link js-hideMobileMenu js-lang" data-key="menu-repair" href="#repair">Naprawa i regeneracja</a>
+            <div class="c-nav-mobile d-block d-lg-none">
+                <div class="c-nav-mobile__menu l-center-y">
+                    <ul class="c-menu-mobile">
+                        <li class="c-menu-mobile__list-item">
+                            <a class="c-menu-mobile__link js-hideMobileMenu js-lang" data-key="menu-repair" href="#repair">Naprawa i regeneracja</a>
                         </li>
-                        <li class="c-menu--mobile__list-item">
-                            <a class="c-menu--mobile__link js-hideMobileMenu js-lang" data-key="menu-production" href="#production">Produkcja</a>
+                        <li class="c-menu-mobile__list-item">
+                            <a class="c-menu-mobile__link js-hideMobileMenu js-lang" data-key="menu-production" href="#production">Produkcja</a>
                         </li>
-                        <li class="c-menu--mobile__list-item">
-                            <a class="c-menu--mobile__link js-hideMobileMenu js-lang" data-key="menu-about" href="#about">O firmie</a>
+                        <li class="c-menu-mobile__list-item">
+                            <a class="c-menu-mobile__link js-hideMobileMenu js-lang" data-key="menu-about" href="#about">O firmie</a>
                         </li>
-                        <li class="c-menu--mobile__list-item">
-                            <a class="c-menu--mobile__link js-hideMobileMenu js-lang" data-key="menu-contact" href="#contact-info">Kontakt</a>
-                        </li>
-                    </ul>
-                    <ul class="c-menu--mobile d-sm-none row">
-                        <li class="c-menu--mobile__list-item col-5">
-                            <a class="c-menu--mobile__contact-link h-orange" href="tel:+48323012097">+32 301 20 97</a>
-                        </li>
-                        <li class="c-menu--mobile__list-item col-7">
-                            <a class="c-menu--mobile__contact-link h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a>
+                        <li class="c-menu-mobile__list-item">
+                            <a class="c-menu-mobile__link js-hideMobileMenu js-lang" data-key="menu-contact" href="#contact-info">Kontakt</a>
                         </li>
                     </ul>
-                    <div class="c-lang--mobile">
-                        <a class="c-lang--mobile__item js-translate h-current-lang" data-key="pl" href="#">PL</a>
-                        <a class="h-txt-divider c-lang--mobile__item">|</a>
-                        <a class="c-lang--mobile__item js-translate" data-key="en" href="#">EN</a>
+                    <ul class="c-menu-mobile d-sm-none row">
+                        <li class="c-menu-mobile__list-item col-5">
+                            <a class="c-menu-mobile__contact-link h-orange" href="tel:+48323012097">+32 301 20 97</a>
+                        </li>
+                        <li class="c-menu-mobile__list-item col-7">
+                            <a class="c-menu-mobile__contact-link h-orange" href="mailto:biuro@aurator.com.pl">biuro@aurator.com.pl</a>
+                        </li>
+                    </ul>
+                    <div class="c-lang-mobile">
+                        <a class="c-lang-mobile__item c-lang--current-lang js-translate" data-key="pl" role="button">PL</a>
+                        <a class="h-txt-divider c-lang-mobile__item">|</a>
+                        <a class="c-lang-mobile__item js-translate" data-key="en" role="button">EN</a>
                     </div>
                 </div>
             </div>
@@ -104,9 +104,9 @@
             <div class="banner container l-center-y l-container-padding">
                 <h1 class="c-title h-white js-lang" data-key="banner-title">Naprawa\nmaszyn trakcyjnych</h1>
                 <div class="banner__btns row">
-                        <a class="c-btn c-btn--logo h-border-bottom--orange h-white col-sm-6 col-lg-4 js-lang" data-key="banner-btn1" href="#repair">Sprawdż nasza ofertę</a>
-                        <a class="c-btn h-border-bottom h-white col-sm-5 col-lg-3 js-lang" data-key="banner-btn2" href="mailto:biuro@aurator.com.pl">Umów sie na rozmowę</a>
-                        <a class="c-btn h-border-bottom--thin-gray h-white col-6 col-sm-3 col-lg-2 js-lang" data-key="banner-btn3" href="#">Zobacz film</a>
+                    <a class="c-btn c-btn--logo c-btn--underline-orange h-white col-sm-6 col-lg-4 js-lang" data-key="banner-btn1" href="#repair">Sprawdż nasza ofertę</a>
+                    <a class="c-btn c-btn--underline h-white col-sm-5 col-lg-3 js-lang" data-key="banner-btn2" href="mailto:biuro@aurator.com.pl">Umów sie na rozmowę</a>
+                    <a class="c-btn c-btn--underline-thin-gray h-white col-6 col-sm-3 col-lg-2 js-lang" data-key="banner-btn3" role="button">Zobacz film</a>
                 </div>
             </div>
 
@@ -331,11 +331,11 @@
         
                         <div class="l-col-clean col-12">
                             <div class="l-last-element row">
-                                <a class="c-btn c-btn--form h-orange h-border-bottom col-sm-9 col-md-7 col-lg-5 col-xl-4" href="mailto:biuro@aurator.com.pl">
+                                <a class="c-btn c-btn--form h-orange c-btn--underline col-sm-9 col-md-7 col-lg-5 col-xl-4" href="mailto:biuro@aurator.com.pl">
                                     <span class="c-btn__inner js-lang" data-key="cta-btn1">Wypełnij formularz kontaktowy</span>
                                 </a>
                                 <span class="h-btn-divider col-lg-1 text-lg-center js-lang" data-key="cta-btn-divider">lub</span>
-                                <a class="c-btn c-btn--phone h-dark h-border-bottom col-sm-9 col-md-7 col-lg-5 col-xl-4" href="mailto:biuro@aurator.com.pl">
+                                <a class="c-btn c-btn--phone h-dark c-btn--underline col-sm-9 col-md-7 col-lg-5 col-xl-4" href="mailto:biuro@aurator.com.pl">
                                     <span class="c-btn__inner js-lang" data-key="cta-btn2">Zostaw dane kontaktowe - oddzwonimy!</span>
                                 </a>
                             </div>

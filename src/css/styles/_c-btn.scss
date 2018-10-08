@@ -47,6 +47,18 @@
     }
   }
 
+  &--underline {
+    border-bottom: solid 4px;
+  }
+
+  &--underline-orange {
+    border-bottom: solid $col-orange 4px;
+  }
+
+  &--underline-thin-gray {
+    border-bottom: solid $col-banner-gray-dark 2px;
+  }
+
   &__inner {
     padding-right: 1.6rem;
     line-height: 100%;

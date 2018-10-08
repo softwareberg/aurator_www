@@ -28,7 +28,20 @@
     }
   }
 
-  &-item__inner {
+  @include media-breakpoint-down(xs) {
+    &__item {
+      margin-bottom: 0.5rem;
+
+      &::after {
+        bottom: 0.5rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.c-num-list-item {
+  &__inner {
     position: absolute;
     bottom: 1rem;
     left: 5rem;
@@ -39,16 +52,7 @@
   }
 
   @include media-breakpoint-down(xs) {
-    &__item {
-      margin-bottom: 0.5rem;
-
-      &::after {
-        bottom: 0.5rem;
-        width: 100%;
-      }
-    }
-
-    &-item__inner {
+    &__inner {
       padding-right: 0;
       font-size: 0.7rem;
     }

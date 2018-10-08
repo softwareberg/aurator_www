@@ -141,9 +141,9 @@ function setCurrentLanguage(lang) {
     .toArray()
     .forEach((translateLink) => {
       if (translateLink.getAttribute('data-key') === lang) {
-        translateLink.classList.add('h-current-lang');
+        translateLink.classList.add('c-lang--current-lang');
       } else {
-        translateLink.classList.remove('h-current-lang');
+        translateLink.classList.remove('c-lang--current-lang');
       }
     });
 

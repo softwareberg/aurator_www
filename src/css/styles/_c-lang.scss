@@ -3,12 +3,20 @@
   top: 1rem;
   right: 0;
 
+  &--current-lang {
+    color: $col-txt-gray-light !important;
+  }
+
   &__toggle {
     cursor: pointer;
   }
 
   &__toggle-text {
     padding: 1rem 0.5rem 0.5rem !important;
+    font-family: $font-praktika-bold;
+    font-size: 0.6rem;
+    color: #827f80;
+    text-transform: uppercase;
   }
 
   &__icon,
@@ -24,7 +32,7 @@
     background: transparent;
   }
 
-  &-dd__option {
+  &__dd-option {
     position: relative;
     padding: 0.3rem 1rem 0.3rem 0;
     text-align: center;
@@ -37,27 +45,30 @@
       content: "";
       border-top: 1px solid $col-nav-link;
     }
-
-    &__link {
-      padding: 0.5rem 1.5rem 0.5rem 0.5rem !important;
-      font-family: $font-praktika-bold;
-    }
   }
 
-  &--mobile {
-    padding: 1rem 0;
+  &__dd-link {
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem !important;
+    font-family: $font-praktika-bold;
+    font-size: 0.6rem;
+    color: #827f80;
+    text-transform: uppercase;
+  }
+}
 
-    &__item {
-      padding: 1.5rem 0;
-      font-family: $font-praktika-bold;
-      font-size: 1.6rem;
-      color: $col-txt-gray;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
+.c-lang-mobile {
+  padding: 1rem 0;
 
-      @include media-breakpoint-down(xs) {
-        font-size: 1.2rem;
-      }
+  &__item {
+    padding: 1.5rem 0;
+    font-family: $font-praktika-bold;
+    font-size: 1.6rem;
+    color: $col-txt-gray;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 1.2rem;
     }
   }
 }
