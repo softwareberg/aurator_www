@@ -78,3 +78,30 @@ export function hideLangDropdownOutsideClick() {
     }
   });
 }
+
+export function setFormFullscreen() {
+  if ($('.c-form').height() < $(window).height()) {
+    $('.c-form').css('height', $(window).height());
+  } else {
+    $('.c-form').css('height', '');
+  }
+}
+
+export function showContactFormOnClick() {
+  $('.js-openContactForm').click(() => {
+    $('.js-contactForm').addClass('h-open');
+  });
+}
+
+export function showPhoneFormOnClick() {
+  $('.js-openPhoneForm').click(() => {
+    $('.js-phoneForm').addClass('h-open');
+  });
+}
+
+
+export function hideFormOnClick() {
+  $('.js-hideForm').click(() => {
+    $('.l-form-container').removeClass('h-open');
+  });
+}

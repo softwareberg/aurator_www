@@ -62,7 +62,16 @@ const arrLang = {
     'map-nip-nr': '6312658988',
     'map-email': 'Adres e-mail:',
     'map-tel': 'Nr telefonu:',
-    'map-social': 'Aurator w social media:'
+    'map-social': 'Aurator w social media:',
+    'contact-form-header': 'Skorzystaj z formularza kontaktowego i napisz do nas wiadomość:',
+    'contact-form-name': 'Imię i nazwisko:',
+    'contact-form-email': 'Twój adres e-mail:',
+    'contact-form-msg': 'Treść wiadomości:',
+    'contact-form-btn': 'Wyślij wiadomość',
+    'phone-form-header': 'Zostaw swój nr telefonu, a my skontaktujemy się z Tobą!',
+    'phone-form-name': 'Imię i nazwisko:',
+    'phone-form-phone': 'Twój nr telefonu:',
+    'phone-form-btn': 'Wyślij informacje'
   },
   en: {
     'menu-repair': 'Repair and renovation',
@@ -124,7 +133,16 @@ const arrLang = {
     'map-nip-nr': 'PL6312658988',
     'map-email': 'E-mail address:',
     'map-tel': 'Phone no.:',
-    'map-social': 'Aurator in social media:'
+    'map-social': 'Aurator in social media:',
+    'contact-form-header': 'Skorzystaj z formularza kontaktowego i napisz do nas wiadomość:',
+    'contact-form-name': 'Imię i nazwisko:',
+    'contact-form-email': 'Twój adres e-mail:',
+    'contact-form-msg': 'Treść wiadomości:',
+    'contact-form-btn': 'Wyślij wiadomość',
+    'phone-form-header': 'Zostaw swój nr telefonu, a my skontaktujemy się z Tobą!',
+    'phone-form-name': 'Imię i nazwisko:',
+    'phone-form-phone': 'Twój nr telefonu:',
+    'phone-form-btn': 'Wyślij informacje'
   }
 };
 
