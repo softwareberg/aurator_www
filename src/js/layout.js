@@ -99,9 +99,20 @@ export function showPhoneFormOnClick() {
   });
 }
 
-
 export function hideFormOnClick() {
   $('.js-hideForm').click(() => {
     $('.l-form-container').removeClass('h-open');
   });
+}
+
+export function hideAlertOnClick() {
+  const cookieAuratorAccepted = localStorage.getItem('cookieAuratorAccepted');
+  if (cookieAuratorAccepted) {
+    $('.c-alert').addClass('d-none');
+  } else {
+    $('.js-hideAlert').click(() => {
+      $('.c-alert').addClass('d-none');
+    });
+    localStorage.setItem('cookieAuratorAccepted', true);
+  }
 }

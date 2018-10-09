@@ -2,7 +2,7 @@ import $ from 'jquery';
 import {
   setFotoPosition, setTopFullscreen, toggleMobileMenu, hideMobileMenuForDesktop,
   hideMobileMenuOnClick, setContactPosition, toggleLangDropdown, hideLangDropdownOutsideClick,
-  setFormFullscreen, showContactFormOnClick, showPhoneFormOnClick, hideFormOnClick
+  setFormFullscreen, showContactFormOnClick, showPhoneFormOnClick, hideFormOnClick, hideAlertOnClick
 } from 'js/layout';
 import { translateOnInit, translateOnClick } from 'js/lang';
 import debounce from 'js/utils';
@@ -25,6 +25,7 @@ $(document).ready(() => {
   showContactFormOnClick();
   showPhoneFormOnClick();
   hideFormOnClick();
+  hideAlertOnClick();
 
   $(window).on('resize', debounce(() => {
     setTopFullscreen();

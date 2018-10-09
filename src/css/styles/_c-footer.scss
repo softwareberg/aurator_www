@@ -1,0 +1,30 @@
+.c-footer {
+  padding: 2rem 0 4rem;
+
+  &__copy {
+    margin-bottom: 0.6rem;
+    font-family: $font-praktika-bold;
+    font-size: 0.7rem;
+    line-height: 125%;
+    color: $col-txt-gray;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: pre-line;
+  }
+
+  &__graphics,
+  &__webdev {
+    margin-bottom: 0.6rem;
+    font-family: $font-praktika-bold;
+    font-size: 0.6rem;
+    line-height: 125%;
+    color: $col-txt-gray;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: pre-line;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 2rem 0;
+  }
+}

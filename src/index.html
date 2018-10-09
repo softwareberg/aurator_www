@@ -392,6 +392,12 @@
                 
             </section>
 
+            <section class="c-footer l-container-padding">
+                <p class="c-footer__copy js-lang" data-key="c-footer__copy">Wszelkie prawa zastrzeżone przez Aurator sp. z o. o. @ 2018.</p>
+                <p class="c-footer__graphics js-lang" data-key="c-footer__graphics">Projekt graficzny: Challenge studio</p>
+                <p class="c-footer__webdev js-lang" data-key="c-footer__webdev">Wykonanie: Codeloop.eu</p>
+            </section>
+
         </div>
 
         <div class="l-form-container js-contactForm">
@@ -404,18 +410,18 @@
                     <div class="c-form__col-left col-md-6 col-xl-5">
                         <div class="c-form__group">
                             <label class="c-form__label js-lang" for="name" data-key="contact-form-name">Imię i nazwisko:</label>
-                            <input class="c-form__input form-control" type="text" name="name" id="name">
+                            <input type="text" class="c-form__input form-control js-placeholder" name="name" id="name" placeholder="Imię i nazwisko" data-key="contact-form-name">
                         </div>
                         <div class="c-form__group ">
                             <label class="c-form__label js-lang" for="company" data-key="contact-form-email">Twój adres e-mail:</label>
-                            <input class="c-form__input form-control" type="email" name="email" id="email" required>
+                            <input type="email" class="c-form__input form-control js-placeholder" name="email" id="email" placeholder="Adres e-mail" data-key="contact-form-email">
                         </div>
-                        <a class="c-form__btn d-none d-md-block js-lang js-send" data-key="contact-form-btn" href="#repair">Wyślij wiadomość</a>
+                        <a class="c-form__btn d-none d-md-block js-lang js-send" data-key="contact-form-btn" role="button">Wyślij wiadomość</a>
                     </div>
                     <div class="c-form__col-right col-md-6 col-xl-7">
                         <div class="c-form__group c-form__group--textarea">
                             <label class="c-form__label js-lang" for="message" data-key="contact-form-msg">Treść wiadomości:</label>
-                            <textarea class="c-form__textarea form-control" name="message" id="message"></textarea>
+                            <textarea class="c-form__textarea form-control js-placeholder" name="message" id="message" placeholder="Treść wiadomości" data-key="contact-form-msg"></textarea>
                         </div>
                         <a class="c-form__btn d-block d-md-none js-lang js-send" data-key="contact-form-btn" role="button">Wyślij wiadomość</a>
                     </div>	
@@ -432,20 +438,28 @@
                     </a>
                     <div class="c-form__group c-form__col-left col-md-6 col-xl-4">
                         <label class="c-form__label js-lang" for="name" data-key="phone-form-name">Imię i nazwisko:</label>
-                        <input class="c-form__input form-control" type="text" name="name" id="name">
+                        <input type="text" class="c-form__input form-control js-placeholder" name="name" id="name" placeholder="Imię i nazwisko" data-key="phone-form-name">
                     </div>
                     <div class="c-form__group c-form__col-right col-md-6 col-xl-4">
                         <label class="c-form__label js-lang" for="phone" data-key="phone-form-phone">Twój nr telefonu:</label>
-                        <input class="c-form__input form-control" type="tel" name="phone" id="phone">
+                        <input type="tel" class="c-form__input form-control js-placeholder" name="phone" id="phone" placeholder="Nr telefonu" data-key="phone-form-phone">
                     </div>
                     <div class="l-col-clean col-md-6 col-xl-12 row">
                         <div class="c-form__col-left col-12 col-xl-4 row">
-                            <a class="c-form__btn col-12 js-lang js-send" data-key="phone-form-btn" href="#repair">Wyślij informacje</a>
+                            <a class="c-form__btn col-12 js-lang js-send" data-key="phone-form-btn" role="button">Wyślij informacje</a>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
+
+        <div class="c-alert l-container-padding row">
+            <p class="c-alert__text l-col-clean col-md-10 col-xl-11 js-lang" data-key="alert-text">Wykorzystujemy pliki cookies oraz inne podobne technologie, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.</p>
+            <div class="l-col-clean col-md-2 col-xl-1 text-center">
+                <a class="c-alert__btn js-lang js-hideAlert" role="button" data-key="alert-btn">Zamknij</a>
+            </div>
+        </div>
+
     </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
