@@ -72,7 +72,7 @@ export const arrLang = {
     'c-footer__copy': 'Wszelkie prawa zastrzeżone przez Aurator sp. z o. o. @ 2018.',
     'c-footer__graphics': 'Projekt graficzny: Challenge studio',
     'c-footer__webdev': 'Wykonanie: Codeloop.eu',
-    'alert-text': 'Wykorzystujemy pliki cookies oraz inne podobne technologie, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.',
+    'alert-text': 'Wykorzystujemy pliki cookies, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.',
     'alert-btn': 'Zamknij'
   },
   en: {
@@ -148,7 +148,7 @@ export const arrLang = {
     'c-footer__copy': 'All rights reserved Aurator sp. z o. o. @ 2018.',
     'c-footer__graphics': 'Graphic design: Challenge studio',
     'c-footer__webdev': 'Software: Codeloop.eu',
-    'alert-text': 'We use cookies and other similar technologies to ensure you get the best experience on our website. You can disable use of cookies in your browser settings.',
+    'alert-text': 'We use cookies to ensure you get the best experience on our website. You can disable use of cookies in your browser settings.',
     'alert-btn': 'Close'
   }
 };

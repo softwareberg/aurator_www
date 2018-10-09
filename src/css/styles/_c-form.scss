@@ -74,7 +74,6 @@
   }
 
   &__input {
-    // display: block;
     width: 100%;
     padding: 1rem;
     font-family: $font-praktika-medium;
@@ -85,7 +84,6 @@
   }
 
   &__textarea {
-    // display: block;
     width: 100%;
     height: calc(100% - 46px);
     padding: 1rem;
@@ -100,7 +98,6 @@
     position: relative;
     width: 100%;
     padding: 0.6rem;
-    // padding-top: 1.2rem;
     margin-top: 2rem;
     font-family: $font-praktika-bold;
     font-size: 0.6rem;
@@ -109,6 +106,10 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     border-bottom: solid $col-orange 4px;
+  }
+
+  &__btn:hover {
+    text-decoration: none;
   }
 
   &__btn::after {
@@ -161,10 +162,6 @@
       width: calc(100% - 2rem);
     }
 
-    &__form {
-      // padding-bottom: 140px;
-    }
-
     &__group--textarea {
       height: 350px;
     }
@@ -175,10 +172,6 @@
 
     &__textarea {
       font-size: 0.8rem;
-    }
-
-    &__btn {
-      // margin-bottom: 110px;
     }
   }
 }
