@@ -1,0 +1,71 @@
+.c-btn {
+  padding: 0.6rem;
+  margin: 0.6rem 1.2rem 0.6rem 0;
+  font-family: $font-praktika-bold;
+  font-size: 0.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--logo {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: -1.2rem;
+      bottom: 0.2rem;
+      content: url("../img/c-btn--logo.png");
+      transform: scale(0.5);
+    }
+  }
+
+  &--form {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: url("../img/c-btn--form.png");
+      transform: scale(0.5);
+    }
+  }
+
+  &--phone {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 0.4rem;
+      bottom: -0.2rem;
+      content: url("../img/c-btn--phone.png");
+      transform: scale(0.5);
+    }
+  }
+
+  &--underline {
+    border-bottom: solid 4px;
+  }
+
+  &--underline-orange {
+    border-bottom: solid $col-orange 4px;
+  }
+
+  &--underline-thin-gray {
+    border-bottom: solid $col-banner-gray-dark 2px;
+  }
+
+  &__inner {
+    padding-right: 1.6rem;
+    line-height: 100%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

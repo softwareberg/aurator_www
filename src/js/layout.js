@@ -1,20 +1,20 @@
 import $ from 'jquery';
 
 export function setFotoPosition() {
-  const firmaBg = $('.firma__bg');
-  const firmaBgHeight = firmaBg.height();
-  const quoteHeight = $('.firma__quote-div').outerHeight();
-  const firma = $('.firma');
+  const aboutBg = $('.about__bg');
+  const aboutBgHeight = aboutBg.height();
+  const quoteHeight = $('.c-quote').outerHeight();
+  const about = $('.about');
   const breakpoint = 768;
 
   if (window.innerWidth >= breakpoint) {
-    const maxTopHeight = 7 / 15 * firmaBgHeight;
-    const firmaBgTop = quoteHeight < maxTopHeight ? quoteHeight : maxTopHeight;
-    firmaBg.css({ top: `${-firmaBgTop}px` });
-    firma.css({ height: `${firmaBgHeight}px` });
+    const maxTopHeight = 7 / 15 * aboutBgHeight;
+    const aboutBgTop = quoteHeight < maxTopHeight ? quoteHeight : maxTopHeight;
+    aboutBg.css({ top: `${-aboutBgTop}px` });
+    about.css({ height: `${aboutBgHeight}px` });
   } else {
-    firmaBg.css({ top: '' });
-    firma.css({ height: '' });
+    aboutBg.css({ top: '' });
+    about.css({ height: '' });
   }
 }
 
@@ -23,9 +23,9 @@ export function setTopFullscreen() {
 }
 
 export function toggleMobileMenu() {
-  $('.menu-toggle').click(() => {
-    $('.nav-mobile').toggleClass('h-open');
-    $('.menu-toggle').toggleClass('h-open');
+  $('.c-menu__toggle').click(() => {
+    $('.c-nav-mobile').toggleClass('h-open');
+    $('.c-menu__toggle').toggleClass('h-open');
   });
 }
 
@@ -33,16 +33,16 @@ export function hideMobileMenuForDesktop() {
   const breakpointDesktop = 992;
   if (window.innerWidth >= breakpointDesktop) {
     // for desktop widths reset state of mobile menu
-    $('.nav-mobile').removeClass('h-open');
-    $('.menu-toggle').removeClass('h-open');
+    $('.c-nav-mobile').removeClass('h-open');
+    $('.c-menu__toggle').removeClass('h-open');
   }
 }
 
 export function hideMobileMenuOnClick() {
   // reset state of mobile menu after clicking link from mobile menu
   $('.js-hideMobileMenu').click(() => {
-    $('.nav-mobile').removeClass('h-open');
-    $('.menu-toggle').removeClass('h-open');
+    $('.c-nav-mobile').removeClass('h-open');
+    $('.c-menu__toggle').removeClass('h-open');
   });
 }
 
@@ -56,8 +56,6 @@ export function setContactPosition() {
     $('.c-contact').removeClass('l-center-y');
   }
 }
-
-// const listDropdownIcons = []
 
 export function toggleLangDropdown() {
   // show / hide dropdown with language selection

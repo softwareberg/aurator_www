@@ -1,0 +1,74 @@
+.c-lang {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+
+  &--current-lang {
+    color: $col-txt-gray-light !important;
+  }
+
+  &__toggle {
+    cursor: pointer;
+  }
+
+  &__toggle-text {
+    padding: 1rem 0.5rem 0.5rem !important;
+    font-family: $font-praktika-bold;
+    font-size: 0.6rem;
+    color: #827f80;
+    text-transform: uppercase;
+  }
+
+  &__icon,
+  &__icon-hide {
+    max-width: 12px;
+  }
+
+  &__dd {
+    position: absolute;
+    top: 1.7rem;
+    padding: 0;
+    list-style: none;
+    background: transparent;
+  }
+
+  &__dd-option {
+    position: relative;
+    padding: 0.3rem 1rem 0.3rem 0;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: 0.1rem;
+      left: 0;
+      width: 3rem;
+      content: "";
+      border-top: 1px solid $col-nav-link;
+    }
+  }
+
+  &__dd-link {
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem !important;
+    font-family: $font-praktika-bold;
+    font-size: 0.6rem;
+    color: #827f80;
+    text-transform: uppercase;
+  }
+}
+
+.c-lang-mobile {
+  padding: 1rem 0;
+
+  &__item {
+    padding: 1.5rem 0;
+    font-family: $font-praktika-bold;
+    font-size: 1.6rem;
+    color: $col-txt-gray;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 1.2rem;
+    }
+  }
+}

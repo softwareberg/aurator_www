@@ -1,0 +1,28 @@
+.about {
+  position: relative;
+  overflow: hidden;
+
+  &__quote {
+    position: relative;
+    z-index: 1000;
+  }
+
+  &__mobile-foto {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__bg {
+    position: relative;
+  }
+
+  &__bg-img {
+    width: 100%;
+  }
+
+  &__know-how {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}

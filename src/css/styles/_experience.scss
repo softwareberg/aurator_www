@@ -1,0 +1,24 @@
+.experience {
+  &__bg {
+    width: 100%;
+    overflow: hidden;
+    background: url("../img/experience-bg.jpg") no-repeat 15%;
+    background-size: cover;
+  }
+
+  &__logo {
+    width: 243.5px;
+    margin: 0 auto;
+  }
+
+  &__logo-img {
+    max-width: 243.5px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__logo-img {
+      margin-bottom: 2rem;
+    }
+  }
+}
+

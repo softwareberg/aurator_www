@@ -1,0 +1,61 @@
+.c-quote {
+  padding-bottom: 2rem;
+
+  &__header {
+    padding-bottom: 1.5em;
+    font-family: $font-praktika-bold;
+    font-size: 1.6rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__text {
+    padding-bottom: 1em;
+    font-family: $font-praktika-bold;
+    font-size: 2rem;
+    line-height: 150%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__author {
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-family: $font-praktika-bold;
+    font-size: 1rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__author-position {
+    font-family: $font-praktika-bold;
+    font-size: 0.6rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  @include media-breakpoint-down(lg) {
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &__text {
+      font-size: 1rem;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    &__header {
+      font-size: 1.2rem;
+    }
+
+    &__author {
+      font-size: 0.8rem;
+    }
+  }
+}

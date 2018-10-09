@@ -1,33 +1,13 @@
 .h-white {
-  color: #fff !important;
-}
-
-.h-black {
-  color: #000 !important;
+  color: $col-white !important;
 }
 
 .h-dark {
   color: $col-txt-gray !important;
 }
 
-.h-light {
-  color: $col-txt-gray-light !important;
-}
-
 .h-orange {
   color: $col-orange !important;
-}
-
-.h-border-bottom {
-  border-bottom: solid 4px;
-}
-
-.h-border-bottom--orange {
-  border-bottom: solid $col-orange 4px;
-}
-
-.h-border-bottom--thin-gray {
-  border-bottom: solid $col-banner-gray-dark 2px;
 }
 
 .h-txt-divider {
@@ -35,33 +15,11 @@
   padding-left: 0.3em;
 }
 
-.h-current-lang {
-  color: $col-txt-gray-light !important;
-}
-
-.l-container-padding {
-  padding-right: 4rem;
-  padding-left: 4rem;
-}
-
-.c-section {
-  padding-bottom: 4rem;
-}
-
-.l-last-element {
-  margin-bottom: 3rem;
-}
-
-.l-center-y {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.l-col-clean {
-  padding: 0;
-}
-
-.l-col-padding {
-  padding: 0.5rem;
+.h-btn-divider {
+  padding: 0.6rem;
+  margin: 0.6rem 1.2rem 0.6rem 0;
+  font-family: $font-praktika-bold;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }

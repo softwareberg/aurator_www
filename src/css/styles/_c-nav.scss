@@ -1,0 +1,70 @@
+.c-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2 * 2rem);
+  margin: 0 2rem;
+  overflow: visible;
+
+  &::after {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: calc(100% - 3rem - 1rem - 0.5rem);
+    content: "";
+    border-bottom: solid $col-orange 3px;
+  }
+
+  &__logo {
+    float: left;
+    margin: 1rem 0;
+  }
+
+  &__logo-img {
+    max-width: 187px;
+  }
+
+  &__menu {
+    position: relative;
+    float: right;
+    padding-right: 3rem;
+  }
+
+  @include media-breakpoint-down(lg) {
+    &::after {
+      width: calc(100% - 3rem - 0.2rem - 0.2rem - 0.3rem);
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &::after {
+      width: 100%;
+    }
+
+    &__menu {
+      padding-right: 0;
+    }
+  }
+}
+
+.c-nav-mobile {
+  position: absolute;
+  top: 60px;
+  left: 100%;
+  z-index: 1000;
+  width: 100%;
+  height: calc(100% - 60px);
+  padding: 2rem;
+  background: $col-bg-gray-dark;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+
+  &.h-open {
+    left: 0;
+    opacity: 1;
+  }
+
+  &__menu {
+    width: calc(100% - 4rem);
+  }
+}

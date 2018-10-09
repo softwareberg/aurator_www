@@ -1,0 +1,53 @@
+.c-cover {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  color: $col-white;
+  background-size: cover;
+
+  &__title {
+    position: relative;
+    top: 12%;
+    font-family: $font-praktika-bold;
+    font-size: 3.5rem;
+    line-height: 100%;
+    text-shadow: 0 0 10px #000;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: pre-line;
+  }
+
+  &--repair-primary {
+    background: url("../img/repair-primary__foto.jpg") no-repeat 80% 100%;
+  }
+
+  &--repair-secondary {
+    background: url("../img/repair-secondary__foto.jpg") no-repeat 35% 5%;
+  }
+
+  &--production-primary {
+    background: url("../img/production-primary__foto.jpg") no-repeat 30% 40%;
+  }
+
+  &--production-secondary {
+    background: url("../img/production-secondary__foto.jpg") no-repeat 65% 65%;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 400px;
+
+    &__title {
+      font-size: 2.8rem;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    height: 350px;
+
+    &__title {
+      padding-bottom: 2rem;
+      font-size: 1.6rem;
+    }
+  }
+}

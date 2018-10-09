@@ -8,6 +8,7 @@
 
 .app {
   min-width: 320px;
+  font-family: $font-praktika-medium;
 }
 
 .container-fluid {
@@ -21,4 +22,45 @@
 
 .row {
   margin: 0;
+}
+
+/* stylelint-disable-next-line */
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  /* stylelint-disable-next-line */
+  &:hover {
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  background: url("../img/banner-bg.jpg") no-repeat 75%;
+  background-size: cover;
+}
+
+.banner {
+  padding-top: 60px;
+}
+
+.subsection {
+  margin-bottom: 6rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .subsection {
+    margin-bottom: 4rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .subsection {
+    margin-bottom: 3rem;
+  }
 }

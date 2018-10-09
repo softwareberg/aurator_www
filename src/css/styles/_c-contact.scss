@@ -1,0 +1,53 @@
+.c-contact {
+  width: 100%;
+  padding: 0.5rem;
+
+  &__texts {
+    padding: 1rem 0;
+  }
+
+  &__name-img {
+    max-width: 200px;
+  }
+
+  &__name-text {
+    padding-left: 0.6rem;
+    font-family: $font-praktika-bold;
+    font-size: 0.8rem;
+    color: $col-orange;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__text {
+    margin: 0.5rem 0 2rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+
+  &__icon {
+    max-height: 16px;
+    padding-right: 1rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__texts {
+      padding: 2rem 0;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    &__text,
+    &__name-text {
+      font-size: 0.6rem;
+    }
+
+    &__name-img {
+      max-width: 160px;
+    }
+
+    &__name-txt {
+      font-size: 0.6rem;
+    }
+  }
+}

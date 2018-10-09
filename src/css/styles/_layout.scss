@@ -1,0 +1,53 @@
+.l-container-padding {
+  padding-right: 4rem;
+  padding-left: 4rem;
+
+  @include media-breakpoint-down(md) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.l-last-element {
+  margin-bottom: 3rem;
+
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 2rem;
+  }
+}
+
+.l-center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.l-col-clean {
+  padding: 0;
+}
+
+.l-col-pad-right {
+  padding: 0;
+  padding-right: 2rem;
+
+  @include media-breakpoint-down(lg) {
+    padding-right: 1rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+}
+
+.l-col-pad-left {
+  padding: 0;
+  padding-left: 2rem;
+
+  @include media-breakpoint-down(lg) {
+    padding-left: 1rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+}

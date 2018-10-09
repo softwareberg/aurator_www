@@ -1,0 +1,18 @@
+.c-title {
+  padding-bottom: 3rem;
+  font-family: $font-praktika-bold;
+  font-size: 3.5rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: pre-line;
+
+  @include media-breakpoint-down(md) {
+    font-size: 2.8rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+}

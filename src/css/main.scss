@@ -1,161 +1,20 @@
 @import "styles/bootstrap";
 @import "styles/variables";
-@import "styles/typography";
+@import "styles/fonts";
 @import "styles/general";
-@import "styles/top";
-@import "styles/sections";
-@import "styles/firma";
-@import "styles/map";
+@import "styles/c-title";
+@import "styles/c-btn";
+@import "styles/c-nav";
+@import "styles/c-menu";
+@import "styles/c-lang";
+@import "styles/c-cover";
+@import "styles/c-section";
+@import "styles/c-list";
+@import "styles/c-num-list";
+@import "styles/c-quote";
+@import "styles/about";
+@import "styles/experience";
+@import "styles/c-map";
+@import "styles/c-contact";
 @import "styles/helpers";
-
-@include media-breakpoint-down(lg) {
-  .firma__quote {
-    font-size: 1.6rem;
-  }
-
-  .nav-menu__list {
-    margin: 1rem 0.2rem;
-  }
-
-  .c-link--nav {
-    padding-right: 0.3rem;
-    padding-left: 0.3rem;
-  }
-
-  .nav::after {
-    width: calc(100% - 2 * 2rem + 0.4rem);
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .h-h1 {
-    font-size: 2.8rem;
-  }
-
-  .l-container-padding {
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-
-  .l-col-padding {
-    padding: 0;
-  }
-
-  .nav::after {
-    width: 100%;
-  }
-
-  .nav-menu {
-    margin-right: 0;
-  }
-
-  .section__cover-img {
-    height: 400px;
-  }
-
-  .firma__quote {
-    font-size: 1rem;
-  }
-
-  .c-list__title {
-    margin-top: 0.5rem;
-  }
-
-  .c-list__item {
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-
-  .c-list__item::after {
-    width: 100%;
-  }
-
-  .c-list-item__inner-icon {
-    right: 0;
-  }
-
-  .c-map__foreground {
-    max-width: 94%;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .doswiadczenie__icon {
-    margin-bottom: 1.6rem;
-  }
-
-  .c-map__bg {
-    height: 400px;
-    background-position: 100% 20%;
-  }
-
-  .c-contact__texts {
-    padding: 2rem 0;
-  }
-}
-
-@include media-breakpoint-down(xs) {
-  .h-h1 {
-    padding-bottom: 2rem;
-    font-size: 1.6rem;
-  }
-
-  .h-txt24 {
-    font-size: 1.2rem;
-  }
-
-  .h-txt16 {
-    font-size: 0.8rem;
-  }
-
-  .h-txt10 {
-    font-size: 0.6rem;
-  }
-
-  .banner-link {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .section__cover-img {
-    height: 350px;
-  }
-
-  .section__header {
-    margin: 1.2rem 0;
-  }
-
-  .section__p {
-    margin-bottom: 1rem;
-  }
-
-  .c-section {
-    padding-bottom: 2rem;
-  }
-
-  .l-last-element {
-    margin-bottom: 2rem;
-  }
-
-  .c-list--num__item {
-    margin-bottom: 0.5rem;
-  }
-
-  .c-list--num__item::after {
-    bottom: 0.5rem;
-    width: 100%;
-  }
-
-  .c-list--num-item__inner {
-    padding-right: 0;
-  }
-
-  .c-contact__name-img {
-    max-width: 160px;
-  }
-
-  .c-contact__name-txt {
-    font-size: 0.6rem;
-  }
-}
+@import "styles/layout";

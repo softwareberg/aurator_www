@@ -4,6 +4,7 @@ import {
   hideMobileMenuOnClick, setContactPosition, toggleLangDropdown, hideLangDropdownOutsideClick
 } from 'js/layout';
 import { translateOnInit, translateOnClick } from 'js/lang';
+import debounce from 'js/utils';
 
 require('css/main.scss');
 
@@ -20,10 +21,10 @@ $(document).ready(() => {
   hideLangDropdownOutsideClick();
   translateOnClick();
 
-  $(window).resize(() => {
+  $(window).on('resize', debounce(() => {
     setTopFullscreen();
     setFotoPosition();
     hideMobileMenuForDesktop();
     setContactPosition();
-  });
+  }, 50));
 });
