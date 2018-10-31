@@ -42,7 +42,7 @@ function confirmationMail($email, $subject, $message) {
   $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
   $headers .= 'From: "Aurator" <kontakt@aurator.com.pl>' . "\r\n";
 
-  //mail($email, $subject, $message, $headers);
+  mail($email, $subject, $message, $headers);
 }
 
 function requestMail($name, $email, $subject, $message) {
@@ -50,8 +50,8 @@ function requestMail($name, $email, $subject, $message) {
   $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
   $headers .= "From: \"$name\" <$email>" . "\r\n";
 
-  $to = 'paruzel@aurator.com.pl';
-  //mail($to, $subject, $message, $headers);
+  $to = 'michal.kowol@gmail.com';
+  mail($to, $subject, $message, $headers);
 }
 
 $json = getJsonFromBody();
@@ -67,3 +67,6 @@ requestMail($name, $email, $subject, $message);
 confirmationMail($email, $subject, $message);
 
 header('HTTP/1.1 204 No Content');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST');
+header('Access-Control-Allow-Headers: *');
