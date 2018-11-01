@@ -12,7 +12,7 @@ export const arrLang = {
     'repair-primary-h1': 'Elektryczne maszyny wirujące <br class="d-none d-md-inline">prądu stałego oraz zmiennego',
     'repair-primary-p1': 'Realizujemy naprawy maszyn elektrycznych ze spalinowych oraz elektrycznych pojazdów trakcyjnych.',
     'repair-primary-p2': 'Wykonujemy naprawy zarówno silników trakcyjnych, jak i maszyn pomocniczych do większości typów lokomotyw eksploatowanych w Polsce, jak i poza granicami naszego kraju.',
-    'repair-primary-li1': 'Wykonanie lub regeneracja metalowych elementów maszyn (wały wirników, tarcze łożyskowe, pokrywy łożyskowe itp.)',
+    'repair-primary-li1': 'Wykonanie lub regeneracja metalowych elementów maszyn',
     'repair-primary-li2': 'Wyważanie dynamiczne elementów wirujących',
     'repair-primary-li3': 'Wymiana łożysk',
     'repair-primary-li4': 'Przezwojenia wirników (klasa H i wyższe)',
@@ -24,7 +24,7 @@ export const arrLang = {
     'repair-primary-li10': 'Automatyczna obróbka komutatorów wirników',
     'repair-primary-li11': 'Wytaczanie gniazd pod panewki osiowe silników trakcyjnych',
     'repair-primary-li12': 'Dostawa części zamiennych do maszyn elektrycznych',
-    'repair-primary-li13': 'Próby obciążeniowe na stacji prób wraz z wykonaniem charakterystyki obrotów silników',
+    'repair-primary-li13': 'Próby silników na hamowni',
     'repair-secondary-h1': 'Pantografy',
     'repair-secondary-p1': 'Realizujemy naprawy odbieraków prądu do elektrycznych pojazdów trakcyjnych do wszystkich eksploatowanych pojazdów trakcyjnych w Polsce i za granicą.',
     'production-title': 'Produkcja',
@@ -72,7 +72,7 @@ export const arrLang = {
     'c-footer__copy': 'Wszelkie prawa zastrzeżone przez Aurator sp. z o. o. @ 2018.',
     'c-footer__graphics': 'Projekt graficzny: Challenge studio',
     'c-footer__webdev': 'Wykonanie: Codeloop.eu',
-    'alert-text': 'Wykorzystujemy pliki cookies, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.',
+    'alert-text': 'Wykorzystujemy pliki cookies i podobnych technologii, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.',
     'alert-btn': 'Zamknij'
   },
   en: {
@@ -88,7 +88,7 @@ export const arrLang = {
     'repair-primary-h1': 'AC/DC Electrical rotating machines',
     'repair-primary-p1': 'We specialize in repair of electrical machines for internal-combustion and electrical traction units.',
     'repair-primary-p2': 'We fix traction motors and auxiliary machines for most types of railway engines used in Poland and abroad.',
-    'repair-primary-li1': 'Production and renovation of metal machine components (rotor shafts, endshields, end covers etc.)',
+    'repair-primary-li1': 'Production and renovation of metal machine components',
     'repair-primary-li2': 'Dynamic balancing of rotating components',
     'repair-primary-li3': 'Bearing replacement',
     'repair-primary-li4': 'Rotor rewinding (H class and higher)',
@@ -125,7 +125,7 @@ export const arrLang = {
     'certificates-ul2-p1': 'Our diplomas:',
     'certificates-ul2-li1-sub': 'Bureau of Technical Inspection (UDT-CERT)',
     'cta-h1': 'We welcome to cooperation both companies and individual clients',
-    'cta-p1': 'Choose any possible option to contact us: you can call us, make an appointment or visit us in our office in Gliwice.\nOur sales department is open from Monday to Friday from 7:00 am to 3:00 pm',
+    'cta-p1': 'Choose any possible option to contact us: you can call us, make an appointment or visit us in our office in Gliwice.\nOur sales department is open from Monday to Friday from 7:00 am to 3:00 pm.',
     'cta-btn1': 'Please, fill up the form',
     'cta-btn-divider': 'or',
     'cta-btn2': 'Leave contact details - we will call you back!',
@@ -148,7 +148,7 @@ export const arrLang = {
     'c-footer__copy': 'All rights reserved Aurator sp. z o. o. @ 2018.',
     'c-footer__graphics': 'Graphic design: Challenge studio',
     'c-footer__webdev': 'Software: Codeloop.eu',
-    'alert-text': 'We use cookies to ensure you get the best experience on our website. You can disable use of cookies in your browser settings.',
+    'alert-text': 'We use cookies and similar technologies to ensure you get the best experience on our website. You can disable use of cookies in your browser settings.',
     'alert-btn': 'Close'
   }
 };

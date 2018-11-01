@@ -107,12 +107,12 @@ export function hideFormOnClick() {
 
 export function hideAlertOnClick() {
   const cookieAuratorAccepted = localStorage.getItem('cookieAuratorAccepted');
-  if (cookieAuratorAccepted) {
+  if (cookieAuratorAccepted === 'true') {
     $('.c-alert').addClass('d-none');
   } else {
     $('.js-hideAlert').click(() => {
       $('.c-alert').addClass('d-none');
+      localStorage.setItem('cookieAuratorAccepted', 'true');
     });
-    localStorage.setItem('cookieAuratorAccepted', true);
   }
 }

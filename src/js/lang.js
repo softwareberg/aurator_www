@@ -41,12 +41,10 @@ function resetDropdownState() {
 
 
 export function translateOnInit() {
-  const currentLanguage = localStorage.getItem('currentLangAurator');
-  if (currentLanguage) {
-    translateTexts(currentLanguage);
-    translatePlaceholders(currentLanguage);
-    setCurrentLanguage(currentLanguage);
-  }
+  const currentLanguage = localStorage.getItem('currentLangAurator') || 'pl';
+  translateTexts(currentLanguage);
+  translatePlaceholders(currentLanguage);
+  setCurrentLanguage(currentLanguage);
 }
 
 export function translateOnClick() {
