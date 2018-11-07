@@ -73,7 +73,14 @@ export const arrLang = {
     'c-footer__graphics': 'Projekt graficzny: Challenge studio',
     'c-footer__webdev': 'Wykonanie: Codeloop.eu',
     'alert-text': 'Wykorzystujemy pliki cookies i podobnych technologii, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.',
-    'alert-btn': 'Zamknij'
+    'alert-btn': 'Zamknij',
+    'contact-form-name__invalid': 'Podaj, proszę, swoje imię i nazwisko (2-40 znaków)',
+    'contact-form-email__invalid': 'Podaj, proszę, właściwy adres e-mail',
+    'contact-form-msg__invalid': 'Podaj, proszę, treść wiadomości (10-1000 znaków)',
+    'contact-form__msg-sent': 'Wiadomość została wysłana. Dziękujemy!',
+    'phone-form-name__invalid': 'Podaj, proszę, swoje imię i nazwisko (2-40 znaków)',
+    'phone-form-phone__invalid': 'Podaj, proszę, właściwy numer telefonu',
+    'phone-form__msg-sent': 'Wiadomość została wysłana. Dziękujemy!'
   },
   en: {
     'menu-repair': 'Repair and renovation',
@@ -149,7 +156,14 @@ export const arrLang = {
     'c-footer__graphics': 'Graphic design: Challenge studio',
     'c-footer__webdev': 'Software: Codeloop.eu',
     'alert-text': 'We use cookies and similar technologies to ensure you get the best experience on our website. You can disable use of cookies in your browser settings.',
-    'alert-btn': 'Close'
+    'alert-btn': 'Close',
+    'contact-form-name__invalid': 'Please insert a valid name (2-40 characters)',
+    'contact-form-email__invalid': ' Please insert a valid email address',
+    'contact-form-msg__invalid': 'Please use at least 10 characters, maximum 1000',
+    'contact-form__msg-sent': 'Your message was successfully sent. Thank you!',
+    'phone-form-name__invalid': 'Please insert a valid name (2-40 characters)',
+    'phone-form-phone__invalid': ' Please insert a valid phone number',
+    'phone-form__msg-sent': 'Your message was successfully sent. Thank you!'
   }
 };
 

@@ -80,7 +80,10 @@ export function hideLangDropdownOutsideClick() {
 }
 
 export function setFormFullscreen() {
-  if ($('.c-form').height() < $(window).height()) {
+  const cFormPaddingTop = $('.c-form').css('padding-top');
+  const cFormPaddingBottom = $('.c-form').css('padding-bottom');
+  const cFormPaddingY = parseInt(cFormPaddingTop, 10) + parseInt(cFormPaddingBottom, 10);
+  if ($('.c-form__form').height() < $(window).height() - cFormPaddingY) {
     $('.c-form').css('height', $(window).height());
   } else {
     $('.c-form').css('height', '');
@@ -99,9 +102,22 @@ export function showPhoneFormOnClick() {
   });
 }
 
+function removeInputValidation(parentForm) {
+  const inputs = parentForm.find('.form-control');
+  inputs.each((_, input) => {
+    $(input).addClass('js-validate');
+    $(input).removeClass('js-valid');
+    $(input).removeClass('js-invalid');
+    $(input).off('keyup blur change');
+    $(input).siblings('.invalid-feedback').removeClass('show');
+  });
+}
+
 export function hideFormOnClick() {
-  $('.js-hideForm').click(() => {
+  $('.js-hideForm').click((event) => {
     $('.l-form-container').removeClass('h-open');
+    const parentForm = $(event.target).parents('form');
+    removeInputValidation(parentForm);
   });
 }
 

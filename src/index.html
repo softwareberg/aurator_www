@@ -11,6 +11,7 @@
 
     <link rel="shortcut icon" href="img/favicon.ico" />
     <title>Aurator</title>
+
 </head>
 <body class="app">
     <div class="container-fluid">
@@ -102,7 +103,7 @@
             </div>
 
             <div class="banner container l-center-y l-container-padding">
-                <h1 class="c-title h-white js-lang" data-key="banner-title">Naprawa\nmaszyn trakcyjnych</h1>
+                <h1 class="c-title h-white js-lang" data-key="banner-title">Naprawa <br>maszyn trakcyjnych</h1>
                 <div class="banner__btns row">
                     <a class="c-btn c-btn--logo c-btn--underline-orange h-white col-sm-6 col-lg-4 js-lang" data-key="banner-btn1" href="#repair">Sprawdż nasza ofertę</a>
                     <a class="c-btn c-btn--underline h-white col-sm-5 col-lg-3 js-lang js-openContactForm" data-key="banner-btn2" role="button">Umów sie na rozmowę</a>
@@ -118,7 +119,7 @@
 
                 <div class="repair-primary subsection">
                     <div class="c-cover c-cover--repair-primary l-container-padding">
-                        <h1 class="c-cover__title js-lang" data-key="repair-title">Naprawa\ni regeneracja</h1>
+                        <h1 class="c-cover__title js-lang" data-key="repair-title">Naprawa <br>i regeneracja</h1>
                     </div>
                     <div class="c-section l-container-padding">
                         <h1 class="c-section__header h-orange js-lang" data-key="repair-primary-h1">Elektryczne maszyny wirujące <br class="d-none d-md-inline">prądu stałego oraz zmiennego</h1>
@@ -282,7 +283,7 @@
                 <div class="certificates">
                     <div class="l-container-padding row">
                         <div class="c-section l-col-clean col-sm-10 col-md-7">
-                            <h1 class="c-section__header h-orange js-lang" data-key="certificates-h1">Gwarantowana jakość\nwykonania</h1>
+                            <h1 class="c-section__header h-orange js-lang" data-key="certificates-h1">Gwarantowana jakość <br>wykonania</h1>
                             <p class="c-section__text l-last-element js-lang" data-key="certificates-p1">Potencjał i doświadczona kadra gwarantują wysoką jakość produktów i usług oferowanych przez firmę. Spółka posiada certyfikat ISO 9001:2009 wydany przez Urząd Dozoru Technicznego (UDT-CERT).</p>
                         </div>
                     </div>
@@ -326,7 +327,7 @@
                     <div class="l-container-padding row">
                         <div class="c-section l-col-clean col-sm-10 col-md-7">
                             <h1 class="c-section__header js-lang" data-key="cta-h1">Zapraszamy <br class="d-inline d-xl-none">do współpracy</h1>
-                            <p class="c-section__text l-last-element js-lang" data-key="cta-p1">Wybierz jedną z dostępnych opcji kontaktowych lub zadzwoń, umów się na spotkanie i odwiedź nasze biuro w Gliwicach.\nNasz dział handlowy jest do Twojej dyspozycji od poniedziałku do piątku, między 07:00 a 15:00.</p>
+                            <p class="c-section__text l-last-element js-lang" data-key="cta-p1">Wybierz jedną z dostępnych opcji kontaktowych lub zadzwoń, umów się na spotkanie i odwiedź nasze biuro w Gliwicach. <br>Nasz dział handlowy jest do Twojej dyspozycji od poniedziałku do piątku, między 07:00 a 15:00.</p>
                         </div>
         
                         <div class="l-col-clean col-12">
@@ -403,7 +404,7 @@
         <div class="l-form-container js-contactForm">
             <div class="c-form">
                 <div class="container">
-                    <form class="c-form__form row" id="contact-form">
+                    <form class="c-form__form row needs-validation" id="contact-form" novalidate>
                         <h1 class="c-form__header col-10 col-lg-9 js-lang" data-key="contact-form-header">Skorzystaj z formularza kontaktowego i napisz do nas wiadomość:</h1>
                         <a class="c-form__close js-hideForm" role="button">
                             <img class="c-form__close-icon" src="img/c-menu__toggle--close-icon.png" alt="X">
@@ -411,20 +412,37 @@
                         <div class="c-form__col-left col-md-6 col-xl-5">
                             <div class="c-form__group">
                                 <label class="c-form__label js-lang" for="name" data-key="contact-form-name">Imię i nazwisko:</label>
-                                <input type="text" class="c-form__input form-control js-placeholder" name="name" placeholder="Imię i nazwisko" data-key="contact-form-name">
+                                <input type="text" class="c-form__input form-control js-placeholder js-validate" name="name" placeholder="Imię i nazwisko" data-key="contact-form-name" 
+                                required minlength="2" maxlength="40" pattern="^[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ]+(([',. -][a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ])?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]*)*$">
+                                <div class="invalid-feedback js-lang" data-key="contact-form-name__invalid">
+                                    Podaj, proszę, swoje imię i nazwisko (2-40 znaków)
+                                </div>
                             </div>
-                            <div class="c-form__group ">
+                            <div class="c-form__group">
                                 <label class="c-form__label js-lang" for="company" data-key="contact-form-email">Twój adres e-mail:</label>
-                                <input type="email" class="c-form__input form-control js-placeholder" name="email" placeholder="Adres e-mail" data-key="contact-form-email">
+                                <input type="email" class="c-form__input form-control js-placeholder js-validate" name="email" placeholder="Adres e-mail" data-key="contact-form-email" required>
+                                <div class="invalid-feedback js-lang" data-key="contact-form-email__invalid">
+                                    Podaj, proszę, właściwy adres e-mail
+                                </div>
                             </div>
-                            <a class="c-form__btn d-none d-md-block js-lang js-sendMessage" data-key="contact-form-btn" role="button">Wyślij wiadomość</a>
+                            <a class="c-form__btn d-none d-md-block js-lang js-submitBtn js-sendMsg" data-key="contact-form-btn" role="button">Wyślij wiadomość</a>
+                            <div class="js-msgSent d-none d-md-block js-lang" data-key="contact-form__msg-sent">
+                                Wiadomość została wysłana. Dziękujemy!
+                            </div>
                         </div>
                         <div class="c-form__col-right col-md-6 col-xl-7">
                             <div class="c-form__group c-form__group--textarea">
                                 <label class="c-form__label js-lang" for="message" data-key="contact-form-msg">Treść wiadomości:</label>
-                                <textarea class="c-form__textarea form-control js-placeholder" name="message" id="message" placeholder="Treść wiadomości" data-key="contact-form-msg"></textarea>
+                                <textarea class="c-form__textarea form-control js-placeholder js-validate" name="message" id="message" placeholder="Treść wiadomości" data-key="contact-form-msg"
+                                required minlength="10" maxlength="1000"></textarea>
+                                <div class="invalid-feedback js-lang" data-key="contact-form-msg__invalid">
+                                    Podaj, proszę, treść wiadomości (10-1000 znaków)
+                                </div>
                             </div>
-                            <a class="c-form__btn d-block d-md-none js-lang js-sendMessage" data-key="contact-form-btn" role="button">Wyślij wiadomość</a>
+                            <a class="c-form__btn d-block d-md-none js-lang js-submitBtn js-sendMsg" data-key="contact-form-btn" role="button">Wyślij wiadomość</a>
+                            <div class="js-msgSent d-block d-md-none js-lang" data-key="contact-form__msg-sent">
+                                Wiadomość została wysłana. Dziękujemy!
+                            </div>
                         </div>	
                     </form>
                 </div>
@@ -434,22 +452,33 @@
         <div class="l-form-container js-phoneForm">
             <div class="c-form">
                 <div class="container">
-                    <form class="c-form__form row" id="phone-form">
+                    <form class="c-form__form row needs-validation" id="phone-form" novalidate>
                         <h1 class="c-form__header col-10 col-lg-9 js-lang" data-key="phone-form-header">Zostaw swój nr telefonu, a my skontaktujemy się z Tobą!</h1>
                         <a class="c-form__close js-hideForm" role="button">
                             <img class="c-form__close-icon" src="img/c-menu__toggle--close-icon.png" alt="X">
                         </a>
                         <div class="c-form__group c-form__col-left col-md-6 col-xl-4">
                             <label class="c-form__label js-lang" for="name" data-key="phone-form-name">Imię i nazwisko:</label>
-                            <input type="text" class="c-form__input form-control js-placeholder" name="name" placeholder="Imię i nazwisko" data-key="phone-form-name">
+                            <input type="text" class="c-form__input form-control js-placeholder js-validate" name="name" placeholder="Imię i nazwisko" data-key="phone-form-name"
+                            required minlength="2" maxlength="40" pattern="^[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ]+(([',. -][a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ])?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]*)*$">
+                            <div class="invalid-feedback js-lang" data-key="phone-form-name__invalid">
+                                Podaj, proszę, swoje imię i nazwisko (2-40 znaków)
+                            </div>
                         </div>
                         <div class="c-form__group c-form__col-right col-md-6 col-xl-4">
                             <label class="c-form__label js-lang" for="phone" data-key="phone-form-phone">Twój nr telefonu:</label>
-                            <input type="tel" class="c-form__input form-control js-placeholder" name="phone" placeholder="Nr telefonu" data-key="phone-form-phone">
+                            <input type="tel" class="c-form__input form-control js-placeholder js-validate" name="phone" placeholder="Nr telefonu" data-key="phone-form-phone"
+                            required pattern="^[(]?[\+]?[0-9]{2,4}[)]?[-\s\. ]?[0-9]{2,3}[-\s\. ]?[0-9]{2,3}[-\s\. ]?[0-9]{2,3}([-\s\. ]?[0-9]{2,3})?$">
+                            <div class="invalid-feedback js-lang" data-key="phone-form-phone__invalid">
+                                Podaj, proszę, właściwy numer telefonu
+                            </div>
                         </div>
                         <div class="l-col-clean col-md-6 col-xl-12 row">
                             <div class="c-form__col-left col-12 col-xl-4 row">
-                                <a class="c-form__btn col-12 js-lang js-sendPhoneNo" data-key="phone-form-btn" role="button">Wyślij informacje</a>
+                                <a class="c-form__btn col-12 js-lang js-submitBtn js-sendPhoneNo" data-key="phone-form-btn" role="button">Wyślij informacje</a>
+                                <div class="js-msgSent js-lang" data-key="phone-form__msg-sent">
+                                    Wiadomość została wysłana. Dziękujemy!
+                                </div>
                             </div>
                         </div>
                     </form>

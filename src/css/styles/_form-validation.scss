@@ -1,0 +1,40 @@
+.invalid-feedback {
+  font-size: 1rem;
+  color: rgb(148, 20, 20);
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 0.8rem;
+  }
+}
+
+.js-invalid {
+  border-color: rgb(148, 20, 20);
+}
+
+.js-valid {
+  border-color: rgb(0, 129, 69);
+}
+
+.js-msgSent {
+  position: absolute;
+  bottom: -1.5rem;
+  font-size: 1rem;
+  color: rgb(0, 129, 69);
+  opacity: 0;
+
+  &.show {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  @include media-breakpoint-down(md) {
+    // bottom: -2rem;
+    font-size: 0.8rem;
+  }
+}

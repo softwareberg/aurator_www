@@ -5,11 +5,14 @@ import {
   setFormFullscreen, showContactFormOnClick, showPhoneFormOnClick, hideFormOnClick, hideAlertOnClick
 } from 'js/layout';
 import { translateOnInit, translateOnClick } from 'js/lang';
+import validateForm from 'js/formValidation';
 import debounce from 'js/utils';
 
 require('css/main.scss');
 
 window.jQuery = $; window.$ = $;
+require('bootstrap');
+
 
 $(document).ready(() => {
   translateOnInit();
@@ -26,6 +29,7 @@ $(document).ready(() => {
   showPhoneFormOnClick();
   hideFormOnClick();
   hideAlertOnClick();
+  validateForm();
 
   $(window).on('resize', debounce(() => {
     setTopFullscreen();

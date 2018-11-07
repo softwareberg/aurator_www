@@ -62,7 +62,7 @@
   overflow-y: scroll;
   background: $col-bg-gray-dark;
   opacity: 0;
-  transition: 0.5s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .l-form-container.h-open {
