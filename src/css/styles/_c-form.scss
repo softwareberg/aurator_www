@@ -155,7 +155,7 @@
 
   @include media-breakpoint-down(sm) {
     &__col-right,
-    &__col-left, {
+    &__col-left {
       padding: 0;
     }
   }

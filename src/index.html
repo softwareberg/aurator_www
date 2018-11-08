@@ -411,18 +411,18 @@
                         </a>
                         <div class="c-form__col-left col-md-6 col-xl-5">
                             <div class="c-form__group">
-                                <label class="c-form__label js-lang" for="name" data-key="contact-form-name">Imię i nazwisko:</label>
-                                <input type="text" class="c-form__input form-control js-placeholder js-validate" name="name" placeholder="Imię i nazwisko" data-key="contact-form-name" 
+                                <label class="c-form__label js-lang" for="contact-form-name" data-key="contact-form-name">Imię i nazwisko:</label>
+                                <input type="text" class="c-form__input form-control js-placeholder js-validate" id="contact-form-name" placeholder="Imię i nazwisko" data-key="contact-form-name" 
                                 required minlength="2" maxlength="40" pattern="^[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ]+(([',. -][a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ])?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]*)*$">
                                 <div class="invalid-feedback js-lang" data-key="contact-form-name__invalid">
-                                    Podaj, proszę, swoje imię i nazwisko (2-40 znaków)
+                                    Podaj swoje imię i nazwisko (2-40 znaków)
                                 </div>
                             </div>
                             <div class="c-form__group">
-                                <label class="c-form__label js-lang" for="company" data-key="contact-form-email">Twój adres e-mail:</label>
-                                <input type="email" class="c-form__input form-control js-placeholder js-validate" name="email" placeholder="Adres e-mail" data-key="contact-form-email" required>
+                                <label class="c-form__label js-lang" for="contact-form-email" data-key="contact-form-email">Twój adres e-mail:</label>
+                                <input type="email" class="c-form__input form-control js-placeholder js-validate" id="contact-form-email" placeholder="Adres e-mail" data-key="contact-form-email" required>
                                 <div class="invalid-feedback js-lang" data-key="contact-form-email__invalid">
-                                    Podaj, proszę, właściwy adres e-mail
+                                    Podaj właściwy adres e-mail
                                 </div>
                             </div>
                             <a class="c-form__btn d-none d-md-block js-lang js-submitBtn js-sendMsg" data-key="contact-form-btn" role="button">Wyślij wiadomość</a>
@@ -432,11 +432,11 @@
                         </div>
                         <div class="c-form__col-right col-md-6 col-xl-7">
                             <div class="c-form__group c-form__group--textarea">
-                                <label class="c-form__label js-lang" for="message" data-key="contact-form-msg">Treść wiadomości:</label>
-                                <textarea class="c-form__textarea form-control js-placeholder js-validate" name="message" id="message" placeholder="Treść wiadomości" data-key="contact-form-msg"
+                                <label class="c-form__label js-lang" for="contact-form-message" data-key="contact-form-msg">Treść wiadomości:</label>
+                                <textarea class="c-form__textarea form-control js-placeholder js-validate" name="message" id="contact-form-message" placeholder="Treść wiadomości" data-key="contact-form-msg"
                                 required minlength="10" maxlength="1000"></textarea>
                                 <div class="invalid-feedback js-lang" data-key="contact-form-msg__invalid">
-                                    Podaj, proszę, treść wiadomości (10-1000 znaków)
+                                    Podaj treść wiadomości (10-1000 znaków)
                                 </div>
                             </div>
                             <a class="c-form__btn d-block d-md-none js-lang js-submitBtn js-sendMsg" data-key="contact-form-btn" role="button">Wyślij wiadomość</a>
@@ -458,19 +458,19 @@
                             <img class="c-form__close-icon" src="img/c-menu__toggle--close-icon.png" alt="X">
                         </a>
                         <div class="c-form__group c-form__col-left col-md-6 col-xl-4">
-                            <label class="c-form__label js-lang" for="name" data-key="phone-form-name">Imię i nazwisko:</label>
-                            <input type="text" class="c-form__input form-control js-placeholder js-validate" name="name" placeholder="Imię i nazwisko" data-key="phone-form-name"
+                            <label class="c-form__label js-lang" for="phone-form-name" data-key="phone-form-name">Imię i nazwisko:</label>
+                            <input type="text" class="c-form__input form-control js-placeholder js-validate" id="phone-form-name" placeholder="Imię i nazwisko" data-key="phone-form-name"
                             required minlength="2" maxlength="40" pattern="^[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ]+(([',. -][a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ])?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]*)*$">
                             <div class="invalid-feedback js-lang" data-key="phone-form-name__invalid">
-                                Podaj, proszę, swoje imię i nazwisko (2-40 znaków)
+                                Podaj swoje imię i nazwisko (2-40 znaków)
                             </div>
                         </div>
                         <div class="c-form__group c-form__col-right col-md-6 col-xl-4">
-                            <label class="c-form__label js-lang" for="phone" data-key="phone-form-phone">Twój nr telefonu:</label>
-                            <input type="tel" class="c-form__input form-control js-placeholder js-validate" name="phone" placeholder="Nr telefonu" data-key="phone-form-phone"
+                            <label class="c-form__label js-lang" for="phone-form-phone" data-key="phone-form-phone">Twój nr telefonu:</label>
+                            <input type="tel" class="c-form__input form-control js-placeholder js-validate" id="phone-form-phone" placeholder="Nr telefonu" data-key="phone-form-phone"
                             required pattern="^[(]?[\+]?[0-9]{2,4}[)]?[-\s\. ]?[0-9]{2,3}[-\s\. ]?[0-9]{2,3}[-\s\. ]?[0-9]{2,3}([-\s\. ]?[0-9]{2,3})?$">
                             <div class="invalid-feedback js-lang" data-key="phone-form-phone__invalid">
-                                Podaj, proszę, właściwy numer telefonu
+                                Podaj właściwy numer telefonu
                             </div>
                         </div>
                         <div class="l-col-clean col-md-6 col-xl-12 row">
@@ -487,7 +487,7 @@
         </div>
 
         <div class="c-alert l-container-padding row">
-            <p class="c-alert__text l-col-clean col-md-10 col-xl-11 js-lang" data-key="alert-text">Wykorzystujemy pliki cookies, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.</p>
+            <p class="c-alert__text l-col-clean col-md-10 col-xl-11 js-lang" data-key="alert-text">Wykorzystujemy pliki cookies i podobnych technologii, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.</p>
             <div class="l-col-clean col-md-2 col-xl-1 text-center">
                 <a class="c-alert__btn js-lang js-hideAlert" role="button" data-key="alert-btn">Zamknij</a>
             </div>

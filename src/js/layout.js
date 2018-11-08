@@ -113,11 +113,19 @@ function removeInputValidation(parentForm) {
   });
 }
 
+function hideMsgSentInfo(parentForm) {
+  const msgSentElements = parentForm.find('.js-msgSent');
+  msgSentElements.each((_, msgSentElement) => {
+    $(msgSentElement).removeClass('show');
+  });
+}
+
 export function hideFormOnClick() {
   $('.js-hideForm').click((event) => {
     $('.l-form-container').removeClass('h-open');
     const parentForm = $(event.target).parents('form');
     removeInputValidation(parentForm);
+    hideMsgSentInfo(parentForm);
   });
 }
 

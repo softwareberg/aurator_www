@@ -1,6 +1,6 @@
 .invalid-feedback {
   font-size: 1rem;
-  color: rgb(148, 20, 20);
+  color: $col-invalid;
   opacity: 0;
 
   &.show {
@@ -14,18 +14,14 @@
 }
 
 .js-invalid {
-  border-color: rgb(148, 20, 20);
-}
-
-.js-valid {
-  border-color: rgb(0, 129, 69);
+  border-color: $col-invalid;
 }
 
 .js-msgSent {
   position: absolute;
   bottom: -1.5rem;
   font-size: 1rem;
-  color: rgb(0, 129, 69);
+  color: $col-white;
   opacity: 0;
 
   &.show {
@@ -34,7 +30,6 @@
   }
 
   @include media-breakpoint-down(md) {
-    // bottom: -2rem;
     font-size: 0.8rem;
   }
 }

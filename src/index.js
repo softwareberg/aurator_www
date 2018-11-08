@@ -13,7 +13,6 @@ require('css/main.scss');
 window.jQuery = $; window.$ = $;
 require('bootstrap');
 
-
 $(document).ready(() => {
   translateOnInit();
   setTopFullscreen();

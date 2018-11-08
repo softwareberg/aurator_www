@@ -1,6 +1,5 @@
 import $ from 'jquery';
 
-
 function validateInput(inputToValidate) {
   if (inputToValidate.checkValidity() === true) {
     $(inputToValidate).addClass('js-valid');
@@ -23,9 +22,9 @@ function validateInputOnEvent(inputToValidate) {
 function showMsgSentInfo(msgSentElements) {
   msgSentElements.each((_, msgSentElement) => {
     $(msgSentElement).addClass('show');
-    setTimeout(() => {
-      $(msgSentElement).removeClass('show');
-    }, 8000);
+    // setTimeout(() => {
+    //   $(msgSentElement).removeClass('show');
+    // }, 8000);
   });
 }
 
@@ -39,7 +38,6 @@ function resetInputsValidation(inputElements) {
   });
 }
 
-//  Form Validation
 export default function validateForm() {
   const forms = $('.needs-validation');
 
@@ -48,18 +46,16 @@ export default function validateForm() {
 
     submitBtns.each((_, submitBtn) => {
       $(submitBtn).click(() => {
-        const InputsToValidate = $(form).find('.js-validate');
+        const inputsToValidate = $(form).find('.js-validate');
 
-        if (InputsToValidate.length) {
-          InputsToValidate.each((_, inputToValidate) => {
-            validateInput(inputToValidate);
-            validateInputOnEvent(inputToValidate);
-          });
-        }
+        inputsToValidate.each((_, inputToValidate) => {
+          validateInput(inputToValidate);
+          validateInputOnEvent(inputToValidate);
+        });
 
         const invalidInputs = $(form).find('.js-invalid');
 
-        if (invalidInputs.length === 0 && $(form).find('.js-validate').length === 0) {
+        if (invalidInputs.length === 0) {
           const msgSentInfos = $(form).find('.js-msgSent');
           showMsgSentInfo(msgSentInfos);
 

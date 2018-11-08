@@ -74,12 +74,12 @@ export const arrLang = {
     'c-footer__webdev': 'Wykonanie: Codeloop.eu',
     'alert-text': 'Wykorzystujemy pliki cookies i podobnych technologii, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.',
     'alert-btn': 'Zamknij',
-    'contact-form-name__invalid': 'Podaj, proszę, swoje imię i nazwisko (2-40 znaków)',
-    'contact-form-email__invalid': 'Podaj, proszę, właściwy adres e-mail',
-    'contact-form-msg__invalid': 'Podaj, proszę, treść wiadomości (10-1000 znaków)',
+    'contact-form-name__invalid': 'Podaj swoje imię i nazwisko (2-40 znaków)',
+    'contact-form-email__invalid': 'Podaj właściwy adres e-mail',
+    'contact-form-msg__invalid': 'Podaj treść wiadomości (10-1000 znaków)',
     'contact-form__msg-sent': 'Wiadomość została wysłana. Dziękujemy!',
-    'phone-form-name__invalid': 'Podaj, proszę, swoje imię i nazwisko (2-40 znaków)',
-    'phone-form-phone__invalid': 'Podaj, proszę, właściwy numer telefonu',
+    'phone-form-name__invalid': 'Podaj swoje imię i nazwisko (2-40 znaków)',
+    'phone-form-phone__invalid': 'Podaj właściwy numer telefonu',
     'phone-form__msg-sent': 'Wiadomość została wysłana. Dziękujemy!'
   },
   en: {
