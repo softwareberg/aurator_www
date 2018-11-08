@@ -80,14 +80,18 @@ export function hideLangDropdownOutsideClick() {
 }
 
 export function setFormFullscreen() {
-  const cFormPaddingTop = $('.c-form').css('padding-top');
-  const cFormPaddingBottom = $('.c-form').css('padding-bottom');
-  const cFormPaddingY = parseInt(cFormPaddingTop, 10) + parseInt(cFormPaddingBottom, 10);
-  if ($('.c-form__form').height() < $(window).height() - cFormPaddingY) {
-    $('.c-form').css('height', $(window).height());
-  } else {
-    $('.c-form').css('height', '');
-  }
+  const cForms = $('.c-form');
+  cForms.each((_, cForm) => {
+    const cFormPaddingTop = $(cForm).css('padding-top');
+    const cFormPaddingBottom = $(cForm).css('padding-bottom');
+    const cFormPaddingY = parseInt(cFormPaddingTop, 10) + parseInt(cFormPaddingBottom, 10);
+    const cFormForm = $(cForm).find('.c-form__form');
+    if (cFormForm.height() < $(window).height() - cFormPaddingY) {
+      $(cForm).css('height', $(window).height());
+    } else {
+      $(cForm).css('height', '');
+    }
+  });
 }
 
 export function showContactFormOnClick() {
