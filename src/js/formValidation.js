@@ -19,16 +19,22 @@ function validateInputOnEvent(inputToValidate) {
   });
 }
 
-function showMsgSentInfo(msgSentElements) {
-  msgSentElements.each((_, msgSentElement) => {
-    $(msgSentElement).addClass('show');
-    // setTimeout(() => {
-    //   $(msgSentElement).removeClass('show');
-    // }, 8000);
+export function showMsgSentInfo(form) {
+  const msgSentInfos = $(form).find('.js-msgSent');
+  msgSentInfos.each((_, msgSentInfo) => {
+    $(msgSentInfo).addClass('show');
   });
 }
 
-function resetInputsValidation(inputElements) {
+export function showMsgNotSentInfo(form) {
+  const msgNotSentInfos = $(form).find('.js-msgNotSent');
+  msgNotSentInfos.each((_, msgNotSentInfo) => {
+    $(msgNotSentInfo).addClass('show');
+  });
+}
+
+export function resetInputsValidation(form) {
+  const inputElements = $(form).find('.js-valid');
   inputElements.each((_, inputElement) => {
     $(inputElement).addClass('js-validate');
     $(inputElement).removeClass('js-valid');
@@ -38,31 +44,16 @@ function resetInputsValidation(inputElements) {
   });
 }
 
-export default function validateForm() {
-  const forms = $('.needs-validation');
-
-  forms.each((_, form) => {
-    const submitBtns = $(form).find('.js-submitBtn');
-
-    submitBtns.each((_, submitBtn) => {
-      $(submitBtn).click(() => {
-        const inputsToValidate = $(form).find('.js-validate');
-
-        inputsToValidate.each((_, inputToValidate) => {
-          validateInput(inputToValidate);
-          validateInputOnEvent(inputToValidate);
-        });
-
-        const invalidInputs = $(form).find('.js-invalid');
-
-        if (invalidInputs.length === 0) {
-          const msgSentInfos = $(form).find('.js-msgSent');
-          showMsgSentInfo(msgSentInfos);
-
-          const validInputs = $(form).find('.js-valid');
-          resetInputsValidation(validInputs);
-        }
-      });
-    });
+export function validateForm(form) {
+  const inputsToValidate = $(form).find('.js-validate');
+  inputsToValidate.each((_, inputToValidate) => {
+    validateInput(inputToValidate);
+    validateInputOnEvent(inputToValidate);
   });
+
+  const invalidInputs = $(form).find('.js-invalid');
+  if (invalidInputs.length === 0) {
+    return true;
+  }
+  return false;
 }

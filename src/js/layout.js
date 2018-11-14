@@ -122,6 +122,10 @@ function hideMsgSentInfo(parentForm) {
   msgSentElements.each((_, msgSentElement) => {
     $(msgSentElement).removeClass('show');
   });
+  const msgNotSentElements = parentForm.find('.js-msgNotSent');
+  msgNotSentElements.each((_, msgNotSentElement) => {
+    $(msgNotSentElement).removeClass('show');
+  });
 }
 
 export function hideFormOnClick() {

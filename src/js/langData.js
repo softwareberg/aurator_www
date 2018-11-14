@@ -72,15 +72,17 @@ export const arrLang = {
     'c-footer__copy': 'Wszelkie prawa zastrzeżone przez Aurator sp. z o. o. @ 2018.',
     'c-footer__graphics': 'Projekt graficzny: Challenge studio',
     'c-footer__webdev': 'Wykonanie: Codeloop.eu',
-    'alert-text': 'Wykorzystujemy pliki cookies i podobnych technologii, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.',
+    'alert-text': 'Wykorzystujemy pliki cookies i podobne technologie, aby nasz serwis lepiej spełniał Państwa oczekiwania. Można zablokować zapisywanie cookies, zmieniając ustawienia przeglądarki.',
     'alert-btn': 'Zamknij',
     'contact-form-name__invalid': 'Podaj swoje imię i nazwisko (2-40 znaków)',
     'contact-form-email__invalid': 'Podaj właściwy adres e-mail',
     'contact-form-msg__invalid': 'Podaj treść wiadomości (10-1000 znaków)',
     'contact-form__msg-sent': 'Wiadomość została wysłana. Dziękujemy!',
+    'contact-form__msg-not-sent': 'Przepraszamy, coś poszło nie tak. Spróbuj ponownie.',
     'phone-form-name__invalid': 'Podaj swoje imię i nazwisko (2-40 znaków)',
     'phone-form-phone__invalid': 'Podaj właściwy numer telefonu',
-    'phone-form__msg-sent': 'Wiadomość została wysłana. Dziękujemy!'
+    'phone-form__msg-sent': 'Wiadomość została wysłana. Dziękujemy!',
+    'phone-form__msg-not-sent': 'Przepraszamy, coś poszło nie tak. Spróbuj ponownie.'
   },
   en: {
     'menu-repair': 'Repair and renovation',
@@ -161,9 +163,11 @@ export const arrLang = {
     'contact-form-email__invalid': ' Please insert a valid email address',
     'contact-form-msg__invalid': 'Please use at least 10 characters, maximum 1000',
     'contact-form__msg-sent': 'Your message was successfully sent. Thank you!',
+    'contact-form__msg-not-sent': 'Sorry, something went wrong. Please try again.',
     'phone-form-name__invalid': 'Please insert a valid name (2-40 characters)',
     'phone-form-phone__invalid': ' Please insert a valid phone number',
-    'phone-form__msg-sent': 'Your message was successfully sent. Thank you!'
+    'phone-form__msg-sent': 'Your message was successfully sent. Thank you!',
+    'phone-form__msg-not-sent': 'Sorry, something went wrong. Please try again.'
   }
 };
 

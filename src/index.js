@@ -5,8 +5,8 @@ import {
   setFormFullscreen, showContactFormOnClick, showPhoneFormOnClick, hideFormOnClick, hideAlertOnClick
 } from 'js/layout';
 import { translateOnInit, translateOnClick } from 'js/lang';
-import validateForm from 'js/formValidation';
-import debounce from 'js/utils';
+// import validateForm from 'js/formValidation';
+import { debounce, sendMessage, sendPhoneNo } from 'js/utils';
 
 require('css/main.scss');
 
@@ -28,7 +28,9 @@ $(document).ready(() => {
   showPhoneFormOnClick();
   hideFormOnClick();
   hideAlertOnClick();
-  validateForm();
+  // validateForm();
+  sendMessage();
+  sendPhoneNo();
 
   $(window).on('resize', debounce(() => {
     setTopFullscreen();
