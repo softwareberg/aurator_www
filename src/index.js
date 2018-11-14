@@ -5,8 +5,8 @@ import {
   setFormFullscreen, showContactFormOnClick, showPhoneFormOnClick, hideFormOnClick, hideAlertOnClick
 } from 'js/layout';
 import { translateOnInit, translateOnClick } from 'js/lang';
-// import validateForm from 'js/formValidation';
-import { debounce, sendMessage, sendPhoneNo } from 'js/utils';
+import debounce from 'js/utils';
+import { sendMessage, sendPhoneNo } from 'js/msgs';
 
 require('css/main.scss');
 
@@ -28,7 +28,6 @@ $(document).ready(() => {
   showPhoneFormOnClick();
   hideFormOnClick();
   hideAlertOnClick();
-  // validateForm();
   sendMessage();
   sendPhoneNo();
 

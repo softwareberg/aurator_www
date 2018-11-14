@@ -52,8 +52,5 @@ export function validateForm(form) {
   });
 
   const invalidInputs = $(form).find('.js-invalid');
-  if (invalidInputs.length === 0) {
-    return true;
-  }
-  return false;
+  return invalidInputs.length === 0;
 }
