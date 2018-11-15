@@ -1,7 +1,60 @@
 import $ from 'jquery';
 
+function validateName(name) {
+  const reName = /^[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ]+(([',. -][a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ])?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]*)*$/;
+  const minLength = 2;
+  const maxLength = 50;
+
+  return (name.length >= minLength) && (name.length <= maxLength) && reName.test(name);
+}
+
+function validateEmail(email) {
+  const reEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+
+  return reEmail.test(email);
+}
+
+function validateMsg(msg) {
+  const minLength = 10;
+  const maxLength = 1000;
+
+  return (msg.length >= minLength) && (msg.length <= maxLength);
+}
+
+function validatePhone(phone) {
+  const rePhone = /^[(]?[+]?[0-9]{2,4}[)]?[-\s. ]?[0-9]{2,3}[-\s. ]?[0-9]{2,3}[-\s. ]?[0-9]{2,3}([-\s. ]?[0-9]{2,3})?$/;
+
+  return rePhone.test(phone);
+}
+
+function typeValidation(inputToValidate) {
+  const validationType = $(inputToValidate).data('validation');
+  const inputValue = $(inputToValidate).val();
+  let inputValid = false;
+
+  switch (validationType) {
+    case 'name':
+      inputValid = validateName(inputValue);
+      break;
+    case 'email':
+      inputValid = validateEmail(inputValue);
+      break;
+    case 'msg':
+      inputValid = validateMsg(inputValue);
+      break;
+    case 'phone':
+      inputValid = validatePhone(inputValue);
+      break;
+    default:
+      inputValid = false;
+      break;
+  }
+
+  return inputValid;
+}
+
 function validateInput(inputToValidate) {
-  if (inputToValidate.checkValidity() === true) {
+  if (typeValidation(inputToValidate) === true) {
     $(inputToValidate).addClass('js-valid');
     $(inputToValidate).removeClass('js-invalid');
     $(inputToValidate).siblings('.invalid-feedback').removeClass('show');
@@ -20,21 +73,21 @@ function validateInputOnEvent(inputToValidate) {
 }
 
 export function showMsgSentInfo(form) {
-  const msgSentInfos = $(form).find('.js-msgSent');
+  const msgSentInfos = form.find('.js-msgSent');
   msgSentInfos.each((_, msgSentInfo) => {
     $(msgSentInfo).addClass('show');
   });
 }
 
 export function showMsgNotSentInfo(form) {
-  const msgNotSentInfos = $(form).find('.js-msgNotSent');
+  const msgNotSentInfos = form.find('.js-msgNotSent');
   msgNotSentInfos.each((_, msgNotSentInfo) => {
     $(msgNotSentInfo).addClass('show');
   });
 }
 
 export function resetInputsValidation(form) {
-  const inputElements = $(form).find('.js-valid');
+  const inputElements = form.find('.js-valid');
   inputElements.each((_, inputElement) => {
     $(inputElement).addClass('js-validate');
     $(inputElement).removeClass('js-valid');
@@ -45,12 +98,12 @@ export function resetInputsValidation(form) {
 }
 
 export function validateForm(form) {
-  const inputsToValidate = $(form).find('.js-validate');
+  const inputsToValidate = form.find('.js-validate');
   inputsToValidate.each((_, inputToValidate) => {
     validateInput(inputToValidate);
     validateInputOnEvent(inputToValidate);
   });
 
-  const invalidInputs = $(form).find('.js-invalid');
+  const invalidInputs = form.find('.js-invalid');
   return invalidInputs.length === 0;
 }

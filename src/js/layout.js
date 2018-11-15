@@ -117,7 +117,7 @@ function removeInputValidation(parentForm) {
   });
 }
 
-function hideMsgSentInfo(parentForm) {
+export function hideMsgSentInfo(parentForm) {
   const msgSentElements = parentForm.find('.js-msgSent');
   msgSentElements.each((_, msgSentElement) => {
     $(msgSentElement).removeClass('show');
