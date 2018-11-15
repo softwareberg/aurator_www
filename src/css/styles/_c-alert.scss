@@ -1,0 +1,36 @@
+.c-alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1008;
+  width: 100%;
+  padding: 2rem 0;
+  background: rgba(0, 0, 0, 0.8);
+
+  &__text {
+    font-size: 0.8rem;
+    line-height: 150%;
+    color: $col-white;
+    letter-spacing: 0.05em;
+  }
+
+  &__btn {
+    padding: 0.6rem;
+    font-family: $font-praktika-bold;
+    font-size: 0.6rem;
+    color: $col-orange;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: solid 4px;
+  }
+
+  &__btn:hover {
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__text {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
