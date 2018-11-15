@@ -9,6 +9,7 @@ export function sendMessage() {
     $(btn).click(() => {
       const form = $(btn).parents('form');
       hideMsgSentInfo(form);
+
       if (validateForm(form) === true) {
         const name = $('#contact-form-name').val();
         const email = $('#contact-form-email').val();
@@ -35,6 +36,7 @@ export function sendPhoneNo() {
     $(btn).click(() => {
       const form = $(btn).parents('form');
       hideMsgSentInfo(form);
+
       if (validateForm(form) === true) {
         const name = $('#phone-form-name').val();
         const tel = $('#phone-form-phone').val();
