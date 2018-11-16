@@ -107,7 +107,7 @@
                 <div class="banner__btns row">
                     <a class="c-btn c-btn--logo c-btn--underline-orange h-white col-sm-6 col-lg-4 js-lang" data-key="banner-btn1" href="#repair">Sprawdż nasza ofertę</a>
                     <a class="c-btn c-btn--underline h-white col-sm-5 col-lg-3 js-lang js-openContactForm" data-key="banner-btn2" role="button">Umów sie na rozmowę</a>
-                    <a class="c-btn c-btn--underline-thin-gray h-white col-6 col-sm-3 col-lg-2 js-lang" data-key="banner-btn3" role="button">Zobacz film</a>
+                    <a class="c-btn c-btn--underline-thin-gray h-white col-6 col-sm-3 col-lg-2 js-lang" data-key="banner-btn3" role="button"  data-toggle="modal" data-target="#modal-video">Zobacz film</a>
                 </div>
             </div>
 
@@ -392,6 +392,24 @@
                 </div> 
                 
             </section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-videoLabel" aria-hidden="true">
+                <div class="container">
+                    <div class="modal-dialog dark modal-dialog-centered" role="document">
+                        <div class="modal-content bg-transparent">
+                            <div class="modal-header">
+                                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe class="video-yt" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <section class="c-footer l-container-padding">
                 <p class="c-footer__copy js-lang" data-key="c-footer__copy">Wszelkie prawa zastrzeżone przez Aurator sp. z o. o. @ 2018.</p>
