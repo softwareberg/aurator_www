@@ -16,7 +16,6 @@ export function debounce(fn, delay) {
 export function showModalOnClick() {
   $('#modal-video').on('show.bs.modal', () => {
     const src = '';
-    // const src = 'https://www.youtube.com/embed/QIVUl-b2Stk?autoplay=1';
     $('#modal-video').modal('show');
     $('#modal-video iframe').attr('src', src);
   });
