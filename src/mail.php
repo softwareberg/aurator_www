@@ -50,7 +50,7 @@ function requestMail($name, $email, $subject, $message) {
   $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
   $headers .= "From: \"$name\" <$email>" . "\r\n";
 
-  $to = 'aurator@aurator.com.pl';
+  $to = 'paruzel@aurator.com.pl';
   mail($to, $subject, $message, $headers);
 }
 
@@ -67,3 +67,6 @@ requestMail($name, $email, $subject, $message);
 confirmationMail($email, $subject, $message);
 
 header('HTTP/1.1 204 No Content');
+header('Access-Control-Allow-Origin: http://aurator.com.pl, https://aurator.com.pl, http://www.aurator.com.pl, https://www.aurator.com.pl');
+header('Access-Control-Allow-Methods: GET, POST');
+header('Access-Control-Allow-Headers: *');

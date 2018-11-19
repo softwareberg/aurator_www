@@ -34,7 +34,7 @@ function requestMail($name, $tel) {
   $headers .= "From: \"$name\" <kontakt@aurator.com.pl>" . "\r\n";
 
   $subject = 'Aurator - formularz kontaktowy';
-  $to = 'aurator@aurator.com.pl';
+  $to = 'paruzel@aurator.com.pl';
   $message = formatBody($name, $tel);
 
   mail($to, $subject, $message, $headers);
@@ -47,3 +47,6 @@ $tel = htmlspecialchars(@$json['tel']);
 
 requestMail($name, $tel);
 header('HTTP/1.1 204 No Content');
+header('Access-Control-Allow-Origin: http://aurator.com.pl, https://aurator.com.pl, http://www.aurator.com.pl, https://www.aurator.com.pl');
+header('Access-Control-Allow-Methods: GET, POST');
+header('Access-Control-Allow-Headers: *');
