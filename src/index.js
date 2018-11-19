@@ -5,7 +5,7 @@ import {
   setFormFullscreen, showContactFormOnClick, showPhoneFormOnClick, hideFormOnClick, hideAlertOnClick
 } from 'js/layout';
 import { translateOnInit, translateOnClick } from 'js/lang';
-import debounce from 'js/utils';
+import { debounce, showModalOnClick, hideModalOnClick } from 'js/utils';
 import { sendMessage, sendPhoneNo } from 'js/msgs';
 
 require('css/main.scss');
@@ -30,6 +30,8 @@ $(document).ready(() => {
   hideAlertOnClick();
   sendMessage();
   sendPhoneNo();
+  showModalOnClick();
+  hideModalOnClick();
 
   $(window).on('resize', debounce(() => {
     setTopFullscreen();
