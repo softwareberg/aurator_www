@@ -50,7 +50,7 @@ function requestMail($name, $email, $subject, $message) {
   $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
   $headers .= "From: \"$name\" <$email>" . "\r\n";
 
-  $to = 'michal.kowol@gmail.com';
+  $to = 'aurator@aurator.com.pl';
   mail($to, $subject, $message, $headers);
 }
 
@@ -67,6 +67,3 @@ requestMail($name, $email, $subject, $message);
 confirmationMail($email, $subject, $message);
 
 header('HTTP/1.1 204 No Content');
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, POST');
-header('Access-Control-Allow-Headers: *');
