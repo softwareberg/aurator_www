@@ -2,6 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
@@ -19,6 +21,9 @@ module.exports = {
   resolve: {
     modules: ['node_modules', 'src']
   },
+  optimization: {
+    minimizer: prod ? [new UglifyJsPlugin(), new OptimizeCSSAssetsPlugin()] : []
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html')
@@ -28,9 +33,18 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, 'src/img'), to: path.resolve(__dirname, 'dist/img') },
-      { from: path.resolve(__dirname, 'src/mail.php'), to: path.resolve(__dirname, 'dist/mail.php') },
-      { from: path.resolve(__dirname, 'src/tel.php'), to: path.resolve(__dirname, 'dist/tel.php') }
+      {
+        from: path.resolve(__dirname, 'src/img'),
+        to: path.resolve(__dirname, 'dist/img')
+      },
+      {
+        from: path.resolve(__dirname, 'src/mail.php'),
+        to: path.resolve(__dirname, 'dist/mail.php')
+      },
+      {
+        from: path.resolve(__dirname, 'src/tel.php'),
+        to: path.resolve(__dirname, 'dist/tel.php')
+      }
     ]),
     new StyleLintPlugin({
       configFile: path.resolve(__dirname, '.stylelintrc'),
@@ -55,9 +69,14 @@ module.exports = {
     }, {
       test: /\.scss$/,
       use: [{
-        loader: prod ? MiniCssExtractPlugin.loader : 'style-loader'
+        loader: MiniCssExtractPlugin.loader
       }, {
         loader: 'css-loader',
+        options: {
+          sourceMap: !prod
+        }
+      }, {
+        loader: 'postcss-loader',
         options: {
           sourceMap: !prod
         }
@@ -80,7 +99,6 @@ module.exports = {
   devServer: {
     host: '0.0.0.0',
     port,
-    contentBase: path.resolve(__dirname, 'src'),
-    open: true
+    contentBase: path.resolve(__dirname, 'src')
   }
 };
