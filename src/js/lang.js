@@ -10,6 +10,11 @@ function translateTexts(lang) {
     });
 }
 
+function replaceLinkHref(lang) {
+  const href = `files/rodo_${lang}.pdf`;
+  $('.js-rodo').attr('href', href);
+}
+
 function translatePlaceholders(lang) {
   $('.js-placeholder')
     .toArray()
@@ -45,6 +50,7 @@ export function translateOnInit() {
   translateTexts(currentLanguage);
   translatePlaceholders(currentLanguage);
   setCurrentLanguage(currentLanguage);
+  replaceLinkHref(currentLanguage);
 }
 
 export function translateOnClick() {
@@ -53,6 +59,7 @@ export function translateOnClick() {
     translateTexts(lang);
     translatePlaceholders(lang);
     setCurrentLanguage(lang);
+    replaceLinkHref(lang);
     resetDropdownState();
     setFotoPosition();
   });
