@@ -44,6 +44,10 @@ module.exports = {
       {
         from: path.resolve(__dirname, 'src/tel.php'),
         to: path.resolve(__dirname, 'dist/tel.php')
+      },
+      {
+        from: path.resolve(__dirname, 'src/files'),
+        to: path.resolve(__dirname, 'dist/files')
       }
     ]),
     new StyleLintPlugin({
