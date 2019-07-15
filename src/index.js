@@ -14,12 +14,10 @@ require('css/main.scss');
 window.jQuery = $; window.$ = $;
 require('bootstrap');
 
-setPhotoPositionAfterLoading();
-
 $(document).ready(() => {
   translateOnInit();
   setTopFullscreen();
-  // setPhotoPositionAfterLoading();
+  setPhotoPositionAfterLoading();
   toggleMobileMenu();
   hideMobileMenuOnClick();
   setContactPosition();
