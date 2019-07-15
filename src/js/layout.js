@@ -1,13 +1,13 @@
 import $ from 'jquery';
 
-export function setFotoPosition() {
+export function setPhotoPosition() {
   const aboutBg = $('.about__bg');
-  const aboutBgHeight = aboutBg.height();
-  const quoteHeight = $('.c-quote').outerHeight();
   const about = $('.about');
   const breakpoint = 768;
 
   if (window.innerWidth >= breakpoint) {
+    const aboutBgHeight = aboutBg.height();
+    const quoteHeight = $('.c-quote').outerHeight();
     const maxTopHeight = 7 / 15 * aboutBgHeight;
     const aboutBgTop = quoteHeight < maxTopHeight ? quoteHeight : maxTopHeight;
     aboutBg.css({ top: `${-aboutBgTop}px` });
@@ -16,6 +16,15 @@ export function setFotoPosition() {
     aboutBg.css({ top: '' });
     about.css({ height: '' });
   }
+}
+
+export function setPhotoPositionAfterLoading() {
+  const intervalId = setInterval(() => {
+    if ($('.about__bg').height()) {
+      setPhotoPosition();
+      clearInterval(intervalId);
+    }
+  }, 500);
 }
 
 export function setTopFullscreen() {

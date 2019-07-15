@@ -1,8 +1,9 @@
 import $ from 'jquery';
 import {
-  setFotoPosition, setTopFullscreen, toggleMobileMenu, hideMobileMenuForDesktop,
-  hideMobileMenuOnClick, setContactPosition, toggleLangDropdown, hideLangDropdownOutsideClick,
-  setFormFullscreen, showContactFormOnClick, showPhoneFormOnClick, hideFormOnClick, hideAlertOnClick
+  setPhotoPosition, setPhotoPositionAfterLoading, setTopFullscreen, toggleMobileMenu,
+  hideMobileMenuForDesktop, hideMobileMenuOnClick, setContactPosition, toggleLangDropdown,
+  hideLangDropdownOutsideClick, setFormFullscreen, showContactFormOnClick, showPhoneFormOnClick,
+  hideFormOnClick, hideAlertOnClick
 } from 'js/layout';
 import { translateOnInit, translateOnClick } from 'js/lang';
 import { debounce, showModalOnClick, hideModalOnClick } from 'js/utils';
@@ -13,10 +14,12 @@ require('css/main.scss');
 window.jQuery = $; window.$ = $;
 require('bootstrap');
 
+setPhotoPositionAfterLoading();
+
 $(document).ready(() => {
   translateOnInit();
   setTopFullscreen();
-  setTimeout(() => setFotoPosition(), 500);
+  // setPhotoPositionAfterLoading();
   toggleMobileMenu();
   hideMobileMenuOnClick();
   setContactPosition();
@@ -35,7 +38,7 @@ $(document).ready(() => {
 
   $(window).on('resize', debounce(() => {
     setTopFullscreen();
-    setFotoPosition();
+    setPhotoPosition();
     hideMobileMenuForDesktop();
     setContactPosition();
     setFormFullscreen();
