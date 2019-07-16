@@ -40,6 +40,7 @@
     "webpack-dev-server": "3.7.x"
   },
   "dependencies": {
+    "@primer/css": "^12.4.1",
     "bootstrap": "4.3.x",
     "jquery": "3.4.x"
   }
