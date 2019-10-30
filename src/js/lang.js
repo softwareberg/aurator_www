@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { setFotoPosition } from './layout';
+import { setPhotoPosition } from './layout';
 import { arrLang, arrPlaceholders } from './langData';
 
 function translateTexts(lang) {
@@ -61,6 +61,6 @@ export function translateOnClick() {
     setCurrentLanguage(lang);
     replaceLinkHref(lang);
     resetDropdownState();
-    setFotoPosition();
+    setPhotoPosition();
   });
 }
